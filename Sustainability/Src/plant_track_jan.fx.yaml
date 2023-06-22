@@ -1,4 +1,4 @@
-plant_track_dev As screen:
+plant_track_jan As screen:
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
 
     Label5_8 As label:
@@ -91,6 +91,7 @@ plant_track_dev As screen:
                 var_plant,
                 Text(DataCardValue35.Selected.Value)
             );
+            
             Set(
                 var_family,
                 Text(DataCardValue20.Selected.Value)
