@@ -787,7 +787,7 @@ plant_track_jan As screen:
                 Height: =48
                 PaddingLeft: =0
                 Size: =21
-                Text: ="Any of your family involved?"
+                Text: ="Any of your family involved this month?"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
