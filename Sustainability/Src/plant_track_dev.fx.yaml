@@ -184,7 +184,7 @@ plant_track_dev As screen:
                 Height: =48
                 PaddingLeft: =0
                 Size: =21
-                Text: =Parent.DisplayName
+                Text: ="Does your plant still alive on 26th?"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
