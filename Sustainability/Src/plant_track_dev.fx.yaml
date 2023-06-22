@@ -186,7 +186,7 @@ plant_track_dev As screen:
                 Height: =48
                 PaddingLeft: =0
                 Size: =21
-                Text: =Parent.DisplayName
+                Text: ="Do you have new plant under you care? "
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -305,7 +305,7 @@ plant_track_dev As screen:
                 Height: =48
                 PaddingLeft: =0
                 Size: =21
-                Text: =Parent.DisplayName
+                Text: ="Please include your new plant image"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -339,7 +339,7 @@ plant_track_dev As screen:
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =RGBA(0, 120, 212, 1)
+                Fill: =RGBA(133, 242, 99, 1)
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 Height: =114
