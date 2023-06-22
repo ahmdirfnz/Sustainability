@@ -72,31 +72,28 @@ plant_track_dev As screen:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
         OnSelect: |-
-            =//SubmitForm(Form5);
-            //ResetForm(Form5)
-            
-            // Get value from "Usernames" field.
+            =// Get value from "Usernames" field.
             Set(
                 var_usernames,
                 Text(DataCardValue3.Selected.DisplayName)
             );
             Set(
                 var_alive,
-                Text(DataCardValue35.Selected.Value)
+                Text(DataCardValue25.Selected.Value)
             );
             
             Set(
                 var_leaves,
-                Value(DataCardValue23.Text)
+                Value(DataCardValue6.Text)
             );
             
             Set(
                 var_plant,
-                Text(DataCardValue34.Selected.Value)
+                Text(DataCardValue35.Selected.Value)
             );
             Set(
                 var_family,
-                Text(DataCardValue25.Selected.Value)
+                Text(DataCardValue20.Selected.Value)
             );
             
             If(
@@ -874,4 +871,23 @@ plant_track_dev As screen:
                 Wrap: =false
                 Y: =DataCardKey23.Y
                 ZIndex: =4
+
+    Image3_12 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =69
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =back
+        OnSelect: =Navigate(recycling_main,ScreenTransition)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =61
+        X: =24
+        Y: =24
+        ZIndex: =8
 
