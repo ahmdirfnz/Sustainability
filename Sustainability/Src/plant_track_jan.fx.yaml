@@ -98,29 +98,29 @@ plant_track_jan As screen:
             );
             
             If(
-               Not(IsBlank(LookUp('Plant Adoption Program', StartsWith(Name.DisplayName, var_usernames)))),
+               Not(IsBlank(LookUp('January_1', StartsWith(Name.DisplayName, var_usernames)))),
                Patch(
-                    'Plant Adoption Program',
-                    First(Filter('Plant Adoption Program', StartsWith(Name.DisplayName, var_usernames))),
-                    {'Leaf Input': First(Filter('Plant Adoption Program', StartsWith(Name.DisplayName, var_usernames))).'Leaf Input' + var_leaves}
+                    'January_1',
+                    First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))),
+                    {'Leaf Input': First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))).'Leaf Input' + var_leaves}
                );
                
                 If(
                 var_alive = "Yes", 
-                Patch('Plant Adoption Program',First(Filter('Plant Adoption Program', StartsWith(Name.DisplayName, var_usernames))), 
-                {'Alive Points': First(Filter('Plant Adoption Program', StartsWith(Name.DisplayName, var_usernames))).'Alive Points'+ 10});
+                Patch('January_1',First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))), 
+                {'Alive Points': First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))).'Alive Points'+ 10});
                 ,
-                Patch('Plant Adoption Program',First(Filter('Plant Adoption Program', StartsWith(Name.DisplayName, var_usernames))), 
-                {'Alive Points': First(Filter('Plant Adoption Program', StartsWith(Name.DisplayName, var_usernames))).'Alive Points'});
+                Patch('January_1',First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))), 
+                {'Alive Points': First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))).'Alive Points'});
                 );
             
                 If(
                 var_plant = "Yes", 
-                Patch('Plant Adoption Program',First(Filter('Plant Adoption Program', StartsWith(Name.DisplayName, var_usernames))), 
-                {'New Plant Points': First(Filter('Plant Adoption Program', StartsWith(Name.DisplayName, var_usernames))).'New Plant Points'+ 10});
+                Patch('January_1',First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))), 
+                {'New Plant Points': First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))).'New Plant Points'+ 10});
                 ,
-                Patch('Plant Adoption Program',First(Filter('Plant Adoption Program', StartsWith(Name.DisplayName, var_usernames))), 
-                {'New Plant Points': First(Filter('Plant Adoption Program', StartsWith(Name.DisplayName, var_usernames))).'New Plant Points'});
+                Patch('Plant Adoption Program',First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))), 
+                {'New Plant Points': First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))).'New Plant Points'});
                 );
                 
             
