@@ -1,79 +1,6 @@
 plant_track_dev As screen:
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
 
-    ButtonCanvas1_1 As Button:
-        Appearance: ='ButtonCanvas.Appearance'.Secondary
-        DisplayMode: =DisplayMode.Edit
-        Height: =69
-        OnSelect: |-
-            =//SubmitForm(Form5);
-            //ResetForm(Form5)
-            
-            // Get value from "Usernames" field.
-            Set(
-                var_usernames,
-                Text(DataCardValue3.Selected.DisplayName)
-            );
-            Set(
-                var_alive,
-                Text(DataCardValue35.Selected.Value)
-            );
-            
-            Set(
-                var_leaves,
-                Value(DataCardValue23.Text)
-            );
-            
-            Set(
-                var_plant,
-                Text(DataCardValue34.Selected.Value)
-            );
-            Set(
-                var_family,
-                Text(DataCardValue25.Selected.Value)
-            );
-            
-            If(
-               Not(IsBlank(LookUp('Plant Adoption Program', StartsWith(Name.DisplayName, var_usernames)))),
-               Patch(
-                    'Plant Adoption Program',
-                    First(Filter('Plant Adoption Program', StartsWith(Name.DisplayName, var_usernames))),
-                    {'Leaf Input': First(Filter('Plant Adoption Program', StartsWith(Name.DisplayName, var_usernames))).'Leaf Input' + var_leaves}
-               );
-               
-                If(
-                var_alive = "Yes", 
-                Patch('Plant Adoption Program',First(Filter('Plant Adoption Program', StartsWith(Name.DisplayName, var_usernames))), 
-                {'Alive Points': First(Filter('Plant Adoption Program', StartsWith(Name.DisplayName, var_usernames))).'Alive Points'+ 10});
-                ,
-                Patch('Plant Adoption Program',First(Filter('Plant Adoption Program', StartsWith(Name.DisplayName, var_usernames))), 
-                {'Alive Points': First(Filter('Plant Adoption Program', StartsWith(Name.DisplayName, var_usernames))).'Alive Points'});
-                );
-            
-                If(
-                var_plant = "Yes", 
-                Patch('Plant Adoption Program',First(Filter('Plant Adoption Program', StartsWith(Name.DisplayName, var_usernames))), 
-                {'New Plant Points': First(Filter('Plant Adoption Program', StartsWith(Name.DisplayName, var_usernames))).'New Plant Points'+ 10});
-                ,
-                Patch('Plant Adoption Program',First(Filter('Plant Adoption Program', StartsWith(Name.DisplayName, var_usernames))), 
-                {'New Plant Points': First(Filter('Plant Adoption Program', StartsWith(Name.DisplayName, var_usernames))).'New Plant Points'});
-                );
-                
-            
-               ,
-               SubmitForm(Form5);
-                
-            );
-            
-            NewForm(Form5);
-            ResetForm(Form5);
-            //Navigate(plant_adoption_main);
-        Text: ="Submit"
-        Width: =268
-        X: =186
-        Y: =976
-        ZIndex: =2
-
     Label5_8 As label:
         Align: =Align.Center
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -91,16 +18,16 @@ plant_track_dev As screen:
         Text: ="Plant Tracking"
         Width: =432
         X: =104
-        Y: =98
+        Y: =76
         ZIndex: =3
 
     Form5 As form:
         BorderColor: =RGBA(166, 166, 166, 1)
         DataSource: ='Plant Adoption Program'
         DefaultMode: =FormMode.New
-        Height: =722
+        Height: =635
         Width: =640
-        Y: =186
+        Y: =274
         ZIndex: =4
 
         "'Still Alive?_DataCard1' As typedDataCard.comboBoxEditCard":
@@ -1048,4 +975,158 @@ plant_track_dev As screen:
                 Wrap: =false
                 Y: =DataCardKey27.Y
                 ZIndex: =4
+
+            Button3 As button:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(0, 120, 212, 1)
+                FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =70
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =24
+                Text: ="Button"
+                Width: =280
+                X: =470
+                Y: =47
+                ZIndex: =5
+
+    Gallery5 As gallery.galleryHorizontal:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        DelayItemLoading: =true
+        Height: =77
+        Items: |
+            =["Jan","Feb","Mac","Apr","May", "Jun","July","Aug","Sept","Oct","Nov","Dec"]
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplateSize: =130
+        Y: =196
+        ZIndex: =5
+
+        Button1 As button:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(133, 242, 99, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =61
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =30
+            RadiusTopRight: =30
+            Size: =24
+            Text: =ThisItem.Value
+            Width: =130
+            ZIndex: =1
+
+    Button10 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(133, 242, 99, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+        OnSelect: |-
+            =//SubmitForm(Form5);
+            //ResetForm(Form5)
+            
+            // Get value from "Usernames" field.
+            Set(
+                var_usernames,
+                Text(DataCardValue3.Selected.DisplayName)
+            );
+            Set(
+                var_alive,
+                Text(DataCardValue35.Selected.Value)
+            );
+            
+            Set(
+                var_leaves,
+                Value(DataCardValue23.Text)
+            );
+            
+            Set(
+                var_plant,
+                Text(DataCardValue34.Selected.Value)
+            );
+            Set(
+                var_family,
+                Text(DataCardValue25.Selected.Value)
+            );
+            
+            If(
+               Not(IsBlank(LookUp('Plant Adoption Program', StartsWith(Name.DisplayName, var_usernames)))),
+               Patch(
+                    'Plant Adoption Program',
+                    First(Filter('Plant Adoption Program', StartsWith(Name.DisplayName, var_usernames))),
+                    {'Leaf Input': First(Filter('Plant Adoption Program', StartsWith(Name.DisplayName, var_usernames))).'Leaf Input' + var_leaves}
+               );
+               
+                If(
+                var_alive = "Yes", 
+                Patch('Plant Adoption Program',First(Filter('Plant Adoption Program', StartsWith(Name.DisplayName, var_usernames))), 
+                {'Alive Points': First(Filter('Plant Adoption Program', StartsWith(Name.DisplayName, var_usernames))).'Alive Points'+ 10});
+                ,
+                Patch('Plant Adoption Program',First(Filter('Plant Adoption Program', StartsWith(Name.DisplayName, var_usernames))), 
+                {'Alive Points': First(Filter('Plant Adoption Program', StartsWith(Name.DisplayName, var_usernames))).'Alive Points'});
+                );
+            
+                If(
+                var_plant = "Yes", 
+                Patch('Plant Adoption Program',First(Filter('Plant Adoption Program', StartsWith(Name.DisplayName, var_usernames))), 
+                {'New Plant Points': First(Filter('Plant Adoption Program', StartsWith(Name.DisplayName, var_usernames))).'New Plant Points'+ 10});
+                ,
+                Patch('Plant Adoption Program',First(Filter('Plant Adoption Program', StartsWith(Name.DisplayName, var_usernames))), 
+                {'New Plant Points': First(Filter('Plant Adoption Program', StartsWith(Name.DisplayName, var_usernames))).'New Plant Points'});
+                );
+                
+            
+               ,
+               SubmitForm(Form5);
+                
+            );
+            
+            NewForm(Form5);
+            ResetForm(Form5);
+            //Navigate(plant_adoption_main);
+        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Size: =24
+        Text: ="Submit"
+        Width: =280
+        X: =180
+        Y: =999
+        ZIndex: =6
 

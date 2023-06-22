@@ -7,7 +7,7 @@ plant_register_dev As screen:
         DefaultMode: =FormMode.New
         Height: =634
         Width: =640
-        Y: =183
+        Y: =308
         ZIndex: =1
 
         Name_DataCard5 As typedDataCard.comboBoxEditCard:
@@ -590,6 +590,6 @@ plant_register_dev As screen:
         Text: ="Submit"
         Width: =268
         X: =186
-        Y: =942
+        Y: =1035
         ZIndex: =4
 
