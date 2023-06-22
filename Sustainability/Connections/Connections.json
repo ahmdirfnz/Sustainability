@@ -1,0 +1,141 @@
+{
+  "112e14a3-c31d-4be0-85dc-d76cc3867b09": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1627/1.0.1627.3238/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://petronas.sharepoint.com/sites/DE_InfraServices/GOC": {
+        "dataSources": {
+          "Sustainability (Plant Adoption)": {
+            "tableName": "9a7db4a5-b28b-48a7-b62d-dd18f1a34aed"
+          },
+          "Sustainability (Recycle)": {
+            "tableName": "e1875a26-6808-48f4-8c4b-f9b5ef8d3e45"
+          },
+          "Sustainability (Trash PickUp)": {
+            "tableName": "e79d6885-77ab-4417-9bf1-980759fd3da4"
+          }
+        }
+      },
+      "https://petronas.sharepoint.com/sites/sustainablity": {
+        "dataSources": {
+          "Development List": {
+            "tableName": "55862dbf-8391-4369-af42-41f7791311b0"
+          },
+          "Plant Adoption": {
+            "tableName": "7692b11c-d8a0-49c8-8770-73afe86d027b"
+          },
+          "Plant Adoption Program": {
+            "tableName": "1a0058f3-e64b-4343-9b56-162ef0e10ed1"
+          },
+          "Plant Feedback and Ratings": {
+            "tableName": "9d12d035-80b1-45e0-98eb-02ec67a65cc2"
+          },
+          "Recycle": {
+            "tableName": "29aae791-3d67-4225-9628-cae9184911e9"
+          },
+          "Trash Pickup": {
+            "tableName": "2935f1ac-736b-438d-b150-70cf09e824c5"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Sustainability (Trash PickUp)",
+      "Sustainability (Plant Adoption)",
+      "Sustainability (Plant Adoption Register)",
+      "Sustainability (Recycle)",
+      "Plant Adoption Register",
+      "Trash Pickup",
+      "Development List",
+      "Recycle",
+      "Plant Adoption",
+      "FeedBack",
+      "Plant Feedback and Ratings",
+      "Plant Adoption Program"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "112e14a3-c31d-4be0-85dc-d76cc3867b09"
+  },
+  "19720197-d9ba-4527-8a41-4084ab9c5edf": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1626/1.0.1626.3238/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Outlook"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "19720197-d9ba-4527-8a41-4084ab9c5edf"
+  },
+  "3274ce53-6834-41c8-bca7-9928bb2ca6cb": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Users",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1626/1.0.1626.3238/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Users"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "3274ce53-6834-41c8-bca7-9928bb2ca6cb"
+  },
+  "43b9d19d-c236-4f96-841e-3629c8eb88ca": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3310/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://petronas.sharepoint.com/sites/sustainablity": {
+        "dataSources": {
+          "FeedBack": {
+            "tableName": "85be828f-9cf8-44ca-94f3-ba1fb2c2c8f0"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "FeedBack"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "43b9d19d-c236-4f96-841e-3629c8eb88ca"
+  },
+  "d17f07ba-c0d6-4fcb-928b-c0922db800fa": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3310/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://petronas.sharepoint.com/sites/sustainablity": {
+        "dataSources": {
+          "Plant Adoption Register": {
+            "tableName": "5775f3ba-3659-4a18-be44-55f55075af03"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Plant Adoption Register"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "d17f07ba-c0d6-4fcb-928b-c0922db800fa"
+  }
+}
