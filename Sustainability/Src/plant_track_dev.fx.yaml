@@ -154,251 +154,6 @@ plant_track_dev As screen:
         Y: =273
         ZIndex: =7
 
-        "'New Plant?_DataCard1' As typedDataCard.comboBoxEditCard":
-            BorderColor: =RGBA(166, 166, 166, 1)
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="NewPlant_x003f_"
-            Default: =ThisItem.'New Plant?'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@January_1],DataSourceInfo.DisplayName,"NewPlant_x003f_")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue35.Selected
-            Width: =640
-            X: =0
-            Y: =4
-            ZIndex: =1
-
-            DataCardKey39 As label:
-                AutoHeight: =true
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                Color: =RGBA(51, 51, 51, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Height: =48
-                PaddingLeft: =0
-                Size: =21
-                Text: ="Do you have new plant under you care? "
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue35 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                ChevronBackground: =RGBA(255, 255, 255, 1)
-                ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
-                ChevronDisabledFill: =RGBA(166, 166, 166, 1)
-                ChevronFill: =RGBA(33, 33, 33, 1)
-                ChevronHoverBackground: =RGBA(212, 212, 212, 1)
-                ChevronHoverFill: =RGBA(33, 33, 33, 1)
-                Color: =RGBA(51, 51, 51, 1)
-                DefaultSelectedItems: =Parent.Default
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
-                Font: =Font.'Segoe UI'
-                Height: =70
-                HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-                HoverColor: =RGBA(51, 51, 51, 1)
-                HoverFill: =RGBA(212, 212, 212, 1)
-                Items: =Choices([@January_1].'New Plant?')
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-                PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =RGBA(0, 120, 212, 1)
-                SearchFields: =["Value"]
-                SearchItems: =Choices(January_1.'New Plant?',DataCardValue35.SearchText)
-                SelectionFill: =RGBA(0, 120, 212, 1)
-                SelectMultiple: =false
-                Size: =21
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey39.Y + DataCardKey39.Height + 5
-                ZIndex: =2
-
-            ErrorMessage30 As label:
-                AutoHeight: =true
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                Color: =RGBA(168, 0, 0, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(168, 0, 0, 1)
-                FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =21
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue35.Y + DataCardValue35.Height
-                ZIndex: =3
-
-            StarVisible30 As label:
-                Align: =Align.Center
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                Color: =RGBA(51, 51, 51, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Height: =DataCardKey39.Height
-                PaddingLeft: =0
-                Size: =21
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey39.Y
-                ZIndex: =4
-
-        "'New Plant Image_DataCard1' As typedDataCard.addLargePictureCard":
-            BorderColor: =RGBA(166, 166, 166, 1)
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="NewPlantImage"
-            Default: =ThisItem.'New Plant Image'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@January_1],DataSourceInfo.DisplayName,"NewPlantImage")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =Image12.Image
-            Width: =640
-            X: =0
-            Y: =5
-            ZIndex: =1
-
-            DataCardKey40 As label:
-                AutoHeight: =true
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                Color: =RGBA(51, 51, 51, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Height: =48
-                PaddingLeft: =0
-                Size: =21
-                Text: ="Please include your new plant image"
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            Image12 As image:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledFill: =RGBA(0, 0, 0, 0)
-                DisplayMode: =Parent.DisplayMode
-                FocusedBorderThickness: =4
-                Height: =AddPicture4.Height
-                HoverBorderColor: =RGBA(0, 0, 0, 0)
-                HoverFill: =RGBA(0, 0, 0, 0)
-                Image: =If(IsBlank(AddPicture4.Media), Parent.Default, AddPicture4.Media)
-                PressedBorderColor: =RGBA(0, 0, 0, 0)
-                PressedFill: =RGBA(0, 0, 0, 0)
-                Tooltip: =Parent.DisplayName
-                Width: =AddPicture4.Width
-                X: =AddPicture4.X
-                Y: =AddPicture4.Y
-                ZIndex: =2
-
-            AddPicture4 As addMedia:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =RGBA(133, 242, 99, 1)
-                FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
-                Height: =114
-                HoverBorderColor: =RGBA(0, 0, 0, 0)
-                HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-                PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-                Size: =24
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey40.Y + DataCardKey40.Height + 5
-                ZIndex: =3
-
-            ErrorMessage39 As label:
-                AutoHeight: =true
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                Color: =RGBA(168, 0, 0, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(168, 0, 0, 1)
-                FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =21
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =Image12.Y + Image12.Height
-                ZIndex: =4
-
-            StarVisible39 As label:
-                Align: =Align.Center
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                Color: =RGBA(51, 51, 51, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Height: =DataCardKey40.Height
-                PaddingLeft: =0
-                Size: =21
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey40.Y
-                ZIndex: =5
-
         "'Still Alive?_DataCard1' As typedDataCard.comboBoxEditCard":
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
@@ -632,6 +387,252 @@ plant_track_dev As screen:
                 Wrap: =false
                 Y: =DataCardKey25.Y
                 ZIndex: =4
+
+        "'New Plant?_DataCard1' As typedDataCard.comboBoxEditCard":
+            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="NewPlant_x003f_"
+            Default: =ThisItem.'New Plant?'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@January_1],DataSourceInfo.DisplayName,"NewPlant_x003f_")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue35.Selected
+            Width: =640
+            X: =0
+            Y: =4
+            ZIndex: =1
+
+            DataCardKey39 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =48
+                PaddingLeft: =0
+                Size: =21
+                Text: ="Do you have new plant under you care? "
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue35 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                ChevronBackground: =RGBA(255, 255, 255, 1)
+                ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+                ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+                ChevronFill: =RGBA(33, 33, 33, 1)
+                ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+                ChevronHoverFill: =RGBA(33, 33, 33, 1)
+                Color: =RGBA(51, 51, 51, 1)
+                DefaultSelectedItems: =Parent.Default
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Font: =Font.'Segoe UI'
+                Height: =70
+                HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                HoverColor: =RGBA(51, 51, 51, 1)
+                HoverFill: =RGBA(212, 212, 212, 1)
+                Items: =Choices([@January_1].'New Plant?')
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(0, 120, 212, 1)
+                SearchFields: =["Value"]
+                SearchItems: =Choices(January_1.'New Plant?',DataCardValue35.SearchText)
+                SelectionFill: =RGBA(0, 120, 212, 1)
+                SelectMultiple: =false
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey39.Y + DataCardKey39.Height + 5
+                ZIndex: =2
+
+            ErrorMessage30 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(168, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(168, 0, 0, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue35.Y + DataCardValue35.Height
+                ZIndex: =3
+
+            StarVisible30 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =DataCardKey39.Height
+                PaddingLeft: =0
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey39.Y
+                ZIndex: =4
+
+        "'New Plant Image_DataCard1' As typedDataCard.addLargePictureCard":
+            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="NewPlantImage"
+            Default: =ThisItem.'New Plant Image'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@January_1],DataSourceInfo.DisplayName,"NewPlantImage")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =Image12.Image
+            Width: =640
+            X: =0
+            Y: =5
+            ZIndex: =1
+
+            DataCardKey40 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =48
+                PaddingLeft: =0
+                Size: =21
+                Text: ="Please include your new plant image"
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            Image12 As image:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                DisplayMode: =Parent.DisplayMode
+                FocusedBorderThickness: =4
+                Height: =AddPicture4.Height
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Image: =If(IsBlank(AddPicture4.Media), Parent.Default, AddPicture4.Media)
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                Tooltip: =Parent.DisplayName
+                Width: =AddPicture4.Width
+                X: =AddPicture4.X
+                Y: =AddPicture4.Y
+                ZIndex: =2
+
+            AddPicture4 As addMedia:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(133, 242, 99, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                Height: =114
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                Size: =24
+                Text: ="Tap to add a picture"
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey40.Y + DataCardKey40.Height + 5
+                ZIndex: =3
+
+            ErrorMessage39 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(168, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(168, 0, 0, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =Image12.Y + Image12.Height
+                ZIndex: =4
+
+            StarVisible39 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =DataCardKey40.Height
+                PaddingLeft: =0
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey40.Y
+                ZIndex: =5
 
         Name_DataCard2 As typedDataCard.comboBoxEditCard:
             BorderColor: =RGBA(166, 166, 166, 1)
