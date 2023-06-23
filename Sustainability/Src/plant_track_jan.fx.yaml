@@ -66,13 +66,13 @@ plant_track_jan As screen:
                 HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 HoverColor: =RGBA(51, 51, 51, 1)
                 HoverFill: =RGBA(212, 212, 212, 1)
-                Items: =Choices([@January_1].NewPlant_x003f_)
+                Items: =Choices([@January_1].'New Plant?')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 120, 212, 1)
                 SearchFields: =["Value"]
-                SearchItems: =Choices(January_1.NewPlant_x003f_,DataCardValue37.SearchText)
+                SearchItems: =Choices(January_1.'New Plant?',DataCardValue37.SearchText)
                 SelectionFill: =RGBA(0, 120, 212, 1)
                 SelectMultiple: =false
                 Size: =21
@@ -431,13 +431,13 @@ plant_track_jan As screen:
                 HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 HoverColor: =RGBA(51, 51, 51, 1)
                 HoverFill: =RGBA(212, 212, 212, 1)
-                Items: =Choices([@January_1].StillAlive_x003f_)
+                Items: =Choices([@January_1].'Still Alive?')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 120, 212, 1)
                 SearchFields: =["Value"]
-                SearchItems: =Choices(January_1.StillAlive_x003f_,DataCardValue34.SearchText)
+                SearchItems: =Choices(January_1.'Still Alive?',DataCardValue34.SearchText)
                 SelectionFill: =RGBA(0, 120, 212, 1)
                 SelectMultiple: =false
                 Size: =21
@@ -666,13 +666,13 @@ plant_track_jan As screen:
                 HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 HoverColor: =RGBA(51, 51, 51, 1)
                 HoverFill: =RGBA(212, 212, 212, 1)
-                Items: =Choices([@January_1].FamilyInvolvement)
+                Items: =Choices([@January_1].'Family Input')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 120, 212, 1)
                 SearchFields: =["Value"]
-                SearchItems: =Choices(January_1.FamilyInvolvement,DataCardValue20.SearchText)
+                SearchItems: =Choices(January_1.'Family Input',DataCardValue20.SearchText)
                 SelectionFill: =RGBA(0, 120, 212, 1)
                 SelectMultiple: =false
                 Size: =21
@@ -741,6 +741,74 @@ plant_track_jan As screen:
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+        OnSelect: |-
+            =// Get value from "Usernames" field.
+            Set(
+                var_usernames,
+                Text(DataCardValue3.Selected.DisplayName)
+            );
+            Set(
+                var_alive,
+                Text(DataCardValue34.Selected.Value)
+            );
+            
+            Set(
+                var_leaves,
+                Value(DataCardValue6.Text)
+            );
+            
+            Set(
+                var_family,
+                Text(DataCardValue20.Selected.Value)
+            );
+            
+            Set(
+                var_pots,
+                Text(DataCardValue37.Selected.Value)
+            );
+            
+            If(
+               Not(IsBlank(LookUp(January_1, StartsWith(Name.DisplayName, var_usernames)))),
+               Patch(
+                    'January_1',
+                    First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))),
+                    {'Leaf Input': First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))).'Leaf Input' + var_leaves}
+               );
+               
+                If(
+                var_alive = "Yes", 
+                Patch('January_1',First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))), 
+                {'Alive Points': First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))).'Alive Points'+ 10});
+                ,
+                Patch('January_1',First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))), 
+                {'Alive Points': First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))).'Alive Points'});
+                );
+                
+                If(
+                var_pots = "Yes", 
+                Patch('January_1',First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))), 
+                {'New Plant Points': First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))).'New Plant Points'+ 10});
+                ,
+                Patch('January_1',First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))), 
+                {'New Plant Points': First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))).'New Plant Points'});
+                );
+            
+                If(
+                var_family = "Yes", 
+                Patch('January_1',First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))), 
+                {'Family Points': First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))).'Family Points'+ 10});
+                ,
+                Patch('January_1',First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))), 
+                {'Family Points': First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))).'Family Points'});
+                );   
+               ,
+               SubmitForm(Form5);
+                
+            );
+            
+            //NewForm(Form5);
+            //ResetForm(Form5);
+            //Navigate(plant_adoption_main);
         PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
@@ -799,7 +867,8 @@ plant_track_jan As screen:
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-            OnSelect: =Select(Parent)
+            OnSelect: |
+                =Set(SelectedMonth, "Jan");
             PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
