@@ -4,6 +4,7 @@ plant_track_jan As screen:
     Form5 As form:
         BorderColor: =RGBA(166, 166, 166, 1)
         DataSource: =January_1
+        DefaultMode: =FormMode.New
         Height: =667
         Width: =640
         Y: =261
@@ -770,36 +771,36 @@ plant_track_jan As screen:
             If(
                Not(IsBlank(LookUp(January_1, StartsWith(Name.DisplayName, var_usernames)))),
                Patch(
-                    'January_1',
-                    First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))),
-                    {'Leaf Input': First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))).'Leaf Input' + var_leaves}
+                    January_1,
+                    First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))),
+                    {'Leaf Input': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Leaf Input' + var_leaves}
                );
                
                 If(
                 var_alive = "Yes", 
-                Patch('January_1',First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))), 
-                {'Alive Points': First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))).'Alive Points'+ 10});
+                Patch(January_1,First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))), 
+                {'Alive Points': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Alive Points'+ 10});
                 ,
-                Patch('January_1',First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))), 
-                {'Alive Points': First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))).'Alive Points'});
+                Patch(January_1,First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))), 
+                {'Alive Points': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Alive Points'});
                 );
                 
                 If(
                 var_family = "Yes", 
-                Patch('January_1',First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))), 
-                {'Family Points': First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))).'Family Points'+ 10});
+                Patch(January_1,First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))), 
+                {'Family Points': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Family Points'+ 10});
                 ,
-                Patch('January_1',First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))), 
-                {'Family Points': First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))).'Family Points'});
+                Patch(January_1,First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))), 
+                {'Family Points': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Family Points'});
                 );  
             
                 If(
                 var_pots = "Yes", 
-                Patch('January_1',First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))), 
-                {'New Plant Points': First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))).'New Plant Points'+ 10});
+                Patch(January_1,First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))), 
+                {'New Plant Points': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points'+ 10});
                 ,
-                Patch('January_1',First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))), 
-                {'New Plant Points': First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))).'New Plant Points'});
+                Patch(January_1,First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))), 
+                {'New Plant Points': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points'});
                 );
             
                ,
