@@ -785,6 +785,15 @@ plant_track_jan As screen:
                 );
                 
                 If(
+                var_family = "Yes", 
+                Patch('January_1',First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))), 
+                {'Family Points': First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))).'Family Points'+ 10});
+                ,
+                Patch('January_1',First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))), 
+                {'Family Points': First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))).'Family Points'});
+                );  
+            
+                If(
                 var_pots = "Yes", 
                 Patch('January_1',First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))), 
                 {'New Plant Points': First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))).'New Plant Points'+ 10});
@@ -793,14 +802,6 @@ plant_track_jan As screen:
                 {'New Plant Points': First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))).'New Plant Points'});
                 );
             
-                If(
-                var_family = "Yes", 
-                Patch('January_1',First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))), 
-                {'Family Points': First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))).'Family Points'+ 10});
-                ,
-                Patch('January_1',First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))), 
-                {'Family Points': First(Filter('January_1', StartsWith(Name.DisplayName, var_usernames))).'Family Points'});
-                );   
                ,
                SubmitForm(Form5);
                 
