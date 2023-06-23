@@ -5,7 +5,7 @@ plant_track_jan As screen:
         BorderColor: =RGBA(166, 166, 166, 1)
         DataSource: =January_1
         DefaultMode: =FormMode.New
-        Height: =667
+        Height: =723
         Width: =640
         Y: =261
         ZIndex: =1
@@ -808,8 +808,8 @@ plant_track_jan As screen:
                 
             );
             
-            //NewForm(Form5);
-            //ResetForm(Form5);
+            NewForm(Form5);
+            ResetForm(Form5);
             //Navigate(plant_adoption_main);
         PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
