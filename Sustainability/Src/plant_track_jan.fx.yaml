@@ -771,9 +771,9 @@ plant_track_jan As screen:
             If(
                Not(IsBlank(LookUp(January_1, StartsWith(Name.DisplayName, var_usernames)))),
                Patch(
-                    January_1,
-                    First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))),
-                    {'Leaf Points': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Leaf Points' + var_leaves}
+                January_1,
+                First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))),
+                {'Leaf Points': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Leaf Points' + var_leaves}
                );
                
                 If(
