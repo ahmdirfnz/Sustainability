@@ -282,7 +282,7 @@ plant_register_dev As screen:
             Update: =DataCardValue35.Text
             Width: =640
             X: =0
-            Y: =2
+            Y: =3
             ZIndex: =6
 
             DataCardKey30 As label:
@@ -397,7 +397,7 @@ plant_register_dev As screen:
             Update: =Image14.Image
             Width: =640
             X: =0
-            Y: =3
+            Y: =4
             ZIndex: =6
 
             DataCardKey40 As label:
@@ -448,7 +448,7 @@ plant_register_dev As screen:
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =RGBA(0, 120, 212, 1)
+                Fill: =RGBA(133, 242, 99, 1)
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 Height: =133
@@ -523,7 +523,7 @@ plant_register_dev As screen:
             Update: =Image15.Image
             Width: =640
             X: =0
-            Y: =4
+            Y: =2
             ZIndex: =6
 
             DataCardKey43 As label:
@@ -574,7 +574,7 @@ plant_register_dev As screen:
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =RGBA(0, 120, 212, 1)
+                Fill: =RGBA(133, 242, 99, 1)
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 Height: =116
@@ -641,7 +641,7 @@ plant_register_dev As screen:
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(0, 120, 212, 1)
+        Fill: =RGBA(133, 242, 99, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
@@ -655,12 +655,12 @@ plant_register_dev As screen:
         PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
         Size: =24
-        Text: ="Button"
+        Text: ="Submit"
         Width: =280
         X: =180
         Y: =1020
