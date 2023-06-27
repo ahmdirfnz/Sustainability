@@ -816,7 +816,6 @@ plant_track_feb As screen:
                 
                ,
                SubmitForm(Form5_1);
-               Patch(February, Defaults(February), {Name: User().FullName});
                
                   If(
                 var_alive = "Yes", 
