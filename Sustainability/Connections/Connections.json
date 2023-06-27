@@ -50,6 +50,13 @@
             "tableName": "39f55b36-25a7-449a-b52e-dd7fe25c5e79"
           }
         }
+      },
+      "https://petronas.sharepoint.com/sites/sustainablity/Recycle": {
+        "dataSources": {
+          "July": {
+            "tableName": "fe681b6e-96a1-4c32-86ca-af409da93bfa"
+          }
+        }
       }
     },
     "dataSources": [
@@ -66,7 +73,8 @@
       "Plant Feedback and Ratings",
       "Plant Adoption Program",
       "January_1",
-      "February"
+      "February",
+      "July"
     ],
     "dependencies": {},
     "dependents": [],
