@@ -869,7 +869,8 @@ plant_track_jan As screen:
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
-            Fill: =RGBA(133, 242, 99, 1)
+            Fill: |-
+                =If(SelectedMonth = ThisItem.ID, ColorValue("#85F263"), Color.DarkGray)
             FocusedBorderColor: =ColorFade(Self.Fill, -75%)
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
