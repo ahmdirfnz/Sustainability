@@ -811,6 +811,32 @@ plant_track_jan As screen:
             Patch(January_1,First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))), 
                 {'Family Points': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Family Points'});
                 );
+                If(
+                var_alive = "Yes", 
+                Patch(January_1,First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))), 
+                {'Alive Points': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Alive Points'+ 10});
+                ,
+                Patch(January_1,First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))), 
+                {'Alive Points': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Alive Points'});
+                );
+                
+                If(
+                 Text(DataCardValue37.Selected.Value) = "Yes", 
+                Patch(January_1,First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))), 
+                {'New Plant Points': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points'+ 10});
+                ,
+                Patch(January_1,First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))), 
+                {'New Plant Points': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points'});
+                );
+            
+                If(
+                 Text(DataCardValue20.Selected.Value) = "Yes", 
+                Patch(January_1,First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))), 
+                {'Family Points': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Family Points'+ 10});
+                ,
+                Patch(January_1,First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))), 
+                {'Family Points': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Family Points'});
+                );
             
             
             NewForm(Form5);
