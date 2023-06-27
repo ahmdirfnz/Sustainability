@@ -48,6 +48,9 @@
           },
           "January_1": {
             "tableName": "39f55b36-25a7-449a-b52e-dd7fe25c5e79"
+          },
+          "Plant Registration": {
+            "tableName": "48a3a86a-1642-4f16-8ecb-21bdbdde4e09"
           }
         }
       }
@@ -66,7 +69,8 @@
       "Plant Feedback and Ratings",
       "Plant Adoption Program",
       "January_1",
-      "February"
+      "February",
+      "Plant Registration"
     ],
     "dependencies": {},
     "dependents": [],
