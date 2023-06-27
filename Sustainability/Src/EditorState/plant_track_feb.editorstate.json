@@ -2793,8 +2793,8 @@
         },
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "{\r\n    DisplayName: User().FullName\r\n}",
           "InvariantPropertyName": "DefaultSelectedItems",
           "IsLockable": true,
           "NameMapSourceSchema": "?"
