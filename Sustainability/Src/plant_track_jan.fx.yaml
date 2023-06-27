@@ -6,6 +6,8 @@ plant_track_jan As screen:
         DataSource: =January_1
         DefaultMode: =FormMode.New
         Height: =723
+        Visible: |
+            =SelectedMonth=1
         Width: =640
         Y: =261
         ZIndex: =1
@@ -21,6 +23,7 @@ plant_track_jan As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue37.Selected
+            Visible: =SelectedMonth=1
             Width: =640
             X: =0
             Y: =4
@@ -140,6 +143,7 @@ plant_track_jan As screen:
             Height: =50
             Required: =false
             Update: =Image12.Image
+            Visible: =SelectedMonth=1
             Width: =640
             X: =0
             Y: =5
@@ -266,6 +270,7 @@ plant_track_jan As screen:
             Height: =50
             Required: =true
             Update: =DataCardValue3.Selected
+            Visible: =SelectedMonth=1
             Width: =640
             X: =0
             Y: =0
@@ -386,6 +391,7 @@ plant_track_jan As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue34.Selected
+            Visible: =SelectedMonth=1
             Width: =640
             X: =0
             Y: =1
@@ -505,6 +511,7 @@ plant_track_jan As screen:
             Height: =50
             Required: =false
             Update: =Value(DataCardValue6.Text)
+            Visible: =SelectedMonth=1
             Width: =640
             X: =0
             Y: =2
@@ -621,6 +628,7 @@ plant_track_jan As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue20.Selected
+            Visible: =SelectedMonth=1
             Width: =640
             X: =0
             Y: =3
@@ -850,7 +858,7 @@ plant_track_jan As screen:
         DelayItemLoading: =true
         Height: =78
         Items: |
-            =["Jan","Feb","Mac","Apr","May", "Jun","July","Aug","Sept","Oct","Nov","Dec"]
+            =Table({ID:1, Label:"Jan"},{ID:2, Label:"Feb"},{ID:3, Label:"Mar"},{ID:4, Label:"Apr"},{ID:5, Label:"May"},{ID:6, Label:"Jun"},{ID:7, Label:"July"},{ID:8, Label:"Aug"},{ID:9, Label:"Sept"},{ID:10, Label:"Oct"},{ID:11, Label:"Nov"},{ID:12, Label:"Dis"})
         LoadingSpinner: =LoadingSpinner.Data
         TemplateSize: =120
         Y: =183
@@ -869,8 +877,7 @@ plant_track_jan As screen:
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-            OnSelect: |
-                =Set(SelectedMonth, "Jan");
+            OnSelect: =Set(SelectedMonth,ThisItem.ID)
             PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
@@ -879,7 +886,7 @@ plant_track_jan As screen:
             RadiusTopLeft: =20
             RadiusTopRight: =20
             Size: =24
-            Text: =ThisItem.Value
+            Text: =ThisItem.Label
             Width: =115
             ZIndex: =1
 
