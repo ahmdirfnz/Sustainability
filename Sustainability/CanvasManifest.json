@@ -98,7 +98,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 36,
+    "BindingErrorCount": 23,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "Phone",
@@ -143,7 +143,6 @@
     "plant_rating_feedback",
     "RecycleForm_Screen",
     "recycle_leaderboard",
-    "recycle_rating_feedback",
     "recycling_main",
     "trash_pickup_main",
     "TrashPickup_Form",
