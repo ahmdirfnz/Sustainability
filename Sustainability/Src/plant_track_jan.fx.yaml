@@ -766,15 +766,6 @@ plant_track_jan As screen:
                 Value(DataCardValue6.Text)
             );
             
-            Set(
-                var_family,
-                Text(DataCardValue20.Selected.Value)
-            );
-            
-            Set(
-                var_pots,
-                Text(DataCardValue37.Selected.Value)
-            );
             
             If(
                Not(IsBlank(LookUp(January_1, StartsWith(Name.DisplayName, var_usernames)))),

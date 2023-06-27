@@ -904,12 +904,12 @@ plant_track_feb As screen:
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
             OnSelect: |-
-                =Set(SelectedMonth,ThisItem.ID);
-                If(
-                    ThisItem.ID=1,Navigate(plant_track_feb),
+                =If(
+                    ThisItem.ID=1,Navigate(plant_track_jan),
                     ThisItem.ID=2,Navigate(plant_track_feb)
                     )
                 ;
+                Set(SelectedMonth,ThisItem.ID);
             PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
