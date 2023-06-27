@@ -508,7 +508,7 @@ plant_track_feb As screen:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="LeafInput"
-            Default: =ThisItem.'Leaf Points'
+            Default: =ThisItem.LeafPoints
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@January_1],DataSourceInfo.DisplayName,"LeafInput")
             Fill: =RGBA(0, 0, 0, 0)
@@ -879,7 +879,7 @@ plant_track_feb As screen:
                 If(
                     ThisItem.ID=1,Navigate(plant_track_feb),
                     ThisItem.ID=2,Navigate(plant_track_feb)
-                    )
+                )
             PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
