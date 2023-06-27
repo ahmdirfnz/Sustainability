@@ -778,7 +778,7 @@ plant_track_feb As screen:
                Patch(
                 February,
                 First(Filter(February, StartsWith(Name.DisplayName, var_usernames))),
-                {'Leaf Points': First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'Leaf Points' + var_leaves}
+                {'Leaf Points': First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).LeafPoints + var_leaves}
                );
                
                 If(
@@ -906,7 +906,7 @@ plant_track_feb As screen:
             OnSelect: |
                 =Set(SelectedMonth,ThisItem.ID);
                 If(
-                    ThisItem.ID=1,Navigate(plant_track_feb),
+                    ThisItem.ID=1,Navigate(plant_track_jan),
                     ThisItem.ID=2,Navigate(plant_track_feb)
                 )
             PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
