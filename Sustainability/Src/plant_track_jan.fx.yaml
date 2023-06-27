@@ -264,7 +264,7 @@ plant_track_jan As screen:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Name"
             Default: =ThisItem.Name
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =Parent.DisplayMode.View
             DisplayName: =DataSourceInfo([@January_1],DataSourceInfo.DisplayName,"Name")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
