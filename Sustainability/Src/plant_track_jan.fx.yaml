@@ -509,7 +509,7 @@ plant_track_jan As screen:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="LeafInput"
-            Default: =ThisItem.'Leaf Points'
+            Default: =ThisItem.'Leaf Input'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@January_1],DataSourceInfo.DisplayName,"LeafInput")
             Fill: =RGBA(0, 0, 0, 0)
@@ -776,7 +776,7 @@ plant_track_jan As screen:
                Not(IsBlank(LookUp(January_1, StartsWith(Name.DisplayName, var_usernames)))),
                Patch(January_1,
                 First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))),
-                {'Leaf Points': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Leaf Points' + var_leaves}
+                {'Leaf Input': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Leaf Input' + var_leaves}
                );
                
                 If(

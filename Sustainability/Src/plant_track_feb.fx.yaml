@@ -514,7 +514,7 @@ plant_track_feb As screen:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="LeafInput"
-            Default: =ThisItem.'Leaf Points'
+            Default: =ThisItem.'Leaf Input'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@January_1],DataSourceInfo.DisplayName,"LeafInput")
             Fill: =RGBA(0, 0, 0, 0)
@@ -784,7 +784,7 @@ plant_track_feb As screen:
                Patch(
                 February,
                 First(Filter(February, StartsWith(Name.DisplayName, var_usernames))),
-                {'LeafInput': First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'LeafInput' + var_leaves}
+                {'Leaf Input': First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'Leaf Input' + var_leaves}
                );
                
                 If(
@@ -836,15 +836,14 @@ plant_track_feb As screen:
                 );
             
                 If(
-                 Text(DataCardValue20_1.Selected.Value) = "Yes", 
+                Text(DataCardValue20_1.Selected.Value) = "Yes", 
                 Patch(February,First(Filter(February, StartsWith(Name.DisplayName, var_usernames))), 
                 {'Family Points': First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'Family Points'+ 10});
                 ,
                 Patch(February,First(Filter(February, StartsWith(Name.DisplayName, var_usernames))), 
                 {'Family Points': First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'Family Points'});
                 );
-                
-                
+                  
             );
             
             NewForm(Form5_1);
