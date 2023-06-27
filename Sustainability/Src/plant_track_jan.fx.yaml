@@ -783,11 +783,16 @@ plant_track_jan As screen:
                 ,
                 Patch(January_1,First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))), 
                 {'Alive Points': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Alive Points'});
-                
-                
                 );
                 
-            
+                If(
+                 Text(DataCardValue37.Selected.Value) = "Yes", 
+                Patch(January_1,First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))), 
+                {'New Plant Points': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points'+ 10});
+                ,
+                Patch(January_1,First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))), 
+                {'New Plant Points': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points'});
+                );
                ,
                SubmitForm(Form5);
                 
