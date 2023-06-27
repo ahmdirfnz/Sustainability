@@ -783,6 +783,8 @@ plant_track_jan As screen:
                 ,
                 Patch(January_1,First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))), 
                 {'Alive Points': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Alive Points'});
+                
+                
                 );
                 
             
