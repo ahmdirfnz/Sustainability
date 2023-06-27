@@ -219,10 +219,10 @@ recycling_main As screen:
                     Value(
                         First(
                             Filter(
-                                Recycle,
+                                July,
                                 User().FullName in Name.DisplayName
                             )
-                        ).Points
+                        ).'Total Points'
                     ),
                     0
                 ),

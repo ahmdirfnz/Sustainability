@@ -269,14 +269,13 @@ plant_track_jan As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =true
-            Update: =DataCardValue3.Selected
-            Visible: =SelectedMonth=1
+            Update: =DataCardValue2.Selected
             Width: =640
             X: =0
             Y: =0
-            ZIndex: =2
+            ZIndex: =1
 
-            DataCardKey3 As label:
+            DataCardKey2 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -297,7 +296,7 @@ plant_track_jan As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue3 As combobox:
+            DataCardValue2 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 ChevronBackground: =RGBA(255, 255, 255, 1)
                 ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
@@ -306,12 +305,18 @@ plant_track_jan As screen:
                 ChevronHoverBackground: =RGBA(212, 212, 212, 1)
                 ChevronHoverFill: =RGBA(33, 33, 33, 1)
                 Color: =RGBA(51, 51, 51, 1)
-                DefaultSelectedItems: =Parent.Default
+                DefaultSelectedItems: |-
+                    ={
+                    DisplayName:User().FullName,
+                    Claims:"i:0#.f|membership|" & Lower(User().Email),
+                    Email: User().Email,
+                    Picture:""
+                    }
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayFields: =["DisplayName","Email","Picture"]
-                DisplayMode: =Parent.DisplayMode
+                DisplayMode: =Parent.DisplayMode.View
                 Font: =Font.'Segoe UI'
                 Height: =70
                 HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
@@ -323,7 +328,7 @@ plant_track_jan As screen:
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 120, 212, 1)
                 SearchFields: =["DisplayName"]
-                SearchItems: =Choices(January_1.Name,DataCardValue3.SearchText)
+                SearchItems: =Choices(January_1.Name,DataCardValue2.SearchText)
                 SelectionFill: =RGBA(0, 120, 212, 1)
                 SelectMultiple: =false
                 Size: =21
@@ -331,10 +336,10 @@ plant_track_jan As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey3.Y + DataCardKey3.Height + 5
+                Y: =DataCardKey2.Y + DataCardKey2.Height + 5
                 ZIndex: =2
 
-            ErrorMessage4 As label:
+            ErrorMessage3 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -356,10 +361,10 @@ plant_track_jan As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue3.Y + DataCardValue3.Height
+                Y: =DataCardValue2.Y + DataCardValue2.Height
                 ZIndex: =3
 
-            StarVisible4 As label:
+            StarVisible3 As label:
                 Align: =Align.Center
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -370,14 +375,14 @@ plant_track_jan As screen:
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
-                Height: =DataCardKey3.Height
+                Height: =DataCardKey2.Height
                 PaddingLeft: =0
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey3.Y
+                Y: =DataCardKey2.Y
                 ZIndex: =4
 
         "'Still Alive?_DataCard1' As typedDataCard.comboBoxEditCard":
@@ -504,7 +509,7 @@ plant_track_jan As screen:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="LeafInput"
-            Default: =ThisItem.'Leaf Points'
+            Default: =ThisItem.'Leaf Input'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@January_1],DataSourceInfo.DisplayName,"LeafInput")
             Fill: =RGBA(0, 0, 0, 0)
@@ -754,7 +759,7 @@ plant_track_jan As screen:
             =// Get value from "Usernames" field.
             Set(
                 var_usernames,
-                Text(DataCardValue3.Selected.DisplayName)
+                Text(DataCardValue2.Selected.DisplayName)
             );
             Set(
                 var_alive,
@@ -771,7 +776,7 @@ plant_track_jan As screen:
                Not(IsBlank(LookUp(January_1, StartsWith(Name.DisplayName, var_usernames)))),
                Patch(January_1,
                 First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))),
-                {'Leaf Points': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Leaf Points' + var_leaves}
+                {'Leaf Input': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Leaf Input' + var_leaves}
                );
                
                 If(
@@ -803,8 +808,36 @@ plant_track_jan As screen:
                 
                ,
                SubmitForm(Form5);
+            Patch(January_1,First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))), 
+                {'Family Points': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Family Points'});
+                );
+                If(
+                var_alive = "Yes", 
+                Patch(January_1,First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))), 
+                {'Alive Points': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Alive Points'+ 10});
+                ,
+                Patch(January_1,First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))), 
+                {'Alive Points': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Alive Points'});
+                );
                 
-            );
+                If(
+                 Text(DataCardValue37.Selected.Value) = "Yes", 
+                Patch(January_1,First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))), 
+                {'New Plant Points': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points'+ 10});
+                ,
+                Patch(January_1,First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))), 
+                {'New Plant Points': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points'});
+                );
+            
+                If(
+                 Text(DataCardValue20.Selected.Value) = "Yes", 
+                Patch(January_1,First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))), 
+                {'Family Points': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Family Points'+ 10});
+                ,
+                Patch(January_1,First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))), 
+                {'Family Points': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Family Points'});
+                );
+            
             
             NewForm(Form5);
             ResetForm(Form5);
