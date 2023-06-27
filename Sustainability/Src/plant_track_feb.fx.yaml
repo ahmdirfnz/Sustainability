@@ -775,7 +775,8 @@ plant_track_feb As screen:
             
             If(
                Not(IsBlank(LookUp(February, StartsWith(Name.DisplayName, var_usernames)))),
-               Patch(February,
+               Patch(
+                February,
                 First(Filter(February, StartsWith(Name.DisplayName, var_usernames))),
                 {'Leaf Points': First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'Leaf Points' + var_leaves}
                );
@@ -809,6 +810,34 @@ plant_track_feb As screen:
                 
                ,
                SubmitForm(Form5_1);
+               
+                  If(
+                var_alive = "Yes", 
+                Patch(February,First(Filter(February, StartsWith(Name.DisplayName, var_usernames))), 
+                {'Alive Points': First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'Alive Points'+ 10});
+                ,
+                Patch(February,First(Filter(February, StartsWith(Name.DisplayName, var_usernames))), 
+                {'Alive Points': First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'Alive Points'});
+                );
+                
+                If(
+                 Text(DataCardValue37_1.Selected.Value) = "Yes", 
+                Patch(February,First(Filter(February, StartsWith(Name.DisplayName, var_usernames))), 
+                {'New Plant Points': First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points'+ 10});
+                ,
+                Patch(February,First(Filter(February, StartsWith(Name.DisplayName, var_usernames))), 
+                {'New Plant Points': First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points'});
+                );
+            
+                If(
+                 Text(DataCardValue20_1.Selected.Value) = "Yes", 
+                Patch(February,First(Filter(February, StartsWith(Name.DisplayName, var_usernames))), 
+                {'Family Points': First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'Family Points'+ 10});
+                ,
+                Patch(February,First(Filter(February, StartsWith(Name.DisplayName, var_usernames))), 
+                {'Family Points': First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'Family Points'});
+                );
+                
                 
             );
             
@@ -874,12 +903,13 @@ plant_track_feb As screen:
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-            OnSelect: |
+            OnSelect: |-
                 =Set(SelectedMonth,ThisItem.ID);
                 If(
                     ThisItem.ID=1,Navigate(plant_track_feb),
                     ThisItem.ID=2,Navigate(plant_track_feb)
                     )
+                ;
             PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
