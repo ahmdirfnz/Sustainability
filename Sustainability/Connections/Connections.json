@@ -43,6 +43,9 @@
       },
       "https://petronas.sharepoint.com/sites/sustainablity/plant-adoption": {
         "dataSources": {
+          "February": {
+            "tableName": "487694a8-2ca8-4497-8ad8-543213ead9f0"
+          },
           "January_1": {
             "tableName": "39f55b36-25a7-449a-b52e-dd7fe25c5e79"
           }
@@ -62,7 +65,8 @@
       "FeedBack",
       "Plant Feedback and Ratings",
       "Plant Adoption Program",
-      "January_1"
+      "January_1",
+      "February"
     ],
     "dependencies": {},
     "dependents": [],
