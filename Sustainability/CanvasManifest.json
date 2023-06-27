@@ -98,7 +98,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 50,
+    "BindingErrorCount": 46,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "Phone",
@@ -111,13 +111,13 @@
     "DocumentType": "App",
     "EnableInstrumentation": false,
     "FileID": "720ca52c-4ba4-458a-8637-2fba6ce90084",
-    "Id": "5b4cafcb-aa85-4eeb-a1cc-da698f572d80",
+    "Id": "dedff4d6-4deb-4004-9ed6-45fa326866de",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
     "ManualOfflineProfileId": "",
-    "Name": "Sustainability Apps",
+    "Name": "Sustainability+Apps.msapp",
     "OriginatingVersion": "1.326",
-    "ParserErrorCount": 1
+    "ParserErrorCount": 0
   },
   "PublishInfo": {
     "AppName": "Sustainability Apps",
