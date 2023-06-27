@@ -785,23 +785,6 @@ plant_track_jan As screen:
                 {'Alive Points': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Alive Points'});
                 );
                 
-                If(
-                var_family = "Yes", 
-                Patch(January_1,First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))), 
-                {'Family Points': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Family Points'+ 10});
-                ,
-                Patch(January_1,First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))), 
-                {'Family Points': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Family Points'});
-                );  
-            
-                If(
-                var_pots = "Yes", 
-                Patch(January_1,First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))), 
-                {'New Plant Points': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points'+ 10});
-                ,
-                Patch(January_1,First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))), 
-                {'New Plant Points': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points'});
-                );
             
                ,
                SubmitForm(Form5);
