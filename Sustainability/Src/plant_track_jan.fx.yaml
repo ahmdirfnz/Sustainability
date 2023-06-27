@@ -773,7 +773,7 @@ plant_track_jan As screen:
                Patch(
                     January_1,
                     First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))),
-                    {'Leaf Input': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Leaf Input' + var_leaves}
+                    {'Leaf Points': First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Leaf Points' + var_leaves}
                );
                
                 If(
