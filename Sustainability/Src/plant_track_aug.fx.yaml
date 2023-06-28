@@ -1057,3 +1057,24 @@ plant_track_aug As screen:
             Width: =115
             ZIndex: =1
 
+    Icon1_11 As icon.ChevronLeft:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(133, 242, 99, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =47
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.ChevronLeft
+        OnSelect: =Navigate(plant_adoption_main,ScreenTransition.CoverRight)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =52
+        X: =38
+        Y: =1031
+        ZIndex: =5
+
