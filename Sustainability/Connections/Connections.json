@@ -53,13 +53,6 @@
             "tableName": "48a3a86a-1642-4f16-8ecb-21bdbdde4e09"
           }
         }
-      },
-      "https://petronas.sharepoint.com/sites/sustainablity/Recycle": {
-        "dataSources": {
-          "July": {
-            "tableName": "fe681b6e-96a1-4c32-86ca-af409da93bfa"
-          }
-        }
       }
     },
     "dataSources": [
@@ -77,8 +70,7 @@
       "Plant Adoption Program",
       "January_1",
       "February",
-      "Plant Registration",
-      "July"
+      "Plant Registration"
     ],
     "dependencies": {},
     "dependents": [],
