@@ -881,7 +881,7 @@ plant_track_aug As screen:
         DelayItemLoading: =true
         Height: =78
         Items: |
-            =Table({ID:1, Label:"Jan"},{ID:2, Label:"Feb"},{ID:3, Label:"Mar"},{ID:4, Label:"Apr"},{ID:5, Label:"May"},{ID:6, Label:"Jun"},{ID:7, Label:"July"},{ID:8, Label:"Aug"},{ID:9, Label:"Sept"},{ID:10, Label:"Oct"},{ID:11, Label:"Nov"},{ID:12, Label:"Dis"})
+            =Table({ID:1, Label:"Jan"},{ID:2, Label:"Feb"},{ID:3, Label:"Mar"},{ID:4, Label:"Apr"},{ID:5, Label:"May"},{ID:6, Label:"Jun"},{ID:7, Label:"July"},{ID:8, Label:"Aug"},{ID:9, Label:"Sept"},{ID:10, Label:"Oct"},{ID:11, Label:"Nov"},{ID:12, Label:"Dec"})
         LoadingSpinner: =LoadingSpinner.Data
         TemplateSize: =120
         Y: =183
