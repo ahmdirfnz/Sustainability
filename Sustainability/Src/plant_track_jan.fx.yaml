@@ -768,7 +768,7 @@ plant_track_jan As screen:
             
             Set(
                 var_leaves,
-                Value(DataCardValue6.Text)x
+                Value(DataCardValue6.Text)
             );
             
             
