@@ -149,6 +149,16 @@
     "plant_register_dev",
     "plant_track_jan",
     "plant_track_feb",
+    "plant_track_mac",
+    "plant_track_apr",
+    "plant_track_may",
+    "plant_track_jun",
+    "plant_track_jul",
+    "plant_track_aug",
+    "plant_track_sept",
+    "plant_track_oct",
+    "plant_track_nov",
+    "plant_track_dec",
     "trash_pickup_pending",
     "plant_leaderboard_1"
   ]
