@@ -981,7 +981,7 @@ plant_track_dec As screen:
         Text: ="Submit"
         Width: =280
         X: =180
-        Y: =1021
+        Y: =1019
         ZIndex: =2
 
     Label5_20 As label:
@@ -1063,7 +1063,7 @@ plant_track_dec As screen:
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(220, 220, 220, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
+        FocusedBorderThickness: =10
         Height: =47
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
