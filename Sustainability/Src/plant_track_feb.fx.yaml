@@ -771,7 +771,7 @@ plant_track_feb As screen:
             // Get value from "Usernames" field.
             Set(
                 var_usernames,
-                Text(DataCardValue15.Selected.DisplayName)
+                Text(DataCardValue3_1.Selected.DisplayName)
             );
             
             If(
