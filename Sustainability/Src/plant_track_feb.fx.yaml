@@ -768,6 +768,12 @@ plant_track_feb As screen:
                Value(DataCardValue6_1.Text)
             );
             
+            // Get value from "Usernames" field.
+            Set(
+                var_usernames,
+                Text(DataCardValue15.Selected.DisplayName)
+            );
+            
             If(
                Not(IsBlank(LookUp(February, StartsWith(Name.DisplayName, var_usernames)))),
                Patch(
