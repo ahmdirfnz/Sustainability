@@ -762,7 +762,7 @@ plant_track_feb As screen:
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-        OnSelect: |
+        OnSelect: |-
             =Set(
                var_leaves,
                Value(DataCardValue6_1.Text)
@@ -784,48 +784,29 @@ plant_track_feb As screen:
                      First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'Leaf Input' + var_leaves,
             
                      'Alive Points': 
-                     If(Text(DataCardValue34_1.Selected.Value) = "Yes", 
+                     If(var_alive = "Yes", 
                      First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'Alive Points' + 10, 
-                     First(Filter(February, StartsWith (Name.DisplayName, var_usernames))).'Alive Points'),
+                     First(Filter(February, StartsWith (Name.DisplayName, var_usernames))).'Alive Points' + 0),
             
                      'New Plant Points': 
                      If(Text(DataCardValue37_1.Selected.Value) = "Yes", 
                      First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points' + 10, 
-                     First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points'),
+                     First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points' + 0),
                      
                      'Family Points': 
                      If(Text(DataCardValue20_1.Selected.Value) = "Yes", 
                      First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'Family Points' + 10,
-                     First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'Family Points')
-                  }
-               ),
+                     First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'Family Points' + 0)
+                  })
+                  
+                  //Else
+                  ,
+            
                SubmitForm(Form5_1);
-               Patch(
-                  February,
-                  First(Filter(February, StartsWith(Name.DisplayName, var_usernames))),
-                  {
-                     'Leaf Input': 
-                     First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'Leaf Input' + var_leaves,
-            
-                     'Alive Points': 
-                     If(Text(DataCardValue34_1.Selected.Value) = "Yes", 
-                     First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'Alive Points' + 10, 
-                     First(Filter(February, StartsWith (Name.DisplayName, var_usernames))).'Alive Points'),
-            
-                     'New Plant Points': 
-                     If(Text(DataCardValue37_1.Selected.Value) = "Yes", 
-                     First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points' + 10, 
-                     First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points'),
-                     
-                     'Family Points': 
-                     If(Text(DataCardValue20_1.Selected.Value) = "Yes", 
-                     First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'Family Points' + 10,
-                     First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'Family Points')
-                  }
-               );
                
-            );
             
+            );
+            SubmitForm(Form5_1);
             NewForm(Form5_1);
             ResetForm(Form5_1);
             //Navigate(plant_adoption_main);
