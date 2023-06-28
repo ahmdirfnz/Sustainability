@@ -905,7 +905,17 @@ plant_track_feb As screen:
                 =Set(SelectedMonth,ThisItem.ID);
                 If(
                     ThisItem.ID=1,Navigate(plant_track_jan),
-                    ThisItem.ID=2,Navigate(plant_track_feb)
+                    ThisItem.ID=2,Navigate(plant_track_feb),
+                    ThisItem.ID=3,Navigate(plant_track_mac),
+                    ThisItem.ID=4,Navigate(plant_track_apr),
+                    ThisItem.ID=5,Navigate(plant_track_may),
+                    ThisItem.ID=6,Navigate(plant_track_jun),
+                    ThisItem.ID=7,Navigate(plant_track_jul),
+                    ThisItem.ID=8,Navigate(plant_track_aug),
+                    ThisItem.ID=9,Navigate(plant_track_sept),
+                    ThisItem.ID=10,Navigate(plant_track_oct),
+                    ThisItem.ID=11,Navigate(plant_track_nov),
+                    ThisItem.ID=12,Navigate(plant_track_dec)
                 )
             PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
             PressedColor: =RGBA(255, 255, 255, 1)
