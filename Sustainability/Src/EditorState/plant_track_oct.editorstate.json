@@ -313,7 +313,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button1_11",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5976,7 +5976,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Family Input_DataCard1_9",
-      "ParentIndex": 3,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6105,7 +6105,7 @@
       "LayoutName": "vertical",
       "MetaDataIDKey": "",
       "Name": "Form5_9",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6218,7 +6218,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Gallery4_9",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6424,7 +6424,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon1_13",
-      "ParentIndex": 0,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6861,7 +6861,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label5_18",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7141,7 +7141,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Leaf Input_DataCard1_9",
-      "ParentIndex": 2,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7301,7 +7301,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Name_DataCard2_9",
-      "ParentIndex": 0,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7461,7 +7461,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "New Plant Image_DataCard1_9",
-      "ParentIndex": 5,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7621,7 +7621,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "New Plant?_DataCard1_9",
-      "ParentIndex": 4,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9535,7 +9535,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Still Alive?_DataCard1_9",
-      "ParentIndex": 1,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

@@ -219,7 +219,7 @@ plant_adoption_main As screen:
                     Value(
                         First(
                             Filter(
-                                'Development List',
+                                February,
                                 User().FullName in Usernames.DisplayName
                             )
                         ).'Total Points'
@@ -243,7 +243,7 @@ plant_adoption_main As screen:
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
-        Height: =456
+        Height: =435
         HoverBorderColor: =RGBA(236, 236, 235, 1)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(236, 236, 235,0), -0%)
@@ -258,7 +258,7 @@ plant_adoption_main As screen:
         Text: =""
         Width: =512
         X: =64
-        Y: =502
+        Y: =521
         ZIndex: =13
 
     Button2_13 As button:
