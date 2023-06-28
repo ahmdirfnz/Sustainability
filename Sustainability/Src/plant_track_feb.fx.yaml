@@ -764,8 +764,8 @@ plant_track_feb As screen:
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
         OnSelect: |-
             =Set(
-               var_alive2,
-               Value(DataCardValue34_1.Selected.Value)
+                var_alive2,
+                Text(DataCardValue34_1.Selected.Value)
             );
             Set(
                var_newPlant2,
@@ -839,7 +839,6 @@ plant_track_feb As screen:
                   })
             
             );
-            SubmitForm(Form5_1);
             NewForm(Form5_1);
             ResetForm(Form5_1);
             //Navigate(plant_adoption_main);
