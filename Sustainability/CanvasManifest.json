@@ -98,7 +98,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 35,
+    "BindingErrorCount": 50,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "Phone",
@@ -148,6 +148,8 @@
     "TrashPickup_Form",
     "plant_register_dev",
     "plant_track_jan",
-    "plant_track_feb"
+    "plant_track_feb",
+    "trash_pickup_pending",
+    "plant_leaderboard_1"
   ]
 }

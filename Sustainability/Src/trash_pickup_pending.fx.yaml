@@ -1,0 +1,101 @@
+trash_pickup_pending As screen:
+    LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
+
+    Gallery1 As gallery.galleryVertical:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        DelayItemLoading: =true
+        Items: =Filter('Trash Pickup', varReset)
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =36
+        Y: =120
+        ZIndex: =1
+
+        "DateCreated As 'Date picker'":
+            DisplayMode: =DisplayMode.Edit
+            Height: =36
+            Value: =ThisItem.Created
+            Width: =205
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+        "DateScheduled As 'Date picker'":
+            DisplayMode: =DisplayMode.Edit
+            Height: =36
+            OnChange: =Select(SaveInvisible)
+            Value: =ThisItem.'Scheduled Date'
+            Width: =194
+            X: =205
+            Y: =0
+            ZIndex: =2
+
+        MarkDone As Checkbox:
+            Checked: =ThisItem.'Mark As Done'
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Label: ="Done"
+            OnSelect: =Select(SaveInvisible)
+            Width: =120
+            X: =412
+            Y: =0
+            ZIndex: =3
+
+        SaveInvisible As Button:
+            DisplayMode: =DisplayMode.Edit
+            Height: =28
+            OnSelect: |-
+                =If(
+                    IsBlank(
+                        LookUp(
+                            colGridUpdates,
+                            ID = ThisItem.ID
+                        )
+                    ),
+                    Collect(
+                        colGridUpdates,
+                        ThisItem
+                    )
+                );
+                
+                UpdateIf(
+                    colGridUpdates,
+                    ID = ThisItem.ID,
+                    {
+                        'Scheduled Date': DateScheduled.Value,
+                        'Mark As Done': MarkDone.Checked
+                    }
+                )
+            Text: ="Save"
+            Visible: =false
+            Width: =56
+            X: =513
+            Y: =4
+            ZIndex: =4
+
+    ButtonCanvas2 As Button:
+        Appearance: ='ButtonCanvas.Appearance'.Primary
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        OnSelect: |
+            =Patch(
+                'Trash Pickup',
+                ShowColumns(
+                    colGridUpdates,
+                    "ScheduledDate",
+                    "MarkAsDone",
+                    "ID"
+                )
+            );
+            
+            Notify("Update Successful", NotificationType.Success, 3000);
+            Clear(colGridUpdates);
+            Set(varReset, false);
+            Set(varReset, true);
+        Text: ="Save"
+        Width: =96
+        X: =519
+        Y: =39
+        ZIndex: =2
+
