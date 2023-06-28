@@ -23,7 +23,7 @@ recycle_leaderboard As screen:
         Fill: =RGBA(255, 255, 255, 1)
         Height: =810
         Items: |
-            =SortByColumns(Recycle,"Points", SortOrder.Descending)
+            =Sort(July,"Total_x0020_Points", SortOrder.Descending)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
@@ -102,7 +102,7 @@ recycle_leaderboard As screen:
             OnSelect: =Select(Parent)
             Size: =18
             Text: |
-                =Concatenate(Text(Round(ThisItem.Points, 0)), " points")
+                =Concatenate(Text(Round(ThisItem.'Total Points', 0)), " points")
             Width: =279
             X: =361
             Y: =17

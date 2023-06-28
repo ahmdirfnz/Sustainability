@@ -42,12 +42,12 @@ recycling_main As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
-        Height: =85
-        Size: =24
+        Height: =98
+        Size: =34
         Text: ="Recycling Programme"
-        Width: =340
-        X: =143
-        Y: =121
+        Width: =488
+        X: =68
+        Y: =117
         ZIndex: =9
 
     Group2_2 As group:
@@ -362,7 +362,7 @@ recycling_main As screen:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: |-
             =ColorValue("#38B09D")
-        OnSelect: =Navigate(recycle_rating_feedback,ScreenTransition);
+        OnSelect: =
         PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
