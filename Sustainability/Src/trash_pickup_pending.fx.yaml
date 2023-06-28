@@ -4,11 +4,12 @@ trash_pickup_pending As screen:
     Gallery1 As gallery.galleryVertical:
         BorderColor: =RGBA(166, 166, 166, 1)
         DelayItemLoading: =true
+        Height: =515
         Items: ='Trash Pickup'
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplateSize: =59
-        Y: =201
+        Y: =244
         ZIndex: =1
 
         "DateCreated As 'Date picker'":
@@ -102,7 +103,7 @@ trash_pickup_pending As screen:
         HoverFill: =RGBA(0, 120, 212, 1)
         PressedFill: =RGBA(0, 120, 212, 1)
         Width: =640
-        Y: =131
+        Y: =174
         ZIndex: =3
 
     Button8_4 As button:
@@ -114,7 +115,7 @@ trash_pickup_pending As screen:
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
-        Height: =52
+        Height: =48
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
@@ -141,10 +142,29 @@ trash_pickup_pending As screen:
         RadiusBottomRight: =30
         RadiusTopLeft: =30
         RadiusTopRight: =30
-        Size: =24
-        Text: ="Save"
-        Width: =178
-        X: =430
-        Y: =32
+        Size: =18
+        Text: ="💾 Save"
+        Width: =134
+        X: =484
+        Y: =72
         ZIndex: =4
+
+    Image3_12 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =69
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =back
+        OnSelect: =Navigate(trash_pickup_main,ScreenTransition)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =61
+        X: =28
+        Y: =20
+        ZIndex: =5
 
