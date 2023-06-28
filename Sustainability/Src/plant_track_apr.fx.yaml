@@ -3,11 +3,11 @@ plant_track_apr As screen:
 
     Form5_3 As form:
         BorderColor: =RGBA(166, 166, 166, 1)
-        DataSource: =February
+        DataSource: =April
         DefaultMode: =FormMode.New
         Height: =723
         Visible: |
-            =SelectedMonth=2
+            =SelectedMonth=4
         Width: =640
         Y: =261
         ZIndex: =1
@@ -24,7 +24,7 @@ plant_track_apr As screen:
             Required: =false
             Update: =DataCardValue37_3.Selected
             Visible: |
-                =SelectedMonth=2
+                =SelectedMonth=4
             Width: =640
             X: =0
             Y: =4
@@ -145,7 +145,7 @@ plant_track_apr As screen:
             Required: =false
             Update: =Image12_3.Image
             Visible: |
-                =SelectedMonth=2
+                =SelectedMonth=4
             Width: =640
             X: =0
             Y: =5
@@ -273,7 +273,7 @@ plant_track_apr As screen:
             Required: =true
             Update: =DataCardValue3_3.Selected
             Visible: |
-                =SelectedMonth=2
+                =SelectedMonth=4
             Width: =640
             X: =0
             Y: =0
@@ -401,7 +401,7 @@ plant_track_apr As screen:
             Required: =false
             Update: =DataCardValue34_3.Selected
             Visible: |
-                =SelectedMonth=2
+                =SelectedMonth=4
             Width: =640
             X: =0
             Y: =1
@@ -522,7 +522,7 @@ plant_track_apr As screen:
             Required: =false
             Update: =Value(DataCardValue6_3.Text)
             Visible: |
-                =SelectedMonth=2
+                =SelectedMonth=4
             Width: =640
             X: =0
             Y: =2
@@ -640,7 +640,7 @@ plant_track_apr As screen:
             Required: =false
             Update: =DataCardValue20_3.Selected
             Visible: |
-                =SelectedMonth=2
+                =SelectedMonth=4
             Width: =640
             X: =0
             Y: =3
@@ -787,28 +787,28 @@ plant_track_apr As screen:
             );
             
             If(
-               Not(IsBlank(LookUp(February, StartsWith(Name.DisplayName, var_usernames)))),
+               Not(IsBlank(LookUp(April, StartsWith(Name.DisplayName, var_usernames)))),
                Patch(
-                  February,
-                  First(Filter(February, StartsWith(Name.DisplayName, var_usernames))),
+                  April,
+                  First(Filter(April, StartsWith(Name.DisplayName, var_usernames))),
                   {
                      'Leaf Input': 
-                     First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'Leaf Input' + var_leaves,
+                     First(Filter(April, StartsWith(Name.DisplayName, var_usernames))).'Leaf Input' + var_leaves,
             
                      'Alive Points': 
                      If(var_alive2 = "Yes", 
-                     First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'Alive Points' + 10, 
-                     First(Filter(February, StartsWith (Name.DisplayName, var_usernames))).'Alive Points' + 0),
+                     First(Filter(April, StartsWith(Name.DisplayName, var_usernames))).'Alive Points' + 10, 
+                     First(Filter(April, StartsWith (Name.DisplayName, var_usernames))).'Alive Points' + 0),
             
                      'New Plant Points': 
                      If(var_newPlant2 = "Yes", 
-                     First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points' + 10, 
-                     First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points' + 0),
+                     First(Filter(April, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points' + 10, 
+                     First(Filter(April, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points' + 0),
                      
                      'Family Points': 
                      If(var_family2 = "Yes", 
-                     First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'Family Points' + 10,
-                     First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'Family Points' + 0)
+                     First(Filter(April, StartsWith(Name.DisplayName, var_usernames))).'Family Points' + 10,
+                     First(Filter(April, StartsWith(Name.DisplayName, var_usernames))).'Family Points' + 0)
                   })
                   
                   //Else
@@ -816,26 +816,26 @@ plant_track_apr As screen:
             
                SubmitForm(Form5_3);
                Patch(
-                  February,
-                  First(Filter(February, StartsWith(Name.DisplayName, var_usernames))),
+                  April,
+                  First(Filter(April, StartsWith(Name.DisplayName, var_usernames))),
                   {
                      'Leaf Input': 
-                     First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'Leaf Input' + var_leaves,
+                     First(Filter(April, StartsWith(Name.DisplayName, var_usernames))).'Leaf Input' + var_leaves,
             
                      'Alive Points': 
                      If(var_alive2 = "Yes", 
-                     First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'Alive Points' + 10, 
-                     First(Filter(February, StartsWith (Name.DisplayName, var_usernames))).'Alive Points' + 0),
+                     First(Filter(April, StartsWith(Name.DisplayName, var_usernames))).'Alive Points' + 10, 
+                     First(Filter(April, StartsWith (Name.DisplayName, var_usernames))).'Alive Points' + 0),
             
                      'New Plant Points': 
                      If(var_newPlant2 = "Yes", 
-                     First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points' + 10, 
-                     First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points' + 0),
+                     First(Filter(April, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points' + 10, 
+                     First(Filter(April, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points' + 0),
                      
                      'Family Points': 
                      If(var_family2 = "Yes", 
-                     First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'Family Points' + 10,
-                     First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'Family Points' + 0)
+                     First(Filter(April, StartsWith(Name.DisplayName, var_usernames))).'Family Points' + 10,
+                     First(Filter(April, StartsWith(Name.DisplayName, var_usernames))).'Family Points' + 0)
                   })
             
             );

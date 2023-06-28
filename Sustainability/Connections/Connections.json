@@ -43,17 +43,44 @@
       },
       "https://petronas.sharepoint.com/sites/sustainablity/plant-adoption": {
         "dataSources": {
+          "April": {
+            "tableName": "1c90719a-fe0a-4e84-879f-e57b6b95ba52"
+          },
+          "August": {
+            "tableName": "44ebd9a8-6aa6-46d5-b7c7-365739029861"
+          },
+          "December": {
+            "tableName": "093b3f08-7721-41e4-a05f-f42efb0530b9"
+          },
           "February": {
             "tableName": "487694a8-2ca8-4497-8ad8-543213ead9f0"
           },
           "January_1": {
             "tableName": "39f55b36-25a7-449a-b52e-dd7fe25c5e79"
           },
+          "July_1": {
+            "tableName": "45e4f3c5-695e-4282-b281-173c9a2e2ae3"
+          },
+          "June": {
+            "tableName": "2801dfcc-4d94-4d30-9751-650118792579"
+          },
           "March": {
             "tableName": "184e6f41-7e1c-45a4-8efe-bd1c9adb4fdc"
           },
+          "May": {
+            "tableName": "093e15b7-9275-4280-81fe-8cab18221ec9"
+          },
+          "November": {
+            "tableName": "81d67c4b-dc58-4a29-93b0-3afb13a2eda1"
+          },
+          "October": {
+            "tableName": "45f74c01-a8bd-4dcd-8633-d244de9567f8"
+          },
           "Plant Registration": {
             "tableName": "48a3a86a-1642-4f16-8ecb-21bdbdde4e09"
+          },
+          "September": {
+            "tableName": "b31d0892-ceb6-46e7-80bd-60de8849c599"
           }
         }
       }
@@ -74,7 +101,16 @@
       "January_1",
       "February",
       "Plant Registration",
-      "March"
+      "March",
+      "April",
+      "May",
+      "June",
+      "July_1",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
     ],
     "dependencies": {},
     "dependents": [],
