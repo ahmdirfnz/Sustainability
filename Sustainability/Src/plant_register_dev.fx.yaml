@@ -369,6 +369,7 @@ plant_register_dev As screen:
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 Size: =24
+                Text: ="add a picture"
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardKey20.Y + DataCardKey20.Height + 5
@@ -495,6 +496,7 @@ plant_register_dev As screen:
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 Size: =24
+                Text: ="add a picture"
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardKey25.Y + DataCardKey25.Height + 5
