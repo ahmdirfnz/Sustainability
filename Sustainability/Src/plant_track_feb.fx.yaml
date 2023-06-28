@@ -780,14 +780,23 @@ plant_track_feb As screen:
                   February,
                   First(Filter(February, StartsWith(Name.DisplayName, var_usernames))),
                   {
-                     'Leaf Input': First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'Leaf Input' + var_leaves,
+                     'Leaf Input': 
+                     First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'Leaf Input' + var_leaves,
             
-                     'Alive Points': If(var_alive = "Yes", First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'Alive Points' + 10, First(Filter(February, StartsWith                          (Name.DisplayName, var_usernames))).'Alive Points'),
+                     'Alive Points': 
+                     If(var_alive = "Yes", 
+                     First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'Alive Points' + 10, 
+                     First(Filter(February, StartsWith (Name.DisplayName, var_usernames))).'Alive Points'),
             
-                     'New Plant Points': If(Text(DataCardValue37_1.Selected.Value) = "Yes", First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points' +                               10, First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points'),
+                     'New Plant Points': 
+                     If(Text(DataCardValue37_1.Selected.Value) = "Yes", 
+                     First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points' + 10, 
+                     First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points'),
                      
-                     'Family Points': If(Text(DataCardValue20_1.Selected.Value) = "Yes", First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'Family Points' + 10,
-                                      First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'Family Points')
+                     'Family Points': 
+                     If(Text(DataCardValue20_1.Selected.Value) = "Yes", 
+                     First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'Family Points' + 10,
+                     First(Filter(February, StartsWith(Name.DisplayName, var_usernames))).'Family Points')
                   }
                
                ),
