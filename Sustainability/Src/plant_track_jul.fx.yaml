@@ -953,8 +953,6 @@ plant_track_jul As screen:
                   July,
                   First(Filter(July, StartsWith(Name.DisplayName, var_usernames))),
                   {
-                     'Leaf Input': 
-                     First(Filter(July, StartsWith(Name.DisplayName, var_usernames))).'Leaf Input' + var_leaves,
             
                      'Alive Points': 
                      If(var_alive2 = "Yes", 

@@ -947,9 +947,6 @@ plant_track_oct As screen:
                   October,
                   First(Filter(October, StartsWith(Name.DisplayName, var_usernames))),
                   {
-                     'Leaf Input': 
-                     First(Filter(October, StartsWith(Name.DisplayName, var_usernames))).'Leaf Input' + var_leaves,
-            
                      'Alive Points': 
                      If(var_alive2 = "Yes", 
                      First(Filter(October, StartsWith(Name.DisplayName, var_usernames))).'Alive Points' + 10, 

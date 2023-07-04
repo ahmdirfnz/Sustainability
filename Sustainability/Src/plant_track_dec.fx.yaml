@@ -947,9 +947,6 @@ plant_track_dec As screen:
                   December,
                   First(Filter(December, StartsWith(Name.DisplayName, var_usernames))),
                   {
-                     'Leaf Input': 
-                     First(Filter(December, StartsWith(Name.DisplayName, var_usernames))).'Leaf Input' + var_leaves,
-            
                      'Alive Points': 
                      If(var_alive2 = "Yes", 
                      First(Filter(December, StartsWith(Name.DisplayName, var_usernames))).'Alive Points' + 10, 
