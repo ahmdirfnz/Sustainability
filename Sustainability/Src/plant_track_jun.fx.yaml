@@ -7,6 +7,7 @@ plant_track_jun As screen:
         DataSource: =June
         DefaultMode: =FormMode.New
         Height: =723
+        OnFailure: =Notify("Failed to submit form.", NotificationType.Error)
         OnSuccess: =Notify("Saved.", NotificationType.Success)
         Visible: |
             =SelectedMonth=6

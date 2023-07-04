@@ -7051,6 +7051,14 @@
           "InvariantPropertyName": "OnSuccess",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "false",
+          "InvariantPropertyName": "OnFailure",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
         }
       ],
       "HasDynamicProperties": false,
@@ -7134,6 +7142,11 @@
         {
           "Category": "Behavior",
           "PropertyName": "OnSuccess",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Behavior",
+          "PropertyName": "OnFailure",
           "RuleProviderType": "Unknown"
         }
       ],
