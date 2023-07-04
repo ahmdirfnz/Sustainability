@@ -101,7 +101,7 @@ plant_register As screen:
             DataCardValue51 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 CalendarHeaderFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-                Color: =RGBA(51, 51, 51, 1)
+                Color: =RGBA(0, 120, 212, 1)
                 DefaultDate: =Parent.Default
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -118,7 +118,7 @@ plant_register As screen:
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SelectedDateFill: =RGBA(0, 120, 212, 1)
                 Size: =21
-                StartYear: =1899
+                StartYear: =2000
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
