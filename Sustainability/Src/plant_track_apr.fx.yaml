@@ -337,6 +337,7 @@ plant_track_apr As screen:
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 Size: =24
+                Text: ="add a picture"
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardKey42_3.Y + DataCardKey42_3.Height + 5
