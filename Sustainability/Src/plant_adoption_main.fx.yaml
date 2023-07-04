@@ -213,22 +213,7 @@ plant_adoption_main As screen:
         Font: =Font.'Segoe UI'
         Height: =52
         Size: =19
-        Text: |-
-            =Concatenate(
-                Round(
-                    Value(
-                        First(
-                            Filter(
-                                February,
-                                User().FullName in Usernames.DisplayName
-                            )
-                        ).'Total Points'
-                    ),
-                    0
-                ),
-                " Pts
-            "
-            )
+        Text: =Concatenate(Round(First(Filter(January_1,User().FullName in Name.DisplayName)).'Total Points',0)+First(Filter('February',User().FullName in Name.DisplayName)).'Total Points',0,"pts")
         Width: =104
         X: =201
         Y: =404
