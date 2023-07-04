@@ -247,7 +247,7 @@ plant_adoption_main As screen:
         BorderColor: =RGBA(248, 246, 244, 1)
         DisabledBorderColor: =RGBA(248, 246, 244, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisabledFill: =RGBA(248, 246, 244, 1)
         Fill: =RGBA(248, 246, 244, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.'Segoe UI'
@@ -258,7 +258,7 @@ plant_adoption_main As screen:
         HoverFill: =ColorFade(RGBA(236, 236, 235,0), -0%)
         PressedBorderColor: =RGBA(248, 246, 244, 1)
         PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        PressedFill: =ColorFade(RGBA(236, 236, 235,0), -0%)
         RadiusBottomLeft: =30
         RadiusBottomRight: =30
         RadiusTopLeft: =30
