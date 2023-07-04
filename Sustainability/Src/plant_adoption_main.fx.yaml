@@ -442,7 +442,7 @@ plant_adoption_main As screen:
         Size: =19
         Text: =Concatenate(Round(Today()-First(Filter('Plant Registration',User().FullName in Name.DisplayName)).'First Day',0)," Days")
         Width: =111
-        X: =431
+        X: =443
         Y: =408
         ZIndex: =21
 
@@ -459,7 +459,7 @@ plant_adoption_main As screen:
         Size: =30
         Text: ="="
         Width: =51
-        X: =404
+        X: =416
         Y: =406
         ZIndex: =24
 
