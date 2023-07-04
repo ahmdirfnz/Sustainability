@@ -416,13 +416,7 @@ plant_adoption_main As screen:
         Font: =Font.'Segoe UI'
         Height: =44
         Size: =19
-        Text: |-
-            =Concatenate(
-                Round(
-                    Today()
-                    -
-                    First(Filter('Development List',User().FullName in Usernames.DisplayName)).'First Day',0)," Days"
-                    )
+        Text: =Concatenate(Round(Today()-First(Filter('Plant Registration',User().FullName in Name.DisplayName)).'First Day',0)," Days")
         Width: =111
         X: =446
         Y: =408
