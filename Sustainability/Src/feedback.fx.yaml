@@ -75,6 +75,7 @@ feedback As screen:
     Form7 As form:
         BorderColor: =RGBA(166, 166, 166, 1)
         DataSource: =Feedback
+        DefaultMode: =FormMode.New
         Height: =678
         Width: =640
         Y: =235
