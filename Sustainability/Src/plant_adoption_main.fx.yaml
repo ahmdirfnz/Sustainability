@@ -374,8 +374,8 @@ plant_adoption_main As screen:
         RadiusBottomRight: =20
         RadiusTopLeft: =20
         RadiusTopRight: =20
-        Size: =24
-        Text: ="Leaderboard"
+        Size: =20
+        Text: ="Leaderboard (coming soon)"
         Width: =475
         X: =79
         Y: =760
@@ -403,8 +403,8 @@ plant_adoption_main As screen:
         RadiusBottomRight: =20
         RadiusTopLeft: =20
         RadiusTopRight: =20
-        Size: =24
-        Text: ="Report"
+        Size: =20
+        Text: ="Report (coming soon)"
         Width: =475
         X: =82
         Y: =857
