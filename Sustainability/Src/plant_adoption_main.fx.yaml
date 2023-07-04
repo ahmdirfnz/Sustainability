@@ -393,15 +393,15 @@ plant_adoption_main As screen:
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledFill: =RGBA(0, 0, 0, 0)
         FocusedBorderThickness: =4
-        Height: =81
+        Height: =80
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverFill: =RGBA(0, 0, 0, 0)
         Image: =life
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =71
-        X: =318
-        Y: =384
+        Width: =85
+        X: =319
+        Y: =390
         ZIndex: =19
 
     Label16_3 As label:
