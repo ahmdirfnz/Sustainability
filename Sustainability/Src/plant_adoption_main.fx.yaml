@@ -239,7 +239,7 @@ plant_adoption_main As screen:
                     +
                     Round(First (Filter('December',User().FullName in Name.DisplayName)).'Total Points',0),"pts")
         Width: =104
-        X: =201
+        X: =188
         Y: =404
         ZIndex: =12
 
@@ -442,7 +442,7 @@ plant_adoption_main As screen:
         Size: =19
         Text: =Concatenate(Round(Today()-First(Filter('Plant Registration',User().FullName in Name.DisplayName)).'First Day',0)," Days")
         Width: =111
-        X: =446
+        X: =431
         Y: =408
         ZIndex: =21
 
