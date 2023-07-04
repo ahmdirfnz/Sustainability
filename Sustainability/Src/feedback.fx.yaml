@@ -10,7 +10,7 @@ feedback As screen:
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
-        Height: =70
+        Height: =89
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
@@ -27,9 +27,9 @@ feedback As screen:
         RadiusTopRight: =30
         Size: =24
         Text: ="Give Feedback & Ratings"
-        Width: =549
-        X: =40
-        Y: =974
+        Width: =309
+        X: =165
+        Y: =962
         ZIndex: =2
 
     Image3_7 As image:
