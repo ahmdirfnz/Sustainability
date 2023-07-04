@@ -6763,7 +6763,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Family Image_DataCard7",
-      "ParentIndex": 4,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6918,7 +6918,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Family Input_DataCard1_6",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8305,7 +8305,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Leaf Input_DataCard1_6",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8465,7 +8465,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Name_DataCard2_6",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10980,7 +10980,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Still Alive?_DataCard1_6",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
