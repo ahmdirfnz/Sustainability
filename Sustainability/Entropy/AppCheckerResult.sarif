@@ -10494,6 +10494,66 @@
               "message": {
                 "text": "Error occurred running rule app-InefficientDelayLoading."
               }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 11
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error occurred running rule app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 11
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error occurred running rule app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 11
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error occurred running rule app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 11
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error occurred running rule app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 11
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error occurred running rule app-InefficientDelayLoading."
+              }
             }
           ]
         }
@@ -16148,19 +16208,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "feedback.Form4.Ratings_DataCard3.DataCardValue42.AccessibleLabel"
+                  "fullyQualifiedName": "feedback.Form7.Name_DataCard7.DataCardValue44.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "feedback.Form4.Ratings_DataCard3.DataCardValue42.AccessibleLabel",
+                  "fullyQualifiedName": "feedback.Form7.Name_DataCard7.DataCardValue44.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "feedback",
-                "type": "feedback.Form4.Ratings_DataCard3.DataCardValue42"
+                "type": "feedback.Form7.Name_DataCard7.DataCardValue44"
               }
             }
           ],
@@ -16178,19 +16238,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "feedback.Form4.Feedback_DataCard3.DataCardValue39.AccessibleLabel"
+                  "fullyQualifiedName": "feedback.Form7.Feedback_DataCard4.DataCardValue45.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "feedback.Form4.Feedback_DataCard3.DataCardValue39.AccessibleLabel",
+                  "fullyQualifiedName": "feedback.Form7.Feedback_DataCard4.DataCardValue45.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "feedback",
-                "type": "feedback.Form4.Feedback_DataCard3.DataCardValue39"
+                "type": "feedback.Form7.Feedback_DataCard4.DataCardValue45"
               }
             }
           ],
@@ -16208,19 +16268,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "feedback.Form4.Name_DataCard6.DataCardValue38.AccessibleLabel"
+                  "fullyQualifiedName": "feedback.Form7.Ratings_DataCard5.DataCardValue49.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "feedback.Form4.Name_DataCard6.DataCardValue38.AccessibleLabel",
+                  "fullyQualifiedName": "feedback.Form7.Ratings_DataCard5.DataCardValue49.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "feedback",
-                "type": "feedback.Form4.Name_DataCard6.DataCardValue38"
+                "type": "feedback.Form7.Ratings_DataCard5.DataCardValue49"
               }
             }
           ],
@@ -18512,6 +18572,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "feedback.Form7.Initiatives_DataCard1.DataCardValue47.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "feedback.Form7.Initiatives_DataCard1.DataCardValue47.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "feedback",
+                "type": "feedback.Form7.Initiatives_DataCard1.DataCardValue47"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
         },
         {
           "locations": [
