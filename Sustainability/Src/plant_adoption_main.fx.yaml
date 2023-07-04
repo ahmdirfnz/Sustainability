@@ -424,7 +424,7 @@ plant_adoption_main As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =85
-        X: =319
+        X: =306
         Y: =390
         ZIndex: =19
 
