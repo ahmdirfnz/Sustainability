@@ -139,12 +139,12 @@ Home As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
-            Height: =38
+            Height: =61
             Size: =19
             Text: ="Hello,"
-            Width: =76
+            Width: =159
             X: =66
-            Y: =105
+            Y: =93
             ZIndex: =5
 
         Label5 As label:
@@ -174,13 +174,13 @@ Home As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
-            Height: =33
+            Height: =52
             Size: =18
             Text: |
                 =Office365Users.MyProfile().JobTitle
-            Width: =76
+            Width: =312
             X: =66
-            Y: =184
+            Y: =170
             ZIndex: =7
 
     Button5_1 As button:
