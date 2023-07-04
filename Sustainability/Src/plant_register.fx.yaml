@@ -56,6 +56,7 @@ plant_register As screen:
         DataSource: ='Plant Registration'
         DefaultMode: =FormMode.New
         Height: =750
+        OnSuccess: =Notify("Successfully registered.Thank you for participating in this sustainability initiative.",NotificationType.Success)
         Width: =640
         Y: =195
         ZIndex: =7
