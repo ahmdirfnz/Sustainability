@@ -21,9 +21,6 @@
       },
       "https://petronas.sharepoint.com/sites/sustainablity": {
         "dataSources": {
-          "Development List": {
-            "tableName": "55862dbf-8391-4369-af42-41f7791311b0"
-          },
           "Feedback": {
             "tableName": "881611d7-bd8e-40a9-8d44-089c854bb6ad"
           },
@@ -110,7 +107,6 @@
       "Sustainability (Recycle)",
       "Plant Adoption Register",
       "Trash Pickup",
-      "Development List",
       "Recycle",
       "Plant Adoption",
       "FeedBack",
