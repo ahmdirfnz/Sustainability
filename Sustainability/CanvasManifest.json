@@ -98,7 +98,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 105,
+    "BindingErrorCount": 45,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "Phone",
@@ -135,8 +135,6 @@
     "Home",
     "EarthHours",
     "plant_adoption_main",
-    "plant_leaderboard",
-    "track_leaf_dev",
     "feedback",
     "RecycleForm_Screen",
     "recycle_leaderboard",
@@ -156,7 +154,6 @@
     "plant_track_oct",
     "plant_track_nov",
     "plant_track_dec",
-    "trash_pickup_pending",
-    "plant_leaderboard_1"
+    "trash_pickup_pending"
   ]
 }

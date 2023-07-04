@@ -357,7 +357,7 @@ plant_adoption_main As screen:
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(133, 242, 99, 1)
+        Fill: =RGBA(204, 204, 204, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.Verdana
         FontWeight: =FontWeight.Semibold
@@ -366,7 +366,7 @@ plant_adoption_main As screen:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: |-
             =ColorValue("#38B09D")
-        OnSelect: =Navigate(plant_leaderboard,ScreenTransition.Fade)
+        OnSelect: =//Navigate(plant_leaderboard,ScreenTransition.Fade)
         PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
@@ -386,7 +386,7 @@ plant_adoption_main As screen:
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(133, 242, 99, 1)
+        Fill: =RGBA(204, 204, 204, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.Verdana
         FontWeight: =FontWeight.Semibold
@@ -395,7 +395,7 @@ plant_adoption_main As screen:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: |-
             =ColorValue("#38B09D")
-        OnSelect: =Navigate(feedback,ScreenTransition.Fade)
+        OnSelect: =//Navigate(feedback,ScreenTransition.Fade)
         PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
