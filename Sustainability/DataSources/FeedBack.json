@@ -3,7 +3,7 @@
     "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
     "CdpRevision": {
       "BaseUrl": "/",
-      "LastChangedTimeString": "2023-05-31T22:00:55.5250000Z",
+      "LastChangedTimeString": "2023-06-13T16:06:17.0520000Z",
       "RevisionNumber": 1
     },
     "ConnectedDataSourceInfoNameMapping": {
@@ -17,7 +17,7 @@
       "{Link}": "Link to item",
       "{ModerationComment}": "Comments associated with the content approval of this list item",
       "{ModerationStatus}": "Content approval status",
-      "{Name}": "Name",
+      "{Name}": "Name ({Name})",
       "{Path}": "Folder path",
       "{Thumbnail}": "Thumbnail",
       "{TriggerWindowEndToken}": "Trigger Window End Token",
@@ -29,21 +29,22 @@
       "Created": "Created",
       "Editor": "Modified By",
       "Editor#Claims": "Modified By Claims",
-      "EmployeeName": "Employee Name",
-      "EmployeeName#Claims": "Employee Name Claims",
       "Feedback": "Feedback",
       "ID": "ID",
+      "Initiatives": "Initiatives",
+      "Initiatives#Id": "Initiatives Id",
       "Modified": "Modified",
+      "Name": "Name",
+      "Name#Claims": "Name Claims",
       "OData__ColorTag": "Color Tag",
-      "Rating": "Rating",
-      "Suggestion": "Suggestion",
+      "Ratings": "Ratings",
       "Title": "Title"
     },
     "DatasetName": "https://petronas.sharepoint.com/sites/sustainablity",
     "EncodeDataset": true,
     "IsSampleData": false,
     "IsWritable": true,
-    "Name": "FeedBack",
+    "Name": "Feedback",
     "Type": "ConnectedDataSourceInfo"
   }
 ]

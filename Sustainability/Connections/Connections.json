@@ -174,28 +174,6 @@
     "dependents": [],
     "id": "3274ce53-6834-41c8-bca7-9928bb2ca6cb"
   },
-  "43b9d19d-c236-4f96-841e-3629c8eb88ca": {
-    "connectionRef": {
-      "displayName": "SharePoint",
-      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3310/sharepointonline/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
-    },
-    "datasets": {
-      "https://petronas.sharepoint.com/sites/sustainablity": {
-        "dataSources": {
-          "FeedBack": {
-            "tableName": "85be828f-9cf8-44ca-94f3-ba1fb2c2c8f0"
-          }
-        }
-      }
-    },
-    "dataSources": [
-      "FeedBack"
-    ],
-    "dependencies": {},
-    "dependents": [],
-    "id": "43b9d19d-c236-4f96-841e-3629c8eb88ca"
-  },
   "d17f07ba-c0d6-4fcb-928b-c0922db800fa": {
     "connectionRef": {
       "displayName": "SharePoint",
