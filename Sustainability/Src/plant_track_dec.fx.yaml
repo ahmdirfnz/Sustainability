@@ -6,6 +6,7 @@ plant_track_dec As screen:
         DataSource: =December
         DefaultMode: =FormMode.New
         Height: =723
+        OnSuccess: =Notify("Saved.", NotificationType.Success)
         Visible: |
             =SelectedMonth=12
         Width: =640
