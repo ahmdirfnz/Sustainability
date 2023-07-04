@@ -97,7 +97,6 @@ feedback As screen:
             ZIndex: =1
 
             DataCardKey66 As label:
-                AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
@@ -107,7 +106,7 @@ feedback As screen:
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
-                Height: =48
+                Height: =47
                 PaddingLeft: =0
                 Size: =21
                 Text: =Parent.DisplayName
@@ -128,7 +127,7 @@ feedback As screen:
                 Fill: =RGBA(0, 0, 0, 0)
                 FocusedBorderColor: =Self.BorderColor
                 FocusedBorderThickness: =4
-                Height: =73
+                Height: =78
                 HoverFill: =Self.Fill
                 Max: =Parent.Max
                 PressedFill: =Self.Fill
@@ -136,7 +135,7 @@ feedback As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey66.Y + DataCardKey66.Height + 5
+                Y: =67
                 ZIndex: =2
 
             ErrorMessage66 As label:
