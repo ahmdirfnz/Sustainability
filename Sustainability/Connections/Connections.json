@@ -24,6 +24,9 @@
           "Development List": {
             "tableName": "55862dbf-8391-4369-af42-41f7791311b0"
           },
+          "Feedback": {
+            "tableName": "881611d7-bd8e-40a9-8d44-089c854bb6ad"
+          },
           "Plant Adoption": {
             "tableName": "7692b11c-d8a0-49c8-8770-73afe86d027b"
           },
@@ -130,7 +133,8 @@
       "November",
       "October",
       "Plant Registration_1",
-      "September"
+      "September",
+      "Feedback"
     ],
     "dependencies": {},
     "dependents": [],

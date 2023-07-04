@@ -371,7 +371,7 @@ plant_adoption_main As screen:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: |-
             =ColorValue("#38B09D")
-        OnSelect: =Navigate(plant_rating_feedback,ScreenTransition.Fade)
+        OnSelect: =Navigate(feedback,ScreenTransition.Fade)
         PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
@@ -380,7 +380,7 @@ plant_adoption_main As screen:
         RadiusTopLeft: =20
         RadiusTopRight: =20
         Size: =24
-        Text: ="Feedback"
+        Text: ="Report"
         Width: =475
         X: =82
         Y: =857
@@ -400,8 +400,8 @@ plant_adoption_main As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =71
-        X: =333
-        Y: =382
+        X: =318
+        Y: =384
         ZIndex: =19
 
     Label16_3 As label:
@@ -424,8 +424,8 @@ plant_adoption_main As screen:
                     First(Filter('Development List',User().FullName in Usernames.DisplayName)).'First Day',0)," Days"
                     )
         Width: =111
-        X: =443
-        Y: =407
+        X: =446
+        Y: =408
         ZIndex: =21
 
     Label15_3 As label:
@@ -441,7 +441,7 @@ plant_adoption_main As screen:
         Size: =30
         Text: ="="
         Width: =51
-        X: =420
+        X: =404
         Y: =406
         ZIndex: =24
 

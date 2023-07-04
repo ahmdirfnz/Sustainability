@@ -1,4 +1,4 @@
-plant_rating_feedback As screen:
+feedback As screen:
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
 
     Button9 As button:
@@ -6,7 +6,7 @@ plant_rating_feedback As screen:
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(133, 242, 99, 1)
+        Fill: =RGBA(255, 215, 0, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
@@ -15,9 +15,9 @@ plant_rating_feedback As screen:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
         OnSelect: |-
-            =SubmitForm(Form2);
-            ResetForm(Form2);
-            NewForm(Form2)
+            =SubmitForm(Form4);
+            ResetForm(Form4);
+            NewForm(Form4)
         PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
@@ -28,8 +28,8 @@ plant_rating_feedback As screen:
         Size: =24
         Text: ="Give Feedback & Ratings"
         Width: =549
-        X: =45
-        Y: =878
+        X: =40
+        Y: =974
         ZIndex: =2
 
     Image3_7 As image:
@@ -72,32 +72,31 @@ plant_rating_feedback As screen:
         Y: =131
         ZIndex: =4
 
-    Form2 As form:
+    Form4 As form:
         BorderColor: =RGBA(166, 166, 166, 1)
-        DataSource: ='Plant Feedback and Ratings'
-        DefaultMode: =FormMode.New
-        Height: =564
+        DataSource: =Feedback
+        Height: =664
         Width: =640
-        Y: =241
+        Y: =255
         ZIndex: =5
 
-        Usernames_DataCard2 As typedDataCard.comboBoxEditCard:
+        Ratings_DataCard3 As typedDataCard.ratingEditCard:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
-            DataField: ="Usernames"
-            Default: =ThisItem.Usernames
+            DataField: ="Ratings"
+            Default: =ThisItem.Ratings
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Plant Feedback and Ratings'],DataSourceInfo.DisplayName,"Usernames")
+            DisplayName: =DataSourceInfo([@Feedback],DataSourceInfo.DisplayName,"Ratings")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =DataCardValue7.Selected
+            Update: =DataCardValue42.Value
             Width: =640
             X: =0
-            Y: =0
+            Y: =2
             ZIndex: =1
 
-            DataCardKey6 As label:
+            DataCardKey59 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -118,7 +117,112 @@ plant_rating_feedback As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue7 As combobox:
+            DataCardValue42 As rating:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Default: =Parent.Default
+                DisabledBorderColor: =RGBA(159, 167, 165, 1)
+                DisabledFill: =Self.Fill
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(0, 0, 0, 0)
+                FocusedBorderColor: =Self.BorderColor
+                FocusedBorderThickness: =4
+                Height: =68
+                HoverFill: =Self.Fill
+                Max: =Parent.Max
+                PressedFill: =Self.Fill
+                RatingFill: =ColorFade(RGBA(255, 215, 0, 1),0%)
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey59.Y + DataCardKey59.Height + 5
+                ZIndex: =2
+
+            ErrorMessage59 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(168, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(168, 0, 0, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue42.Y + DataCardValue42.Height
+                ZIndex: =3
+
+            StarVisible59 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =DataCardKey59.Height
+                PaddingLeft: =0
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey59.Y
+                ZIndex: =4
+
+        Name_DataCard6 As typedDataCard.comboBoxEditCard:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Name"
+            Default: =ThisItem.Name
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@Feedback],DataSourceInfo.DisplayName,"Name")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =170
+            Required: =false
+            Update: =DataCardValue38.Selected
+            Width: =640
+            X: =0
+            Y: =0
+            ZIndex: =6
+
+            DataCardKey55 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =48
+                PaddingLeft: =0
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue38 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 ChevronBackground: =RGBA(255, 255, 255, 1)
                 ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
@@ -138,14 +242,13 @@ plant_rating_feedback As screen:
                 HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 HoverColor: =RGBA(51, 51, 51, 1)
                 HoverFill: =RGBA(212, 212, 212, 1)
-                IsSearchable: =false
-                Items: =Choices([@'Plant Feedback and Ratings'].Usernames)
+                Items: =Choices([@Feedback].Name)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 120, 212, 1)
                 SearchFields: =["DisplayName"]
-                SearchItems: =[]
+                SearchItems: =Choices(Feedback.Name,DataCardValue38.SearchText)
                 SelectionFill: =RGBA(0, 120, 212, 1)
                 SelectMultiple: =false
                 Size: =21
@@ -153,10 +256,10 @@ plant_rating_feedback As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey6.Y + DataCardKey6.Height + 5
+                Y: =DataCardKey55.Y + DataCardKey55.Height + 5
                 ZIndex: =2
 
-            ErrorMessage6 As label:
+            ErrorMessage55 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -178,10 +281,10 @@ plant_rating_feedback As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue7.Y + DataCardValue7.Height
+                Y: =DataCardValue38.Y + DataCardValue38.Height
                 ZIndex: =3
 
-            StarVisible6 As label:
+            StarVisible55 As label:
                 Align: =Align.Center
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -192,33 +295,34 @@ plant_rating_feedback As screen:
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
-                Height: =DataCardKey6.Height
+                Height: =DataCardKey55.Height
                 PaddingLeft: =0
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey6.Y
+                Y: =DataCardKey55.Y
                 ZIndex: =4
 
-        Feedback_DataCard2 As typedDataCard.textualMultiLineEditCard:
+        Feedback_DataCard3 As typedDataCard.textualEditCard:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Feedback"
             Default: =ThisItem.Feedback
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Plant Feedback and Ratings'],DataSourceInfo.DisplayName,"Feedback")
+            DisplayName: =DataSourceInfo([@Feedback],DataSourceInfo.DisplayName,"Feedback")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =285
+            Height: =322
+            MaxLength: =DataSourceInfo([@Feedback], DataSourceInfo.MaxLength, "Feedback")
             Required: =false
-            Update: =DataCardValue13.Text
+            Update: =DataCardValue39.Text
             Width: =640
             X: =0
             Y: =1
-            ZIndex: =1
+            ZIndex: =6
 
-            DataCardKey12 As label:
+            DataCardKey56 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -239,7 +343,7 @@ plant_rating_feedback As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue13 As text:
+            DataCardValue39 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 BorderThickness: =2
                 Color: =RGBA(51, 51, 51, 1)
@@ -251,11 +355,11 @@ plant_rating_feedback As screen:
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
-                Height: =195
+                Height: =210
                 HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 HoverColor: =RGBA(51, 51, 51, 1)
                 HoverFill: =RGBA(255, 255, 255, 1)
-                Mode: =TextMode.MultiLine
+                MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 PressedBorderColor: =RGBA(0, 120, 212, 1)
                 PressedColor: =RGBA(51, 51, 51, 1)
@@ -268,10 +372,10 @@ plant_rating_feedback As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =72
+                Y: =DataCardKey56.Y + DataCardKey56.Height + 5
                 ZIndex: =2
 
-            ErrorMessage12 As label:
+            ErrorMessage56 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -293,10 +397,10 @@ plant_rating_feedback As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue13.Y + DataCardValue13.Height
+                Y: =DataCardValue39.Y + DataCardValue39.Height
                 ZIndex: =3
 
-            StarVisible12 As label:
+            StarVisible56 As label:
                 Align: =Align.Center
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -307,118 +411,13 @@ plant_rating_feedback As screen:
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
-                Height: =DataCardKey12.Height
+                Height: =DataCardKey56.Height
                 PaddingLeft: =0
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey12.Y
-                ZIndex: =4
-
-        Ratings_DataCard2 As typedDataCard.ratingEditCard:
-            BorderColor: =RGBA(166, 166, 166, 1)
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Ratings"
-            Default: =ThisItem.Ratings
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Plant Feedback and Ratings'],DataSourceInfo.DisplayName,"Ratings")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =184
-            Required: =false
-            Update: =DataCardValue11.Value
-            Width: =640
-            X: =0
-            Y: =2
-            ZIndex: =1
-
-            DataCardKey9 As label:
-                AutoHeight: =true
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                Color: =RGBA(51, 51, 51, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Height: =48
-                PaddingLeft: =0
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue11 As rating:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                Default: =Parent.Default
-                DisabledBorderColor: =RGBA(159, 167, 165, 1)
-                DisabledFill: =Self.Fill
-                DisplayMode: =Parent.DisplayMode
-                Fill: =RGBA(0, 0, 0, 0)
-                FocusedBorderColor: =Self.BorderColor
-                FocusedBorderThickness: =4
-                Height: =65
-                HoverFill: =Self.Fill
-                Max: =Parent.Max
-                PressedFill: =Self.Fill
-                RatingFill: =ColorFade(RGBA(133, 242, 99, 1), 0%)
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey9.Y + DataCardKey9.Height + 5
-                ZIndex: =2
-
-            ErrorMessage9 As label:
-                AutoHeight: =true
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                Color: =RGBA(168, 0, 0, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(168, 0, 0, 1)
-                FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =21
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue11.Y + DataCardValue11.Height
-                ZIndex: =3
-
-            StarVisible9 As label:
-                Align: =Align.Center
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                Color: =RGBA(51, 51, 51, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Height: =DataCardKey9.Height
-                PaddingLeft: =0
-                Size: =21
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey9.Y
+                Y: =DataCardKey56.Y
                 ZIndex: =4
 
