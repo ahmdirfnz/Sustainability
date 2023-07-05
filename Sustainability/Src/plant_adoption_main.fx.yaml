@@ -217,27 +217,27 @@ plant_adoption_main As screen:
             =Concatenate(
                 Round(First(Filter(January_1,User().FullName in Name.DisplayName)).'Total Points',0)
                     +
-                Round(First(Filter('February',User().FullName in Name.DisplayName)).'Total Points',0)
+                Round(First(Filter(February,User().FullName in Name.DisplayName)).'Total Points',0)
                     + 
-                Round(First (Filter('March',User().FullName in Name.DisplayName)).'Total Points',0)
+                Round(First (Filter(March,User().FullName in Name.DisplayName)).'Total Points',0)
                     +
-                Round(First (Filter('April',User().FullName in Name.DisplayName)).'Total Points',0)
+                Round(First (Filter(April,User().FullName in Name.DisplayName)).'Total Points',0)
                     +
-                    Round(First (Filter('May',User().FullName in Name.DisplayName)).'Total Points',0)
+                    Round(First (Filter(May,User().FullName in Name.DisplayName)).'Total Points',0)
                     +
-                    Round(First (Filter('June',User().FullName in Name.DisplayName)).'Total Points',0)
+                    Round(First (Filter(June,User().FullName in Name.DisplayName)).'Total Points',0)
                     +
-                    Round(First (Filter('July',User().FullName in Name.DisplayName)).'Total Points',0)
+                    Round(First (Filter(July,User().FullName in Name.DisplayName)).'Total Points',0)
                     +
-                    Round(First (Filter('August',User().FullName in Name.DisplayName)).'Total Points',0)
+                    Round(First (Filter(August,User().FullName in Name.DisplayName)).'Total Points',0)
                     +
-                    Round(First (Filter('September',User().FullName in Name.DisplayName)).'Total Points',0)
+                    Round(First (Filter(September,User().FullName in Name.DisplayName)).'Total Points',0)
                     +
-                    Round(First (Filter('October',User().FullName in Name.DisplayName)).'Total Points',0)
+                    Round(First (Filter(October,User().FullName in Name.DisplayName)).'Total Points',0)
                     +
-                    Round(First (Filter('November',User().FullName in Name.DisplayName)).'Total Points',0)
+                    Round(First (Filter(November,User().FullName in Name.DisplayName)).'Total Points',0)
                     +
-                    Round(First (Filter('December',User().FullName in Name.DisplayName)).'Total Points',0),"pts")
+                    Round(First (Filter(December,User().FullName in Name.DisplayName)).'Total Points',0),"pts")
         Width: =104
         X: =188
         Y: =404
