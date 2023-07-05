@@ -149,7 +149,8 @@ plant_track_jan As screen:
             DisplayName: =DataSourceInfo([@January_1],DataSourceInfo.DisplayName,"FamilyImage")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: |
+                =DataCardValue20.Selected.Value = "Yes"
             Update: =Image16.Image
             Visible: |
                 =
@@ -399,7 +400,8 @@ plant_track_jan As screen:
             DisplayName: =DataSourceInfo([@January_1],DataSourceInfo.DisplayName,"NewPlantImage")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: |
+                =DataCardValue37.Selected.Value = "Yes"
             Update: =Image12.Image
             Visible: |
                 =If(DataCardValue37.Selected.Value = "Yes", true, false) && SelectedMonth = 1
