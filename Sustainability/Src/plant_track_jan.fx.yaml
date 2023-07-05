@@ -6,7 +6,7 @@ plant_track_jan As screen:
         DataSource: =January_1
         DefaultMode: =FormMode.New
         Height: =723
-        OnFailure: =Notify("Failed to submit form.", NotificationType.Error)
+        OnFailure: =Notify("Failed to submit form. Please fill in the required field.", NotificationType.Error)
         OnSuccess: =Notify("Saved.", NotificationType.Success)
         Visible: |
             =SelectedMonth=1
@@ -530,7 +530,7 @@ plant_track_jan As screen:
             DisplayName: =DataSourceInfo([@January_1],DataSourceInfo.DisplayName,"StillAlive_x003f_")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: =true
             Update: =DataCardValue34.Selected
             Visible: =SelectedMonth=1
             Width: =640
