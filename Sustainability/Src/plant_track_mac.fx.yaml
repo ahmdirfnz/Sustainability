@@ -25,6 +25,8 @@ plant_track_mac As screen:
             Height: =50
             Required: =false
             Update: =Image18.Image
+            Visible: |
+                =If(DataCardValue20_2.Selected.Value = "Yes", true, false) && SelectedMonth = 3
             Width: =640
             X: =0
             Y: =4
@@ -274,7 +276,7 @@ plant_track_mac As screen:
             Required: =false
             Update: =Image12_2.Image
             Visible: |
-                =SelectedMonth=3
+                =If(DataCardValue37_2.Selected.Value = "Yes", true, false) && SelectedMonth = 3
             Width: =640
             X: =0
             Y: =6
