@@ -92,6 +92,27 @@ trash_pickup_pending As screen:
             Y: =12
             ZIndex: =5
 
+        Icon4 As icon.Trash:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Color: =RGBA(0, 120, 212, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =40
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.Trash
+            OnSelect: =Remove('Trash Pickup', ThisItem); Set(varReset, false); Set(varReset, true);
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =28
+            X: =546
+            Y: =10
+            ZIndex: =6
+
     Rectangle4_3 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 1)
         BorderStyle: =BorderStyle.None
@@ -145,8 +166,8 @@ trash_pickup_pending As screen:
         Size: =18
         Text: ="💾 Save"
         Width: =134
-        X: =484
-        Y: =72
+        X: =488
+        Y: =107
         ZIndex: =4
 
     Image3_12 As image:
@@ -167,4 +188,13 @@ trash_pickup_pending As screen:
         X: =28
         Y: =20
         ZIndex: =5
+
+    DropdownCanvas1 As Dropdown.pcfdataset:
+        DisplayMode: =DisplayMode.Edit
+        Height: =42
+        Items: =Choices('Trash Pickup'.Name)
+        Width: =260
+        X: =154
+        Y: =113
+        ZIndex: =6
 
