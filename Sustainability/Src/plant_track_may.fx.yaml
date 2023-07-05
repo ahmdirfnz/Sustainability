@@ -25,6 +25,8 @@ plant_track_may As screen:
             Height: =50
             Required: =false
             Update: =Image20.Image
+            Visible: |
+                =If(DataCardValue20_4.Selected.Value = "Yes", true, false) && SelectedMonth = 5
             Width: =640
             X: =0
             Y: =4
@@ -44,7 +46,7 @@ plant_track_may As screen:
                 Height: =48
                 PaddingLeft: =0
                 Size: =21
-                Text: =Parent.DisplayName
+                Text: ="Attach your family image"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -274,7 +276,7 @@ plant_track_may As screen:
             Required: =false
             Update: =Image12_4.Image
             Visible: |
-                =SelectedMonth=5
+                =If(DataCardValue37_4.Selected.Value = "Yes", true, false) && SelectedMonth = 5
             Width: =640
             X: =0
             Y: =6
@@ -294,7 +296,7 @@ plant_track_may As screen:
                 Height: =48
                 PaddingLeft: =0
                 Size: =21
-                Text: =Parent.DisplayName
+                Text: ="Attach your new plant image"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30

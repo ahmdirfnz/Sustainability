@@ -236,7 +236,8 @@ feedback As screen:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
-                Default: =Parent.Default
+                Default: |
+                    =0
                 DisabledBorderColor: =RGBA(159, 167, 165, 1)
                 DisabledFill: =Self.Fill
                 DisplayMode: =Parent.DisplayMode
