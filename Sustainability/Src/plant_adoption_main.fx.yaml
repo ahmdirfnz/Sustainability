@@ -237,7 +237,7 @@ plant_adoption_main As screen:
                     +
                     Round(First (Filter(November,User().FullName in Name.DisplayName)).'Total Points',0)
                     +
-                    Round(First (Filter(December,User().FullName in Name.DisplayName)).'Total Points',0),"pts")
+                    Round(First (Filter(December,User().FullName in Name.DisplayName)).'Total Points',0)," pts")
         Width: =104
         X: =188
         Y: =404
