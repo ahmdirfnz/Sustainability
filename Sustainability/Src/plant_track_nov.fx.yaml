@@ -23,7 +23,8 @@ plant_track_nov As screen:
             DisplayName: =DataSourceInfo([@November],DataSourceInfo.DisplayName,"FamilyImage")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: |
+                =DataCardValue20_10.Selected.Value = "Yes"
             Update: =Image25.Image
             Visible: =If(DataCardValue20_10.Selected.Value = "Yes", true, false) && SelectedMonth = 11
             Width: =640
@@ -272,7 +273,8 @@ plant_track_nov As screen:
             DisplayName: =DataSourceInfo([@January_1],DataSourceInfo.DisplayName,"NewPlantImage")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: |
+                =DataCardValue37_10.Selected.Value = "Yes"
             Update: =Image12_10.Image
             Visible: =If(DataCardValue37_10.Selected.Value = "Yes", true, false) && SelectedMonth = 11
             Width: =640
@@ -528,7 +530,7 @@ plant_track_nov As screen:
             DisplayName: =DataSourceInfo([@January_1],DataSourceInfo.DisplayName,"StillAlive_x003f_")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: =true
             Update: =DataCardValue34_10.Selected
             Visible: |
                 =SelectedMonth=11
