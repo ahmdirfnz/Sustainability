@@ -4,7 +4,7 @@ trash_pickup_pending As screen:
     Gallery1 As gallery.galleryVertical:
         BorderColor: =RGBA(166, 166, 166, 1)
         DelayItemLoading: =true
-        Height: =515
+        Height: =755
         Items: ='Trash Pickup'
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -188,13 +188,4 @@ trash_pickup_pending As screen:
         X: =28
         Y: =20
         ZIndex: =5
-
-    DropdownCanvas1 As Dropdown.pcfdataset:
-        DisplayMode: =DisplayMode.Edit
-        Height: =42
-        Items: =Choices('Trash Pickup'.Name)
-        Width: =260
-        X: =154
-        Y: =113
-        ZIndex: =6
 
