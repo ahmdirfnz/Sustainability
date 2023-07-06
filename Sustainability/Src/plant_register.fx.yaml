@@ -36,7 +36,7 @@ plant_register As screen:
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
         OnSelect: |-
             =SubmitForm(Form9);
-            ResetForm(Form9)
+            Navigate(plant_adoption_main)
         PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
