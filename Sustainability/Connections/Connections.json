@@ -98,6 +98,13 @@
             "tableName": "b31d0892-ceb6-46e7-80bd-60de8849c599"
           }
         }
+      },
+      "https://petronas.sharepoint.com/sites/sustainablity/Recycle": {
+        "dataSources": {
+          "July_1": {
+            "tableName": "fe681b6e-96a1-4c32-86ca-af409da93bfa"
+          }
+        }
       }
     },
     "dataSources": [
@@ -130,7 +137,8 @@
       "October",
       "Plant Registration_1",
       "September",
-      "Feedback"
+      "Feedback",
+      "July_1"
     ],
     "dependencies": {},
     "dependents": [],
