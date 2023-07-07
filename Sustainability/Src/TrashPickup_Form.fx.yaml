@@ -48,52 +48,6 @@ TrashPickup_Form As screen:
         Y: =210
         ZIndex: =10
 
-        DataCard2 As typedDataCard.blankCard:
-            BorderColor: =RGBA(166, 166, 166, 1)
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =136
-            Width: =640
-            X: =0
-            Y: =7
-            ZIndex: =1
-
-            Button7_2 As button:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =RGBA(0, 120, 212, 1)
-                FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Height: =66
-                HoverBorderColor: =RGBA(0, 0, 0, 0)
-                HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-                OnSelect: |+
-                    =SubmitForm(Form6); 
-                    NewForm(Form6);
-                    ResetForm(Form6);
-                    Navigate(trash_pickup_main);
-                    Notify("Form has been submitted successfully", NotificationType.Success, 3000);
-                    
-                    
-                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-                PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-                RadiusBottomLeft: =30
-                RadiusBottomRight: =30
-                RadiusTopLeft: =30
-                RadiusTopRight: =30
-                Size: =24
-                Text: ="Submit"
-                Width: =203
-                X: =217
-                Y: =24
-                ZIndex: =1
-
         Date_DataCard3 As typedDataCard.dateEditCard:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
@@ -202,6 +156,52 @@ TrashPickup_Form As screen:
                 Wrap: =false
                 Y: =DataCardKey6.Y
                 ZIndex: =4
+
+        DataCard2 As typedDataCard.blankCard:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =136
+            Width: =640
+            X: =0
+            Y: =7
+            ZIndex: =1
+
+            Button7_2 As button:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(0, 120, 212, 1)
+                FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =66
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+                OnSelect: |+
+                    =SubmitForm(Form6); 
+                    NewForm(Form6);
+                    ResetForm(Form6);
+                    Navigate(trash_pickup_main);
+                    Notify("Form has been submitted successfully", NotificationType.Success, 3000);
+                    
+                    
+                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                RadiusBottomLeft: =30
+                RadiusBottomRight: =30
+                RadiusTopLeft: =30
+                RadiusTopRight: =30
+                Size: =24
+                Text: ="Submit"
+                Width: =203
+                X: =217
+                Y: =24
+                ZIndex: =1
 
         Name_DataCard4 As typedDataCard.comboBoxEditCard:
             BorderColor: =RGBA(166, 166, 166, 1)
