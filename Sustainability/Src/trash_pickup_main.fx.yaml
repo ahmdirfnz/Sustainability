@@ -30,26 +30,6 @@ trash_pickup_main As screen:
         Y: =247
         ZIndex: =2
 
-    Label5_3 As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        Color: =RGBA(51, 51, 51, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisplayMode: =DisplayMode.View
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Bold
-        Height: =85
-        Size: =24
-        Text: ="Trash Pickup Programme"
-        Width: =433
-        X: =100
-        Y: =80
-        ZIndex: =9
-
     Image13_2 As image:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
@@ -361,24 +341,6 @@ trash_pickup_main As screen:
         Y: =857
         ZIndex: =17
 
-    Label1 As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        Color: =RGBA(51, 51, 51, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
-        Height: =70
-        Size: =15
-        Text: ="(coming soon)"
-        Width: =223
-        X: =201
-        Y: =138
-        ZIndex: =18
-
     Circle4_3 As circle:
         BorderColor: =RGBA(166, 166, 166, 1)
         BorderStyle: =BorderStyle.None
@@ -413,6 +375,26 @@ trash_pickup_main As screen:
         Y: =1054
         ZIndex: =26
 
+    Label5_3 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.View
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =85
+        Size: =24
+        Text: ="Trash Pickup Programme"
+        Width: =432
+        X: =97
+        Y: =120
+        ZIndex: =27
+
     Group3_2 As group:
         Height: =5
         Width: =5
@@ -428,7 +410,7 @@ trash_pickup_main As screen:
             Fill: =RGBA(248, 246, 244, 1)
             FocusedBorderThickness: =4
             HoverFill: =RGBA(248, 246, 244, 1)
-            PressedFill: =RGBA(0, 120, 212, 1)
+            PressedFill: =RGBA(248, 246, 244, 1)
             Width: =640
             Y: =1036
             ZIndex: =19

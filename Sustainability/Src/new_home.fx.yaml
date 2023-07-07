@@ -54,12 +54,12 @@ new_home As screen:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
-            DisabledFill: =RGBA(133, 242, 99, 1)
+            DisabledFill: =RGBA(212, 212, 212, 1)
             Fill: =RGBA(212, 212, 212, 0.42)
             Height: =81
-            HoverFill: =RGBA(133, 242, 99, 1)
+            HoverFill: =RGBA(212, 212, 212, 1)
             OnSelect: =
-            PressedFill: =RGBA(133, 242, 99, 1)
+            PressedFill: =RGBA(212, 212, 212, 1)
             Width: =86
             X: =277
             Y: =1046

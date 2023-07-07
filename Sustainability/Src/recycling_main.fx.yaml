@@ -30,26 +30,6 @@ recycling_main As screen:
         Y: =247
         ZIndex: =2
 
-    Label5_2 As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        Color: =RGBA(51, 51, 51, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisplayMode: =DisplayMode.View
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Bold
-        Height: =98
-        Size: =34
-        Text: ="Recycling Programme"
-        Width: =488
-        X: =68
-        Y: =117
-        ZIndex: =9
-
     Image13_1 As image:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
@@ -411,6 +391,26 @@ recycling_main As screen:
         Y: =1054
         ZIndex: =25
 
+    Label5_2 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.View
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =85
+        Size: =24
+        Text: ="Recycling Programme"
+        Width: =432
+        X: =97
+        Y: =120
+        ZIndex: =26
+
     Group3_3 As group:
         Height: =5
         Width: =5
@@ -426,7 +426,7 @@ recycling_main As screen:
             Fill: =RGBA(248, 246, 244, 1)
             FocusedBorderThickness: =4
             HoverFill: =RGBA(248, 246, 244, 1)
-            PressedFill: =RGBA(0, 120, 212, 1)
+            PressedFill: =RGBA(248, 246, 244, 1)
             Width: =640
             Y: =1036
             ZIndex: =18
