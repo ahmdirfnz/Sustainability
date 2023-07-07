@@ -26,13 +26,13 @@
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
             DisabledFill: =RGBA(133, 242, 99, 1)
-            Fill: =RGBA(133, 242, 99, 0.42)
+            Fill: =RGBA(212, 212, 212, 0.42)
             Height: =81
             HoverFill: =RGBA(133, 242, 99, 1)
             PressedFill: =RGBA(133, 242, 99, 1)
             Width: =86
-            X: =153
-            Y: =1045
+            X: =277
+            Y: =1046
             ZIndex: =6
 
         Image1 As image:
@@ -114,14 +114,14 @@
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledFill: =RGBA(0, 0, 0, 0)
             FocusedBorderThickness: =4
-            Height: =64
+            Height: =65
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverFill: =RGBA(0, 0, 0, 0)
-            Image: =circle
+            Image: ='home (4)'
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
-            Width: =53
-            X: =293
-            Y: =1055
+            Width: =58
+            X: =291
+            Y: =1052
             ZIndex: =16
 
