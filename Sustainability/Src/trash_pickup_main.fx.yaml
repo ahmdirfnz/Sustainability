@@ -383,12 +383,12 @@ trash_pickup_main As screen:
         BorderColor: =RGBA(166, 166, 166, 1)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
-        DisabledFill: =RGBA(133, 242, 99, 1)
+        DisabledFill: =RGBA(169, 102, 227, 1)
         Fill: =RGBA(169, 102, 227, 0.47)
         Height: =81
-        HoverFill: =RGBA(133, 242, 99, 1)
+        HoverFill: =RGBA(169, 102, 227, 1)
         OnSelect: =Navigate(plant_adoption_main,ScreenTransition.Fade)
-        PressedFill: =RGBA(133, 242, 99, 1)
+        PressedFill: =RGBA(169, 102, 227, 1)
         Width: =86
         X: =513
         Y: =1045
