@@ -392,6 +392,25 @@ recycling_main As screen:
         Y: =1045
         ZIndex: =21
 
+    Image8_12 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =65
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: ='home (4)'
+        OnSelect: =Navigate(new_home,ScreenTransition.Fade)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =58
+        X: =291
+        Y: =1054
+        ZIndex: =25
+
     Group3_3 As group:
         Height: =5
         Width: =5
@@ -487,22 +506,4 @@ recycling_main As screen:
             X: =530
             Y: =1054
             ZIndex: =23
-
-        Image8_11 As image:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
-            Height: =64
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverFill: =RGBA(0, 0, 0, 0)
-            Image: ='home (4)'
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedFill: =RGBA(0, 0, 0, 0)
-            Width: =53
-            X: =293
-            Y: =1055
-            ZIndex: =24
 

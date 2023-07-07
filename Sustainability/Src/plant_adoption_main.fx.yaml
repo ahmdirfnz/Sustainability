@@ -471,6 +471,25 @@ plant_adoption_main As screen:
         Y: =406
         ZIndex: =24
 
+    Image8_5 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =65
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: ='home (4)'
+        OnSelect: =Navigate(new_home,ScreenTransition.Fade)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =58
+        X: =291
+        Y: =1054
+        ZIndex: =31
+
     Group3_1 As group:
         Height: =5
         Width: =5
@@ -581,22 +600,4 @@ plant_adoption_main As screen:
             X: =530
             Y: =1054
             ZIndex: =30
-
-        Image8_5 As image:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
-            Height: =64
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverFill: =RGBA(0, 0, 0, 0)
-            Image: ='home (4)'
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedFill: =RGBA(0, 0, 0, 0)
-            Width: =53
-            X: =293
-            Y: =1055
-            ZIndex: =31
 

@@ -1,4 +1,4 @@
-"'New-Home' As screen":
+new_home As screen:
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
 
     Group3 As group:
@@ -12,11 +12,12 @@
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
-            DisabledFill: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(248, 246, 244, 1)
             Fill: =RGBA(248, 246, 244, 1)
             FocusedBorderThickness: =4
-            HoverFill: =RGBA(0, 120, 212, 1)
-            PressedFill: =RGBA(0, 120, 212, 1)
+            HoverFill: =RGBA(248, 246, 244, 1)
+            OnSelect: =
+            PressedFill: =RGBA(248, 246, 244, 1)
             Width: =640
             Y: =1036
             ZIndex: =4
@@ -29,6 +30,7 @@
             Fill: =RGBA(212, 212, 212, 0.42)
             Height: =81
             HoverFill: =RGBA(133, 242, 99, 1)
+            OnSelect: =
             PressedFill: =RGBA(133, 242, 99, 1)
             Width: =86
             X: =277
@@ -46,6 +48,7 @@
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverFill: =RGBA(0, 0, 0, 0)
             Image: ='plant (1)'
+            OnSelect: =
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =62
@@ -64,6 +67,7 @@
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverFill: =RGBA(0, 0, 0, 0)
             Image: =earth
+            OnSelect: =
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =49
@@ -82,6 +86,7 @@
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverFill: =RGBA(0, 0, 0, 0)
             Image: ='recycle-symbol'
+            OnSelect: =Navigate(recycling_main,ScreenTransition.Fade)
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =53
@@ -100,6 +105,7 @@
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverFill: =RGBA(0, 0, 0, 0)
             Image: =bin
+            OnSelect: =Navigate(trash_pickup_main,ScreenTransition.Fade)
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =53
@@ -118,6 +124,7 @@
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverFill: =RGBA(0, 0, 0, 0)
             Image: ='home (4)'
+            OnSelect: =
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =58
