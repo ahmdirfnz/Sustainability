@@ -193,7 +193,7 @@ recycle_form_july As screen:
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =RGBA(0, 120, 212, 1)
+                Fill: =RGBA(255, 191, 0, 1)
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 Height: =320
@@ -1198,7 +1198,7 @@ recycle_form_july As screen:
             =Table({ID:1, Label:"Jan"},{ID:2, Label:"Feb"},{ID:3, Label:"Mar"},{ID:4, Label:"Apr"},{ID:5, Label:"May"},{ID:6, Label:"Jun"},{ID:7, Label:"July"},{ID:8, Label:"Aug"},{ID:9, Label:"Sept"},{ID:10, Label:"Oct"},{ID:11, Label:"Nov"},{ID:12, Label:"Dec"})
         LoadingSpinner: =LoadingSpinner.Data
         TemplateSize: =120
-        Y: =166
+        Y: =161
         ZIndex: =4
 
         Button12_12 As button:
@@ -1249,7 +1249,7 @@ recycle_form_july As screen:
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(220, 220, 220, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
+        FocusedBorderThickness: =10
         Height: =47
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
@@ -1259,7 +1259,7 @@ recycle_form_july As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =52
+        Width: =46
         X: =38
         Y: =1031
         ZIndex: =5
