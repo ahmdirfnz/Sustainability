@@ -14046,30 +14046,6 @@
               "message": {
                 "text": "Error occurred running rule app-InefficientDelayLoading."
               }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 11
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 11
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
             }
           ]
         }
@@ -23394,19 +23370,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "TrashPickup_Form.Form6.Date_DataCard3.DataCardValue3.AccessibleLabel"
+                  "fullyQualifiedName": "TrashPickup_Form.Form6.Date_DataCard2.DataCardValue3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "TrashPickup_Form.Form6.Date_DataCard3.DataCardValue3.AccessibleLabel",
+                  "fullyQualifiedName": "TrashPickup_Form.Form6.Date_DataCard2.DataCardValue3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "TrashPickup_Form",
-                "type": "TrashPickup_Form.Form6.Date_DataCard3.DataCardValue3"
+                "type": "TrashPickup_Form.Form6.Date_DataCard2.DataCardValue3"
               }
             }
           ],
@@ -23454,19 +23430,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "TrashPickup_Form.Form6.'Pick Up Scheduled?_DataCard1'.DataCardValue31.AccessibleLabel"
+                  "fullyQualifiedName": "trash_pickup_pending_1.Gallery1_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "TrashPickup_Form.Form6.'Pick Up Scheduled?_DataCard1'.DataCardValue31.AccessibleLabel",
+                  "fullyQualifiedName": "trash_pickup_pending_1.Gallery1_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "trash_pickup_pending_1",
+                "type": "trash_pickup_pending_1.Gallery1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "trash_pickup_pending_1.Gallery1_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "trash_pickup_pending_1.Gallery1_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "TrashPickup_Form",
-                "type": "TrashPickup_Form.Form6.'Pick Up Scheduled?_DataCard1'.DataCardValue31"
+                "module": "trash_pickup_pending_1",
+                "type": "trash_pickup_pending_1.Gallery1_1"
               }
             }
           ],
@@ -23484,19 +23490,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "TrashPickup_Form.Form6.'Scheduled Date_DataCard1'.DateValue1.AccessibleLabel"
+                  "fullyQualifiedName": "trash_pickup_pending_1.Image3_13.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "TrashPickup_Form.Form6.'Scheduled Date_DataCard1'.DateValue1.AccessibleLabel",
+                  "fullyQualifiedName": "trash_pickup_pending_1.Image3_13.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
-                "module": "TrashPickup_Form",
-                "type": "TrashPickup_Form.Form6.'Scheduled Date_DataCard1'.DateValue1"
+                "member": "TabIndex",
+                "module": "trash_pickup_pending_1",
+                "type": "trash_pickup_pending_1.Image3_13"
               }
             }
           ],
@@ -23506,57 +23512,27 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 7
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "TrashPickup_Form.Form6.'Scheduled Date_DataCard1'.HourValue1.AccessibleLabel"
+                  "fullyQualifiedName": "trash_pickup_pending_1.Image3_13.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "TrashPickup_Form.Form6.'Scheduled Date_DataCard1'.HourValue1.AccessibleLabel",
+                  "fullyQualifiedName": "trash_pickup_pending_1.Image3_13.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "TrashPickup_Form",
-                "type": "TrashPickup_Form.Form6.'Scheduled Date_DataCard1'.HourValue1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "TrashPickup_Form.Form6.'Scheduled Date_DataCard1'.MinuteValue1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "TrashPickup_Form.Form6.'Scheduled Date_DataCard1'.MinuteValue1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "TrashPickup_Form",
-                "type": "TrashPickup_Form.Form6.'Scheduled Date_DataCard1'.MinuteValue1"
+                "module": "trash_pickup_pending_1",
+                "type": "trash_pickup_pending_1.Image3_13"
               }
             }
           ],
@@ -26388,6 +26364,156 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "trash_pickup_pending_1.Gallery1_1.DateCreated_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "trash_pickup_pending_1.Gallery1_1.DateCreated_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "trash_pickup_pending_1",
+                "type": "trash_pickup_pending_1.Gallery1_1.DateCreated_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "trash_pickup_pending_1.Gallery1_1.DateScheduled_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "trash_pickup_pending_1.Gallery1_1.DateScheduled_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "trash_pickup_pending_1",
+                "type": "trash_pickup_pending_1.Gallery1_1.DateScheduled_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "trash_pickup_pending_1.Gallery1_1.Icon4_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "trash_pickup_pending_1.Gallery1_1.Icon4_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "trash_pickup_pending_1",
+                "type": "trash_pickup_pending_1.Gallery1_1.Icon4_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "trash_pickup_pending_1.Gallery1_1.Icon4_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "trash_pickup_pending_1.Gallery1_1.Icon4_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "trash_pickup_pending_1",
+                "type": "trash_pickup_pending_1.Gallery1_1.Icon4_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "trash_pickup_pending_1.Gallery1_1.SaveInvisible_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "trash_pickup_pending_1.Gallery1_1.SaveInvisible_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "trash_pickup_pending_1",
+                "type": "trash_pickup_pending_1.Gallery1_1.SaveInvisible_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
         },
         {
           "locations": [

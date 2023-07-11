@@ -160,6 +160,7 @@
     "plant_track_nov",
     "plant_track_dec",
     "trash_pickup_pending",
+    "trash_pickup_pending_1",
     "new_home"
   ]
 }
