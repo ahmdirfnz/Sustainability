@@ -1088,36 +1088,36 @@ recycle_form_september As screen:
             =// Get value from Weight field.
             Set(
                 paper_var,
-                Value(DataCardValue5.Text)
+                Value(DataCardValue26.Text)
             );
             Set(
                 metal_var,
-                Value(DataCardValue8.Text)
+                Value(DataCardValue27.Text)
             );
             Set(
                 plastic_var,
-                Value(DataCardValue18.Text)
+                Value(DataCardValue28.Text)
             );
             Set(
                 glass_var,
-                Value(DataCardValue19.Text)
+                Value(DataCardValue29.Text)
             );
             Set(
                 textile_var,
-                Value(DataCardValue24.Text)
+                Value(DataCardValue30.Text)
             );
             Set(
                 battery_var,
-                Value(DataCardValue21.Text)
+                Value(DataCardValue31.Text)
             );
             Set(
                 others_var,
-                Value(DataCardValue25.Text)
+                Value(DataCardValue32.Text)
             );
             // Get value from Name field.
             Set(
                 user_name,
-                Text(DataCardValue4.Selected.DisplayName)
+                Text(DataCardValue23.Selected.DisplayName)
             );
             If(
                 Not(IsBlank(LookUp(September_1, StartsWith(Name.DisplayName, user_name)))),
