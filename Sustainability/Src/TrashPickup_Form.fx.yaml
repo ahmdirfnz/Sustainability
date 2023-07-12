@@ -15,29 +15,10 @@ TrashPickup_Form As screen:
         Height: =70
         Size: =21
         Text: ="Cleanup Activity Form"
-        Width: =560
-        X: =60
-        Y: =121
+        Width: =486
+        X: =77
+        Y: =113
         ZIndex: =8
-
-    Image3_8 As image:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
-        Height: =69
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverFill: =RGBA(0, 0, 0, 0)
-        Image: =back
-        OnSelect: =Navigate(trash_pickup_main,ScreenTransition)
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =61
-        X: =44
-        Y: =44
-        ZIndex: =9
 
     Form6_1 As form:
         BorderColor: =RGBA(166, 166, 166, 1)
@@ -206,6 +187,27 @@ TrashPickup_Form As screen:
                 X: =217
                 Y: =24
                 ZIndex: =1
+
+            Icon1_22 As icon.ChevronLeft:
+                BorderColor: =RGBA(166, 166, 166, 1)
+                Color: =RGBA(0, 120, 212, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(220, 220, 220, 1)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                FocusedBorderThickness: =4
+                Height: =47
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Icon: =Icon.ChevronLeft
+                OnSelect: =Navigate(trash_pickup_main,ScreenTransition.CoverRight)
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                Width: =52
+                X: =40
+                Y: =40
+                ZIndex: =2
 
         Name_DataCard4_1 As typedDataCard.comboBoxEditCard:
             BorderColor: =RGBA(166, 166, 166, 1)
