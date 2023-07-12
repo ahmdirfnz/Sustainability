@@ -7,7 +7,7 @@
   },
   "Properties": {
     "AppCreationSource": "AppFromFigma",
-    "AppDescription": "",
+    "AppDescription": "Complete configure sharepoint to respective form of month and fix navigation back button at feedback form",
     "AppPreviewFlagsMap": {
       "aibuilderserviceenrollment": false,
       "allowmultiplescreensincanvaspages": false,
@@ -97,7 +97,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 46,
+    "BindingErrorCount": 45,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "Phone",

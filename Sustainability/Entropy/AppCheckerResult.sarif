@@ -14696,46 +14696,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "plant_track_jan.Gallery4.Button12.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "plant_track_jan.Gallery4.Button12.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 389,
-                  "snippet": {
-                    "text": "recycle_form_"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "plant_track_jan",
-                "type": "plant_track_jan.Gallery4.Button12"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "recycle_form_"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "RecycleForm_Screen.Form3.Paper_DataCard1.DisplayName"
                 }
               ],
@@ -14770,7 +14730,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrColumnDoesNotExist-Name-Similar",
-          "ruleIndex": 2
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -14810,7 +14770,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -14850,7 +14810,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -14930,7 +14890,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -14970,7 +14930,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -15050,7 +15010,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -15090,7 +15050,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -15170,7 +15130,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -15210,7 +15170,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -15290,7 +15250,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -15330,7 +15290,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -15410,7 +15370,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -15450,7 +15410,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -15491,7 +15451,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrColumnDoesNotExist-Name-Similar",
-          "ruleIndex": 2
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -15531,7 +15491,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -15571,7 +15531,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -15612,7 +15572,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrColumnDoesNotExist-Name-Similar",
-          "ruleIndex": 2
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -15652,7 +15612,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -15692,7 +15652,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -15732,7 +15692,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -15772,7 +15732,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -15813,7 +15773,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrColumnDoesNotExist-Name-Similar",
-          "ruleIndex": 2
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -15853,7 +15813,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -15893,7 +15853,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -15973,7 +15933,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -16013,7 +15973,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -16093,7 +16053,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -16133,7 +16093,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -16213,7 +16173,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -16253,7 +16213,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -16333,7 +16293,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -16373,7 +16333,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -16453,7 +16413,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -16493,7 +16453,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -28342,23 +28302,6 @@
               }
             },
             {
-              "id": "app-ErrInvalidName",
-              "messageStrings": {
-                "issue": {
-                  "text": "Name isn't valid. '{0}' isn't recognized."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Remove or correct the reference to the name that isn't valid."
-                ],
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
               "id": "app-ErrColumnDoesNotExist-Name-Similar",
               "messageStrings": {
                 "issue": {
@@ -28381,6 +28324,23 @@
               },
               "properties": {
                 "componentType": "app",
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrInvalidName",
+              "messageStrings": {
+                "issue": {
+                  "text": "Name isn't valid. '{0}' isn't recognized."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Remove or correct the reference to the name that isn't valid."
+                ],
                 "level": "High",
                 "primaryCategory": "formula",
                 "whyFix": ""
