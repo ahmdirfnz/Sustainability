@@ -301,12 +301,18 @@ recycle_form_july As screen:
                 ChevronHoverBackground: =RGBA(212, 212, 212, 1)
                 ChevronHoverFill: =RGBA(33, 33, 33, 1)
                 Color: =RGBA(51, 51, 51, 1)
-                DefaultSelectedItems: =Parent.Default
+                DefaultSelectedItems: |-
+                    ={
+                    DisplayName:User().FullName,
+                    Claims:"i:0#.f|membership|" & Lower(User().Email),
+                    Email: User().Email,
+                    Picture:""
+                    }
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayFields: =["DisplayName","Email","Picture"]
-                DisplayMode: =Parent.DisplayMode
+                DisplayMode: =Parent.DisplayMode.Disabled
                 Font: =Font.'Segoe UI'
                 Height: =70
                 HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
@@ -1114,7 +1120,7 @@ recycle_form_july As screen:
                 Text(DataCardValue4.Selected.DisplayName)
             );
             If(
-                Not(IsBlank(LookUp(July, StartsWith(Name.DisplayName, user_name)))),
+                Not(IsBlank(First(Filter(July_1, StartsWith(Name.DisplayName, user_name))))),
                 Patch(
                     July_1,
                     First(Filter(July_1, StartsWith(Name.DisplayName, user_name))),

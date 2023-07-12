@@ -114,7 +114,7 @@ new_home As screen:
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverFill: =RGBA(0, 0, 0, 0)
             Image: ='recycle-symbol'
-            OnSelect: =Navigate(recycling_main,ScreenTransition.Fade)
+            OnSelect: =Navigate(recycle_form_july,ScreenTransition.Fade)
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =53
