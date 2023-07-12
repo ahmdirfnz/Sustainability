@@ -1079,83 +1079,94 @@ recycle_form_july As screen:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
         OnSelect: |-
-            =Set(
-                var_alive2,
-                Text(DataCardValue34_1.Selected.Value)
+            =// Get value from Weight field.
+            Set(
+                paper_var,
+                Value(DataCardValue5.Text)
             );
             Set(
-               var_newPlant2,
-               Text(DataCardValue37_1.Selected.Value)
+                metal_var,
+                Value(DataCardValue8.Text)
             );
             Set(
-               var_family2,
-               Text(DataCardValue20_1.Selected.Value)
+                plastic_var,
+                Value(DataCardValue18.Text)
             );
             Set(
-               var_leaves,
-               Value(DataCardValue6_1.Text)
+                glass_var,
+                Value(DataCardValue19.Text)
             );
-            
-            // Get value from "Usernames" field.
             Set(
-                var_usernames,
-                Text(DataCardValue3_1.Selected.DisplayName)
+                textile_var,
+                Value(DataCardValue24.Text)
             );
-            
+            Set(
+                battery_var,
+                Value(DataCardValue21.Text)
+            );
+            Set(
+                others_var,
+                Value(DataCardValue25.Text)
+            );
+            // Get value from Name field.
+            Set(
+                user_name,
+                Text(DataCardValue4.Selected.DisplayName)
+            );
             If(
-               Not(IsBlank(LookUp(January_1, StartsWith(Name.DisplayName, var_usernames)))),
-               Patch(
-                  January_1,
-                  First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))),
-                  {
-                     'Leaf Input': 
-                     First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Leaf Input' + var_leaves,
-            
-                     'Alive Points': 
-                     If(var_alive2 = "Yes", 
-                     First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Alive Points' + 10, 
-                     First(Filter(January_1, StartsWith (Name.DisplayName, var_usernames))).'Alive Points' + 0),
-            
-                     'New Plant Points': 
-                     If(var_newPlant2 = "Yes", 
-                     First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points' + 10, 
-                     First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points' + 0),
-                     
-                     'Family Points': 
-                     If(var_family2 = "Yes", 
-                     First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Family Points' + 10,
-                     First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Family Points' + 0)
-                  })
-                  
-                  //Else
-                  ,
-            
-               SubmitForm(Form5_12);
-               Patch(
-                  January_1,
-                  First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))),
-                  {
-            
-                     'Alive Points': 
-                     If(var_alive2 = "Yes", 
-                     First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Alive Points' + 10, 
-                     First(Filter(January_1, StartsWith (Name.DisplayName, var_usernames))).'Alive Points' + 0),
-            
-                     'New Plant Points': 
-                     If(var_newPlant2 = "Yes", 
-                     First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points' + 10, 
-                     First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points' + 0),
-                     
-                     'Family Points': 
-                     If(var_family2 = "Yes", 
-                     First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Family Points' + 10,
-                     First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Family Points' + 0)
-                  })
-            
+                Not(IsBlank(LookUp(July, StartsWith(Name.DisplayName, user_name)))),
+                Patch(
+                    July_1,
+                    First(Filter(July_1, StartsWith(Name.DisplayName, user_name))),
+                    {Paper: First(Filter(July_1, StartsWith(Name.DisplayName, user_name))).Paper + paper_var}
+                );
+                Patch(
+                    July_1,
+                    First(Filter(July_1, StartsWith(Name.DisplayName, user_name))),
+                    {'Metal/Aluminium': First(Filter(July_1, StartsWith(Name.DisplayName, user_name))).'Metal/Aluminium' + metal_var}
+                );
+                Patch(
+                    July_1,
+                    First(Filter(July_1, StartsWith(Name.DisplayName, user_name))),
+                    {Plastic: First(Filter(July_1, StartsWith(Name.DisplayName, user_name))).Plastic + plastic_var}
+                );
+                Patch(
+                    July_1,
+                    First(Filter(July_1, StartsWith(Name.DisplayName, user_name))),
+                    {Glass: First(Filter(July_1, StartsWith(Name.DisplayName, user_name))).Glass + glass_var}
+                );
+                Patch(
+                    July_1,
+                    First(Filter(July_1, StartsWith(Name.DisplayName, user_name))),
+                    {'Textile/Fabric': First(Filter(July_1, StartsWith(Name.DisplayName, user_name))).'Textile/Fabric' + textile_var}
+                );
+                Patch(
+                    July_1,
+                    First(Filter(July_1, StartsWith(Name.DisplayName, user_name))),
+                    {'Battery/E-Waste': First(Filter(July_1, StartsWith(Name.DisplayName, user_name))).'Battery/E-Waste' + battery_var}
+                );
+                Patch(
+                    July_1,
+                    First(Filter(July_1, StartsWith(Name.DisplayName, user_name))),
+                    {Others: First(Filter(July_1, StartsWith(Name.DisplayName, user_name))).Others + others_var}
+                );
+                ,
+                SubmitForm(Form5_12);
+                /*Patch(
+                    Recycle,
+                    First(Filter(Recycle, StartsWith(Name.DisplayName, user_name))),
+                    {
+                        Paper: paper_var,
+                        Plastic: plastic_var,
+                        'Metal/Aluminium': metal_var,
+                        Glass: glass_var,
+                        'Textile/Fabric': textile_var,
+                        'Battery/E-Waste': battery_var
+                    }
+                );*/
             );
             NewForm(Form5_12);
             ResetForm(Form5_12);
-            //Navigate(plant_adoption_main);
         PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)

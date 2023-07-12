@@ -101,8 +101,23 @@
       },
       "https://petronas.sharepoint.com/sites/sustainablity/Recycle": {
         "dataSources": {
+          "August_1": {
+            "tableName": "d89dcc28-5631-4bb8-b8a3-5021df63d048"
+          },
+          "December_1": {
+            "tableName": "181e7603-204d-4d66-913a-be32fc6a1968"
+          },
           "July_1": {
             "tableName": "fe681b6e-96a1-4c32-86ca-af409da93bfa"
+          },
+          "November_1": {
+            "tableName": "ce420b16-4e5c-4f96-94a4-8f827fbc4666"
+          },
+          "October_1": {
+            "tableName": "0afb2274-18ef-4159-949a-d6f9b9c362d8"
+          },
+          "September_1": {
+            "tableName": "890a1761-21c9-4e6f-a1c0-3d7c4e8d58be"
           }
         }
       }
@@ -138,7 +153,12 @@
       "Plant Registration_1",
       "September",
       "Feedback",
-      "July_1"
+      "July_1",
+      "August_1",
+      "December_1",
+      "November_1",
+      "October_1",
+      "September_1"
     ],
     "dependencies": {},
     "dependents": [],

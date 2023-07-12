@@ -3,7 +3,7 @@ recycle_form_august As screen:
 
     Form5_13 As form:
         BorderColor: =RGBA(166, 166, 166, 1)
-        DataSource: =July_1
+        DataSource: =August_1
         DefaultMode: =FormMode.New
         Height: =723
         OnFailure: =Notify("Failed to submit form. Please fill in the required field.", NotificationType.Error)
@@ -15,23 +15,23 @@ recycle_form_august As screen:
         Y: =261
         ZIndex: =1
 
-        Others_DataCard2_1 As typedDataCard.numberEditCard:
+        Others_DataCard3 As typedDataCard.numberEditCard:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Others"
             Default: =ThisItem.Others
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@July_1],DataSourceInfo.DisplayName,"Others")
+            DisplayName: =DataSourceInfo([@August_1],DataSourceInfo.DisplayName,"Others")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =Value(DataCardValue52_1.Text)
+            Update: =Value(DataCardValue15.Text)
             Width: =640
             X: =0
             Y: =7
             ZIndex: =1
 
-            DataCardKey69_1 As label:
+            DataCardKey16 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -52,7 +52,7 @@ recycle_form_august As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue52_1 As text:
+            DataCardValue15 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 BorderThickness: =2
                 Color: =RGBA(51, 51, 51, 1)
@@ -81,10 +81,10 @@ recycle_form_august As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey69_1.Y + DataCardKey69_1.Height + 5
+                Y: =DataCardKey16.Y + DataCardKey16.Height + 5
                 ZIndex: =2
 
-            ErrorMessage63_1 As label:
+            ErrorMessage16 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -106,10 +106,10 @@ recycle_form_august As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue52_1.Y + DataCardValue52_1.Height
+                Y: =DataCardValue15.Y + DataCardValue15.Height
                 ZIndex: =3
 
-            StarVisible63_1 As label:
+            StarVisible16 As label:
                 Align: =Align.Center
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -120,33 +120,33 @@ recycle_form_august As screen:
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
-                Height: =DataCardKey69_1.Height
+                Height: =DataCardKey16.Height
                 PaddingLeft: =0
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey69_1.Y
+                Y: =DataCardKey16.Y
                 ZIndex: =4
 
-        Attachment_DataCard2_1 As typedDataCard.addLargePictureCard:
+        Attachment_DataCard3 As typedDataCard.addLargePictureCard:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Attachment"
             Default: =ThisItem.Attachment
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@July_1],DataSourceInfo.DisplayName,"Attachment")
+            DisplayName: =DataSourceInfo([@August_1],DataSourceInfo.DisplayName,"Attachment")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =Image5_2.Image
+            Update: =Image6.Image
             Width: =640
             X: =0
             Y: =8
             ZIndex: =1
 
-            DataCardKey1_1 As label:
+            DataCardKey18 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -167,7 +167,7 @@ recycle_form_august As screen:
                 Y: =10
                 ZIndex: =1
 
-            Image5_2 As image:
+            Image6 As image:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
@@ -175,19 +175,19 @@ recycle_form_august As screen:
                 DisabledFill: =RGBA(0, 0, 0, 0)
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
-                Height: =AddPicture2_1.Height
+                Height: =AddPicture18.Height
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverFill: =RGBA(0, 0, 0, 0)
-                Image: =If(IsBlank(AddPicture2_1.Media), Parent.Default, AddPicture2_1.Media)
+                Image: =If(IsBlank(AddPicture18.Media), Parent.Default, AddPicture18.Media)
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedFill: =RGBA(0, 0, 0, 0)
                 Tooltip: =Parent.DisplayName
-                Width: =AddPicture2_1.Width
-                X: =AddPicture2_1.X
-                Y: =AddPicture2_1.Y
+                Width: =AddPicture18.Width
+                X: =AddPicture18.X
+                Y: =AddPicture18.Y
                 ZIndex: =2
 
-            AddPicture2_1 As addMedia:
+            AddPicture18 As addMedia:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
@@ -207,10 +207,10 @@ recycle_form_august As screen:
                 Size: =24
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey1_1.Y + DataCardKey1_1.Height + 5
+                Y: =DataCardKey18.Y + DataCardKey18.Height + 5
                 ZIndex: =3
 
-            ErrorMessage6_1 As label:
+            ErrorMessage18 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -232,10 +232,10 @@ recycle_form_august As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =Image5_2.Y + Image5_2.Height
+                Y: =Image6.Y + Image6.Height
                 ZIndex: =4
 
-            StarVisible6_1 As label:
+            StarVisible18 As label:
                 Align: =Align.Center
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -246,33 +246,33 @@ recycle_form_august As screen:
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
-                Height: =DataCardKey1_1.Height
+                Height: =DataCardKey18.Height
                 PaddingLeft: =0
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey1_1.Y
+                Y: =DataCardKey18.Y
                 ZIndex: =5
 
-        Name_DataCard8_1 As typedDataCard.comboBoxEditCard:
+        Name_DataCard3 As typedDataCard.comboBoxEditCard:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Name"
             Default: =ThisItem.Name
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@July_1],DataSourceInfo.DisplayName,"Name")
+            DisplayName: =DataSourceInfo([@August_1],DataSourceInfo.DisplayName,"Name")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =DataCardValue40_1.Selected
+            Update: =DataCardValue3.Selected
             Width: =640
             X: =0
             Y: =0
             ZIndex: =2
 
-            DataCardKey57_1 As label:
+            DataCardKey8 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -293,7 +293,7 @@ recycle_form_august As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue40_1 As combobox:
+            DataCardValue3 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 ChevronBackground: =RGBA(255, 255, 255, 1)
                 ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
@@ -313,13 +313,13 @@ recycle_form_august As screen:
                 HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 HoverColor: =RGBA(51, 51, 51, 1)
                 HoverFill: =RGBA(212, 212, 212, 1)
-                Items: =Choices([@July_1].Name)
+                Items: =Choices([@August_1].Name)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 120, 212, 1)
                 SearchFields: =["DisplayName"]
-                SearchItems: =Choices(July_1.Name,DataCardValue40_1.SearchText)
+                SearchItems: =Choices(August_1.Name,DataCardValue3.SearchText)
                 SelectionFill: =RGBA(0, 120, 212, 1)
                 SelectMultiple: =false
                 Size: =21
@@ -327,10 +327,10 @@ recycle_form_august As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey57_1.Y + DataCardKey57_1.Height + 5
+                Y: =DataCardKey8.Y + DataCardKey8.Height + 5
                 ZIndex: =2
 
-            ErrorMessage55_1 As label:
+            ErrorMessage8 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -352,10 +352,10 @@ recycle_form_august As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue40_1.Y + DataCardValue40_1.Height
+                Y: =DataCardValue3.Y + DataCardValue3.Height
                 ZIndex: =3
 
-            StarVisible55_1 As label:
+            StarVisible8 As label:
                 Align: =Align.Center
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -366,33 +366,33 @@ recycle_form_august As screen:
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
-                Height: =DataCardKey57_1.Height
+                Height: =DataCardKey8.Height
                 PaddingLeft: =0
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey57_1.Y
+                Y: =DataCardKey8.Y
                 ZIndex: =4
 
-        Paper_DataCard2_1 As typedDataCard.numberEditCard:
+        Paper_DataCard3 As typedDataCard.numberEditCard:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Paper"
             Default: =ThisItem.Paper
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@July_1],DataSourceInfo.DisplayName,"Paper")
+            DisplayName: =DataSourceInfo([@August_1],DataSourceInfo.DisplayName,"Paper")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =Value(DataCardValue41_1.Text)
+            Update: =Value(DataCardValue7.Text)
             Width: =640
             X: =0
             Y: =1
             ZIndex: =2
 
-            DataCardKey58_1 As label:
+            DataCardKey9 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -413,7 +413,7 @@ recycle_form_august As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue41_1 As text:
+            DataCardValue7 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 BorderThickness: =2
                 Color: =RGBA(51, 51, 51, 1)
@@ -442,10 +442,10 @@ recycle_form_august As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey58_1.Y + DataCardKey58_1.Height + 5
+                Y: =DataCardKey9.Y + DataCardKey9.Height + 5
                 ZIndex: =2
 
-            ErrorMessage56_1 As label:
+            ErrorMessage9 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -467,10 +467,10 @@ recycle_form_august As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue41_1.Y + DataCardValue41_1.Height
+                Y: =DataCardValue7.Y + DataCardValue7.Height
                 ZIndex: =3
 
-            StarVisible56_1 As label:
+            StarVisible9 As label:
                 Align: =Align.Center
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -481,33 +481,33 @@ recycle_form_august As screen:
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
-                Height: =DataCardKey58_1.Height
+                Height: =DataCardKey9.Height
                 PaddingLeft: =0
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey58_1.Y
+                Y: =DataCardKey9.Y
                 ZIndex: =4
 
-        "'Metal/Aluminium_DataCard2_1' As typedDataCard.numberEditCard":
+        "'Metal/Aluminium_DataCard3' As typedDataCard.numberEditCard":
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Metal_x002f_Aluminium"
             Default: =ThisItem.'Metal/Aluminium'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@July_1],DataSourceInfo.DisplayName,"Metal_x002f_Aluminium")
+            DisplayName: =DataSourceInfo([@August_1],DataSourceInfo.DisplayName,"Metal_x002f_Aluminium")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =Value(DataCardValue42_1.Text)
+            Update: =Value(DataCardValue9.Text)
             Width: =640
             X: =0
             Y: =2
             ZIndex: =2
 
-            DataCardKey59_1 As label:
+            DataCardKey10 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -528,7 +528,7 @@ recycle_form_august As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue42_1 As text:
+            DataCardValue9 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 BorderThickness: =2
                 Color: =RGBA(51, 51, 51, 1)
@@ -557,10 +557,10 @@ recycle_form_august As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey59_1.Y + DataCardKey59_1.Height + 5
+                Y: =DataCardKey10.Y + DataCardKey10.Height + 5
                 ZIndex: =2
 
-            ErrorMessage57_1 As label:
+            ErrorMessage10 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -582,10 +582,10 @@ recycle_form_august As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue42_1.Y + DataCardValue42_1.Height
+                Y: =DataCardValue9.Y + DataCardValue9.Height
                 ZIndex: =3
 
-            StarVisible57_1 As label:
+            StarVisible10 As label:
                 Align: =Align.Center
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -596,33 +596,33 @@ recycle_form_august As screen:
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
-                Height: =DataCardKey59_1.Height
+                Height: =DataCardKey10.Height
                 PaddingLeft: =0
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey59_1.Y
+                Y: =DataCardKey10.Y
                 ZIndex: =4
 
-        Plastic_DataCard2_1 As typedDataCard.numberEditCard:
+        Plastic_DataCard3 As typedDataCard.numberEditCard:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Plastic"
             Default: =ThisItem.Plastic
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@July_1],DataSourceInfo.DisplayName,"Plastic")
+            DisplayName: =DataSourceInfo([@August_1],DataSourceInfo.DisplayName,"Plastic")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =Value(DataCardValue43_1.Text)
+            Update: =Value(DataCardValue10.Text)
             Width: =640
             X: =0
             Y: =3
             ZIndex: =2
 
-            DataCardKey60_1 As label:
+            DataCardKey12 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -643,7 +643,7 @@ recycle_form_august As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue43_1 As text:
+            DataCardValue10 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 BorderThickness: =2
                 Color: =RGBA(51, 51, 51, 1)
@@ -672,10 +672,10 @@ recycle_form_august As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey60_1.Y + DataCardKey60_1.Height + 5
+                Y: =DataCardKey12.Y + DataCardKey12.Height + 5
                 ZIndex: =2
 
-            ErrorMessage58_1 As label:
+            ErrorMessage12 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -697,10 +697,10 @@ recycle_form_august As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue43_1.Y + DataCardValue43_1.Height
+                Y: =DataCardValue10.Y + DataCardValue10.Height
                 ZIndex: =3
 
-            StarVisible58_1 As label:
+            StarVisible12 As label:
                 Align: =Align.Center
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -711,33 +711,33 @@ recycle_form_august As screen:
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
-                Height: =DataCardKey60_1.Height
+                Height: =DataCardKey12.Height
                 PaddingLeft: =0
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey60_1.Y
+                Y: =DataCardKey12.Y
                 ZIndex: =4
 
-        Glass_DataCard2_1 As typedDataCard.numberEditCard:
+        Glass_DataCard3 As typedDataCard.numberEditCard:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Glass"
             Default: =ThisItem.Glass
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@July_1],DataSourceInfo.DisplayName,"Glass")
+            DisplayName: =DataSourceInfo([@August_1],DataSourceInfo.DisplayName,"Glass")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =Value(DataCardValue45_1.Text)
+            Update: =Value(DataCardValue11.Text)
             Width: =640
             X: =0
             Y: =4
             ZIndex: =2
 
-            DataCardKey62_1 As label:
+            DataCardKey13 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -758,7 +758,7 @@ recycle_form_august As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue45_1 As text:
+            DataCardValue11 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 BorderThickness: =2
                 Color: =RGBA(51, 51, 51, 1)
@@ -787,10 +787,10 @@ recycle_form_august As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey62_1.Y + DataCardKey62_1.Height + 5
+                Y: =DataCardKey13.Y + DataCardKey13.Height + 5
                 ZIndex: =2
 
-            ErrorMessage59_1 As label:
+            ErrorMessage13 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -812,10 +812,10 @@ recycle_form_august As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue45_1.Y + DataCardValue45_1.Height
+                Y: =DataCardValue11.Y + DataCardValue11.Height
                 ZIndex: =3
 
-            StarVisible59_1 As label:
+            StarVisible13 As label:
                 Align: =Align.Center
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -826,33 +826,33 @@ recycle_form_august As screen:
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
-                Height: =DataCardKey62_1.Height
+                Height: =DataCardKey13.Height
                 PaddingLeft: =0
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey62_1.Y
+                Y: =DataCardKey13.Y
                 ZIndex: =4
 
-        "'Textile/Fabric_DataCard2_1' As typedDataCard.numberEditCard":
+        "'Textile/Fabric_DataCard3' As typedDataCard.numberEditCard":
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Textile_x002f_Fabric"
             Default: =ThisItem.'Textile/Fabric'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@July_1],DataSourceInfo.DisplayName,"Textile_x002f_Fabric")
+            DisplayName: =DataSourceInfo([@August_1],DataSourceInfo.DisplayName,"Textile_x002f_Fabric")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =Value(DataCardValue46_1.Text)
+            Update: =Value(DataCardValue13.Text)
             Width: =640
             X: =0
             Y: =5
             ZIndex: =2
 
-            DataCardKey63_1 As label:
+            DataCardKey14 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -873,7 +873,7 @@ recycle_form_august As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue46_1 As text:
+            DataCardValue13 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 BorderThickness: =2
                 Color: =RGBA(51, 51, 51, 1)
@@ -902,10 +902,10 @@ recycle_form_august As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey63_1.Y + DataCardKey63_1.Height + 5
+                Y: =DataCardKey14.Y + DataCardKey14.Height + 5
                 ZIndex: =2
 
-            ErrorMessage60_1 As label:
+            ErrorMessage14 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -927,10 +927,10 @@ recycle_form_august As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue46_1.Y + DataCardValue46_1.Height
+                Y: =DataCardValue13.Y + DataCardValue13.Height
                 ZIndex: =3
 
-            StarVisible60_1 As label:
+            StarVisible14 As label:
                 Align: =Align.Center
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -941,33 +941,33 @@ recycle_form_august As screen:
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
-                Height: =DataCardKey63_1.Height
+                Height: =DataCardKey14.Height
                 PaddingLeft: =0
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey63_1.Y
+                Y: =DataCardKey14.Y
                 ZIndex: =4
 
-        "'Battery/E-Waste_DataCard2_1' As typedDataCard.numberEditCard":
+        "'Battery/E-Waste_DataCard3' As typedDataCard.numberEditCard":
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Battery_x002f_E_x002d_Waste"
             Default: =ThisItem.'Battery/E-Waste'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@July_1],DataSourceInfo.DisplayName,"Battery_x002f_E_x002d_Waste")
+            DisplayName: =DataSourceInfo([@August_1],DataSourceInfo.DisplayName,"Battery_x002f_E_x002d_Waste")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =Value(DataCardValue48_1.Text)
+            Update: =Value(DataCardValue14.Text)
             Width: =640
             X: =0
             Y: =6
             ZIndex: =2
 
-            DataCardKey65_1 As label:
+            DataCardKey15 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -988,7 +988,7 @@ recycle_form_august As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue48_1 As text:
+            DataCardValue14 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 BorderThickness: =2
                 Color: =RGBA(51, 51, 51, 1)
@@ -1017,10 +1017,10 @@ recycle_form_august As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey65_1.Y + DataCardKey65_1.Height + 5
+                Y: =DataCardKey15.Y + DataCardKey15.Height + 5
                 ZIndex: =2
 
-            ErrorMessage62_1 As label:
+            ErrorMessage15 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -1042,10 +1042,10 @@ recycle_form_august As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue48_1.Y + DataCardValue48_1.Height
+                Y: =DataCardValue14.Y + DataCardValue14.Height
                 ZIndex: =3
 
-            StarVisible62_1 As label:
+            StarVisible15 As label:
                 Align: =Align.Center
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -1056,14 +1056,14 @@ recycle_form_august As screen:
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
-                Height: =DataCardKey65_1.Height
+                Height: =DataCardKey15.Height
                 PaddingLeft: =0
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey65_1.Y
+                Y: =DataCardKey15.Y
                 ZIndex: =4
 
     Button1_2 As button:
@@ -1080,83 +1080,94 @@ recycle_form_august As screen:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
         OnSelect: |-
-            =Set(
-                var_alive2,
-                Text(DataCardValue34_1.Selected.Value)
+            =// Get value from Weight field.
+            Set(
+                paper_var,
+                Value(DataCardValue5.Text)
             );
             Set(
-               var_newPlant2,
-               Text(DataCardValue37_1.Selected.Value)
+                metal_var,
+                Value(DataCardValue8.Text)
             );
             Set(
-               var_family2,
-               Text(DataCardValue20_1.Selected.Value)
+                plastic_var,
+                Value(DataCardValue18.Text)
             );
             Set(
-               var_leaves,
-               Value(DataCardValue6_1.Text)
+                glass_var,
+                Value(DataCardValue19.Text)
             );
-            
-            // Get value from "Usernames" field.
             Set(
-                var_usernames,
-                Text(DataCardValue3_1.Selected.DisplayName)
+                textile_var,
+                Value(DataCardValue24.Text)
             );
-            
+            Set(
+                battery_var,
+                Value(DataCardValue21.Text)
+            );
+            Set(
+                others_var,
+                Value(DataCardValue25.Text)
+            );
+            // Get value from Name field.
+            Set(
+                user_name,
+                Text(DataCardValue4.Selected.DisplayName)
+            );
             If(
-               Not(IsBlank(LookUp(January_1, StartsWith(Name.DisplayName, var_usernames)))),
-               Patch(
-                  January_1,
-                  First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))),
-                  {
-                     'Leaf Input': 
-                     First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Leaf Input' + var_leaves,
-            
-                     'Alive Points': 
-                     If(var_alive2 = "Yes", 
-                     First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Alive Points' + 10, 
-                     First(Filter(January_1, StartsWith (Name.DisplayName, var_usernames))).'Alive Points' + 0),
-            
-                     'New Plant Points': 
-                     If(var_newPlant2 = "Yes", 
-                     First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points' + 10, 
-                     First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points' + 0),
-                     
-                     'Family Points': 
-                     If(var_family2 = "Yes", 
-                     First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Family Points' + 10,
-                     First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Family Points' + 0)
-                  })
-                  
-                  //Else
-                  ,
-            
-               SubmitForm(Form5_13);
-               Patch(
-                  January_1,
-                  First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))),
-                  {
-            
-                     'Alive Points': 
-                     If(var_alive2 = "Yes", 
-                     First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Alive Points' + 10, 
-                     First(Filter(January_1, StartsWith (Name.DisplayName, var_usernames))).'Alive Points' + 0),
-            
-                     'New Plant Points': 
-                     If(var_newPlant2 = "Yes", 
-                     First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points' + 10, 
-                     First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'New Plant Points' + 0),
-                     
-                     'Family Points': 
-                     If(var_family2 = "Yes", 
-                     First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Family Points' + 10,
-                     First(Filter(January_1, StartsWith(Name.DisplayName, var_usernames))).'Family Points' + 0)
-                  })
-            
+                Not(IsBlank(LookUp(July, StartsWith(Name.DisplayName, user_name)))),
+                Patch(
+                    August_1,
+                    First(Filter(August_1, StartsWith(Name.DisplayName, user_name))),
+                    {Paper: First(Filter(August_1, StartsWith(Name.DisplayName, user_name))).Paper + paper_var}
+                );
+                Patch(
+                    August_1,
+                    First(Filter(August_1, StartsWith(Name.DisplayName, user_name))),
+                    {'Metal/Aluminium': First(Filter(August_1, StartsWith(Name.DisplayName, user_name))).'Metal/Aluminium' + metal_var}
+                );
+                Patch(
+                    August_1,
+                    First(Filter(August_1, StartsWith(Name.DisplayName, user_name))),
+                    {Plastic: First(Filter(August_1, StartsWith(Name.DisplayName, user_name))).Plastic + plastic_var}
+                );
+                Patch(
+                    August_1,
+                    First(Filter(August_1, StartsWith(Name.DisplayName, user_name))),
+                    {Glass: First(Filter(August_1, StartsWith(Name.DisplayName, user_name))).Glass + glass_var}
+                );
+                Patch(
+                    August_1,
+                    First(Filter(August_1, StartsWith(Name.DisplayName, user_name))),
+                    {'Textile/Fabric': First(Filter(August_1, StartsWith(Name.DisplayName, user_name))).'Textile/Fabric' + textile_var}
+                );
+                Patch(
+                    August_1,
+                    First(Filter(August_1, StartsWith(Name.DisplayName, user_name))),
+                    {'Battery/E-Waste': First(Filter(August_1, StartsWith(Name.DisplayName, user_name))).'Battery/E-Waste' + battery_var}
+                );
+                Patch(
+                    August_1,
+                    First(Filter(August_1, StartsWith(Name.DisplayName, user_name))),
+                    {Others: First(Filter(August_1, StartsWith(Name.DisplayName, user_name))).Others + others_var}
+                );
+                ,
+                SubmitForm(Form5_13);
+                /*Patch(
+                    Recycle,
+                    First(Filter(Recycle, StartsWith(Name.DisplayName, user_name))),
+                    {
+                        Paper: paper_var,
+                        Plastic: plastic_var,
+                        'Metal/Aluminium': metal_var,
+                        Glass: glass_var,
+                        'Textile/Fabric': textile_var,
+                        'Battery/E-Waste': battery_var
+                    }
+                );*/
             );
             NewForm(Form5_13);
             ResetForm(Form5_13);
-            //Navigate(plant_adoption_main);
         PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
