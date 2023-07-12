@@ -44,6 +44,8 @@ TrashPickup_Form As screen:
         DataSource: ='Trash Pickup'
         DefaultMode: =FormMode.New
         Height: =926
+        OnFailure: =Notify("Form has not been submitted successfully", NotificationType.Error, 3000);
+        OnSuccess: =Notify("Form has been submitted successfully", NotificationType.Success, 3000);
         Width: =640
         Y: =210
         ZIndex: =10
@@ -188,7 +190,7 @@ TrashPickup_Form As screen:
                     NewForm(Form6_1);
                     ResetForm(Form6_1);
                     Navigate(trash_pickup_main);
-                    Notify("Form has been submitted successfully", NotificationType.Success, 3000);
+                    
                     
                     
                 PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
