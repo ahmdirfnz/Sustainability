@@ -1089,39 +1089,39 @@ recycle_form_august As screen:
             =// Get value from Weight field.
             Set(
                 paper_var,
-                Value(DataCardValue5.Text)
+                Value(DataCardValue7.Text)
             );
             Set(
                 metal_var,
-                Value(DataCardValue8.Text)
+                Value(DataCardValue9.Text)
             );
             Set(
                 plastic_var,
-                Value(DataCardValue18.Text)
+                Value(DataCardValue10.Text)
             );
             Set(
                 glass_var,
-                Value(DataCardValue19.Text)
+                Value(DataCardValue11.Text)
             );
             Set(
                 textile_var,
-                Value(DataCardValue24.Text)
+                Value(DataCardValue13.Text)
             );
             Set(
                 battery_var,
-                Value(DataCardValue21.Text)
+                Value(DataCardValue14.Text)
             );
             Set(
                 others_var,
-                Value(DataCardValue25.Text)
+                Value(DataCardValue15.Text)
             );
             // Get value from Name field.
             Set(
                 user_name,
-                Text(DataCardValue4.Selected.DisplayName)
+                Text(DataCardValue3.Selected.DisplayName)
             );
             If(
-                Not(IsBlank(First(Filter(August_1, StartsWith(user_name, Name.DisplayName))))),
+                Not(IsBlank(LookUp(August_1, StartsWith(Name.DisplayName, user_name)))),
                 Patch(
                     August_1,
                     First(Filter(August_1, StartsWith(Name.DisplayName, user_name))),
