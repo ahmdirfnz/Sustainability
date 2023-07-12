@@ -85,13 +85,14 @@ trash_pickup_pending As screen:
         Items: =CustomGallerySample
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
-        TemplateSize: =112
+        TemplateSize: =65
         Y: =244
         ZIndex: =6
 
         "DatePickerCanvas1 As 'Date picker'":
             DisplayMode: =DisplayMode.Edit
             Height: =38
+            Value: =
             Width: =206
             X: =0
             Y: =6
@@ -100,6 +101,7 @@ trash_pickup_pending As screen:
         "TextInputCanvas1 As 'Text input'":
             DisplayMode: =DisplayMode.Edit
             Height: =38
+            Value: =
             Width: =209
             X: =206
             Y: =6
