@@ -81,7 +81,7 @@ TrashPickup_Form As screen:
                 Font: =Font.'Segoe UI'
                 Height: =70
                 HoverDateFill: =RGBA(200, 200, 200, 1)
-                IconBackground: =RGBA(0, 120, 212, 1)
+                IconBackground: =RGBA(169, 102, 227, 100)
                 InputTextPlaceholder: ="Select Date"
                 IsEditable: =true
                 OnSelect: =
@@ -158,7 +158,7 @@ TrashPickup_Form As screen:
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =RGBA(0, 120, 212, 1)
+                Fill: =RGBA(169, 102, 227, 100)
                 FocusedBorderColor: =ColorFade(Self.Fill, -75%)
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
@@ -190,7 +190,7 @@ TrashPickup_Form As screen:
 
             Icon1_22 As icon.ChevronLeft:
                 BorderColor: =RGBA(166, 166, 166, 1)
-                Color: =RGBA(0, 120, 212, 1)
+                Color: =RGBA(169, 102, 227, 1)
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(220, 220, 220, 1)
                 DisabledFill: =RGBA(0, 0, 0, 0)

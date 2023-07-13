@@ -266,35 +266,6 @@ trash_pickup_main As screen:
         Y: =708
         ZIndex: =15
 
-    Button2_23 As button:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(169, 102, 227, 1)
-        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-        Font: =Font.Verdana
-        FontWeight: =FontWeight.Semibold
-        Height: =65
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: |-
-            =ColorValue("#38B09D")
-        OnSelect: =
-        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-        RadiusBottomLeft: =20
-        RadiusBottomRight: =20
-        RadiusTopLeft: =20
-        RadiusTopRight: =20
-        Size: =24
-        Text: ="Leaderboard"
-        Width: =475
-        X: =79
-        Y: =805
-        ZIndex: =16
-
     Circle4_3 As circle:
         BorderColor: =RGBA(166, 166, 166, 1)
         BorderStyle: =BorderStyle.None
@@ -482,8 +453,37 @@ trash_pickup_main As screen:
                     Round(First (Filter(November,User().FullName in Name.DisplayName)).'Total Points',0)
                     +
                     Round(First (Filter(December,User().FullName in Name.DisplayName)).'Total Points',0)," pts")
-        Width: =104
+        Width: =158
         X: =321
         Y: =438
         ZIndex: =28
+
+    Button2_23 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(204, 204, 204, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.Verdana
+        FontWeight: =FontWeight.Semibold
+        Height: =65
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: |-
+            =ColorValue("#38B09D")
+        OnSelect: =//Navigate(feedback,ScreenTransition.Fade)
+        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Size: =20
+        Text: ="Report (coming soon)"
+        Width: =475
+        X: =79
+        Y: =802
+        ZIndex: =29
 

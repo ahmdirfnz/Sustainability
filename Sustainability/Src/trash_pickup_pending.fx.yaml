@@ -4,13 +4,14 @@ trash_pickup_pending As screen:
     "Gallery1 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
         BorderColor: =RGBA(166, 166, 166, 1)
         DelayItemLoading: =true
-        Height: =926
+        Height: =756
         Items: ='Trash Pickup'
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplateFill: =Color.WhiteSmoke
         TemplatePadding: =20
-        TemplateSize: =116
+        TemplateSize: =161
+        Transition: =Transition.Pop
         Y: =210
         ZIndex: =1
 
@@ -51,7 +52,7 @@ trash_pickup_pending As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 185
             X: =115
-            Y: =(Parent.TemplateHeight - (Self.Size*1.8 + Subtitle2.Size*1.8 + 2 + Body1.Size*1.8)) / 2
+            Y: =30
             ZIndex: =2
 
         Subtitle2 As label:
@@ -130,19 +131,37 @@ trash_pickup_pending As screen:
 
         Rectangle3 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
-            Fill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            Fill: =ColorFade(RGBA(169, 102, 227, 100), -30%)
             Height: =Parent.TemplateHeight - Separator2.Height
             OnSelect: =Select(Parent)
             Visible: =ThisItem.IsSelected
             Width: =4
             ZIndex: =7
 
+        Label1 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =64
+            OnSelect: =Select(Parent)
+            Size: =16
+            Text: =ThisItem.'Weight (kg)' & " Kg"
+            Width: =75
+            X: =463
+            Y: =48
+            ZIndex: =8
+
     Rectangle4_3 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 1)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
         DisabledFill: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(133, 242, 99, 1)
+        Fill: =RGBA(169, 102, 227, 100)
         FocusedBorderThickness: =4
         Height: =70
         HoverFill: =RGBA(0, 120, 212, 1)
@@ -153,7 +172,7 @@ trash_pickup_pending As screen:
 
     Icon1_23 As icon.ChevronLeft:
         BorderColor: =RGBA(166, 166, 166, 1)
-        Color: =RGBA(0, 120, 212, 1)
+        Color: =RGBA(169, 102, 227, 1)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(220, 220, 220, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)
@@ -168,7 +187,26 @@ trash_pickup_pending As screen:
         PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =52
-        X: =40
-        Y: =40
+        X: =25
+        Y: =1017
         ZIndex: =5
+
+    Label13_7 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =70
+        Size: =21
+        Text: ="Cleanup History"
+        Width: =486
+        X: =77
+        Y: =40
+        ZIndex: =6
 
