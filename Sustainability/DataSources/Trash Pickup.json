@@ -33,13 +33,10 @@
       "Group_x002f_POD": "Group/POD",
       "Group_x002f_POD#Id": "Group/POD Id",
       "ID": "ID",
-      "MarkAsDone": "Mark As Done",
       "Modified": "Modified",
       "Name": "Name",
       "Name#Claims": "Name Claims",
       "OData__ColorTag": "Color Tag",
-      "PickUpScheduled_x003f_": "Pick Up Scheduled?",
-      "ScheduledDate": "Scheduled Date",
       "Score": "Score",
       "Title": "Title",
       "Weight_x0028_kg_x0029_": "Weight (kg)"
