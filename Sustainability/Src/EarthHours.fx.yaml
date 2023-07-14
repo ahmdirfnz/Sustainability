@@ -1,13 +1,40 @@
 "EarthHours As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
 
+    Button7 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(248, 246, 244, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =811
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =24
+        Text: =""
+        Width: =596
+        X: =27
+        Y: =205
+        ZIndex: =1
+
     Canvas2 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
         Height: =738
         Width: =585
         X: =33
         Y: =225
-        ZIndex: =3
+        ZIndex: =2
 
         DataCard4 As dataCard:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -82,7 +109,7 @@
         Width: =432
         X: =97
         Y: =120
-        ZIndex: =5
+        ZIndex: =3
 
     Icon1_31 As icon.ChevronLeft:
         BorderColor: =RGBA(166, 166, 166, 1)
@@ -103,5 +130,5 @@
         Width: =52
         X: =38
         Y: =1031
-        ZIndex: =6
+        ZIndex: =4
 
