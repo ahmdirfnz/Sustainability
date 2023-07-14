@@ -223,7 +223,7 @@ recycling_main As screen:
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
-        Height: =432
+        Height: =337
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
@@ -304,7 +304,7 @@ recycling_main As screen:
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(255, 197, 61, 1)
+        Fill: =RGBA(204, 204, 204, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.Verdana
         FontWeight: =FontWeight.Semibold
@@ -321,41 +321,12 @@ recycling_main As screen:
         RadiusBottomRight: =20
         RadiusTopLeft: =20
         RadiusTopRight: =20
-        Size: =24
-        Text: ="Leaderboard"
+        Size: =20
+        Text: ="Leaderboard (coming soon)"
         Width: =475
         X: =79
         Y: =760
         ZIndex: =16
-
-    Button2_20 As button:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(255, 197, 61, 1)
-        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-        Font: =Font.Verdana
-        FontWeight: =FontWeight.Semibold
-        Height: =65
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: |-
-            =ColorValue("#38B09D")
-        OnSelect: =
-        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-        RadiusBottomLeft: =20
-        RadiusBottomRight: =20
-        RadiusTopLeft: =20
-        RadiusTopRight: =20
-        Size: =24
-        Text: ="Feedback"
-        Width: =475
-        X: =82
-        Y: =857
-        ZIndex: =17
 
     Circle4_4 As circle:
         BorderColor: =RGBA(166, 166, 166, 1)

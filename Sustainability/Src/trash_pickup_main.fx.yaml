@@ -190,7 +190,7 @@ trash_pickup_main As screen:
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
-        Height: =392
+        Height: =337
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
@@ -205,7 +205,7 @@ trash_pickup_main As screen:
         Text: =""
         Width: =512
         X: =64
-        Y: =554
+        Y: =525
         ZIndex: =13
 
     Button2_21 As button:
@@ -234,7 +234,7 @@ trash_pickup_main As screen:
         Text: ="Submit Cleanup Activity"
         Width: =475
         X: =82
-        Y: =615
+        Y: =569
         ZIndex: =14
 
     Button2_22 As button:
@@ -263,7 +263,7 @@ trash_pickup_main As screen:
         Text: ="Cleanup History"
         Width: =475
         X: =82
-        Y: =708
+        Y: =661
         ZIndex: =15
 
     Circle4_3 As circle:
@@ -484,6 +484,6 @@ trash_pickup_main As screen:
         Text: ="Report (coming soon)"
         Width: =475
         X: =79
-        Y: =802
+        Y: =763
         ZIndex: =29
 
