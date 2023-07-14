@@ -132,6 +132,7 @@
   },
   "ScreenOrder": [
     "Login",
+    "Home",
     "EarthHours",
     "plant_adoption_main",
     "feedback",
@@ -167,7 +168,6 @@
     "plant_track_dec",
     "trash_pickup_pending",
     "trash_pickup_pending_1",
-    "new_home",
     "Screen1"
   ]
 }
