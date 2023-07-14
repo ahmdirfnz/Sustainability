@@ -28,136 +28,6 @@ Home As screen:
         Y: =207
         ZIndex: =1
 
-    Image8_11 As image:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
-        Height: =65
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverFill: =RGBA(0, 0, 0, 0)
-        Image: ='home (4)'
-        OnSelect: =Navigate(Home,ScreenTransition.Fade)
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =58
-        X: =291
-        Y: =1054
-        ZIndex: =8
-
-    Group3_4 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =8
-
-        Rectangle2_7 As rectangle:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            DisabledFill: =RGBA(248, 246, 244, 1)
-            Fill: =RGBA(248, 246, 244, 1)
-            FocusedBorderThickness: =4
-            HoverFill: =RGBA(248, 246, 244, 1)
-            PressedFill: =RGBA(248, 246, 244, 1)
-            Width: =640
-            Y: =1036
-            ZIndex: =2
-
-        Circle4_2 As circle:
-            BorderColor: =RGBA(166, 166, 166, 1)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            DisabledFill: =RGBA(133, 242, 99, 1)
-            Fill: =RGBA(133, 242, 99, 0.42)
-            Height: =81
-            HoverFill: =RGBA(133, 242, 99, 1)
-            OnSelect: =Navigate(plant_adoption_main,ScreenTransition.Fade)
-            PressedFill: =RGBA(133, 242, 99, 1)
-            Width: =86
-            X: =153
-            Y: =1045
-            ZIndex: =3
-
-        Image1_7 As image:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
-            Height: =51
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverFill: =RGBA(0, 0, 0, 0)
-            Image: ='plant (1)'
-            OnSelect: =Navigate(plant_adoption_main,ScreenTransition.Fade)
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedFill: =RGBA(0, 0, 0, 0)
-            Width: =62
-            X: =165
-            Y: =1059
-            ZIndex: =4
-
-        Image4_4 As image:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
-            Height: =66
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverFill: =RGBA(0, 0, 0, 0)
-            Image: =earth
-            OnSelect: =Navigate(EarthHours,ScreenTransition.Fade)
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedFill: =RGBA(0, 0, 0, 0)
-            Width: =49
-            X: =50
-            Y: =1052
-            ZIndex: =5
-
-        Image8_13 As image:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
-            Height: =64
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverFill: =RGBA(0, 0, 0, 0)
-            Image: ='recycle-symbol'
-            OnSelect: =Navigate(recycling_main,ScreenTransition.Fade) 
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedFill: =RGBA(0, 0, 0, 0)
-            Width: =53
-            X: =411
-            Y: =1054
-            ZIndex: =6
-
-        Image8_14 As image:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
-            Height: =64
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverFill: =RGBA(0, 0, 0, 0)
-            Image: =bin
-            OnSelect: =Navigate(trash_pickup_main,ScreenTransition.Fade)
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedFill: =RGBA(0, 0, 0, 0)
-            Width: =53
-            X: =530
-            Y: =1054
-            ZIndex: =7
-
     Image1_8 As image:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
@@ -373,4 +243,134 @@ Home As screen:
             X: =Title3.X
             Y: =Title3.Y + Title3.Height + 8
             ZIndex: =3
+
+    Image8_18 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =65
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: ='home (4)'
+        OnSelect: =Navigate(Home_1,ScreenTransition.Fade)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =58
+        X: =291
+        Y: =1054
+        ZIndex: =21
+
+    Group3_6 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =22
+
+        Rectangle2_9 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledFill: =RGBA(248, 246, 244, 1)
+            Fill: =RGBA(248, 246, 244, 1)
+            FocusedBorderThickness: =4
+            HoverFill: =RGBA(248, 246, 244, 1)
+            PressedFill: =RGBA(248, 246, 244, 1)
+            Width: =640
+            Y: =1036
+            ZIndex: =16
+
+        Image1_11 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =51
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: ='plant (1)'
+            OnSelect: =Navigate(plant_adoption_main,ScreenTransition.Fade)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =62
+            X: =165
+            Y: =1059
+            ZIndex: =17
+
+        Image4_7 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =66
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: =earth
+            OnSelect: =Navigate(EarthHours,ScreenTransition.Fade)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =49
+            X: =50
+            Y: =1052
+            ZIndex: =18
+
+        Image8_19 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =64
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: ='recycle-symbol'
+            OnSelect: =Navigate(recycling_main,ScreenTransition.Fade) 
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =53
+            X: =411
+            Y: =1054
+            ZIndex: =19
+
+        Image8_20 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =64
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: =bin
+            OnSelect: =Navigate(trash_pickup_main,ScreenTransition.Fade)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =53
+            X: =530
+            Y: =1054
+            ZIndex: =20
+
+    Circle4_7 As circle:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(179, 179, 179, 1)
+        Fill: =RGBA(179, 179, 179, 0.2)
+        Height: =81
+        HoverFill: =RGBA(179, 179, 179, 1)
+        OnSelect: =Navigate(plant_adoption_main,ScreenTransition.Fade)
+        PressedFill: =RGBA(179, 179, 179, 1)
+        Width: =86
+        X: =277
+        Y: =1046
+        ZIndex: =23
 

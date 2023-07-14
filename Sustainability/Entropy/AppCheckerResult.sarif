@@ -32948,49 +32948,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Home.Image8_11.AccessibleLabel"
+                  "fullyQualifiedName": "Home.Image8_18.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Home.Image8_11.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Home",
-                "type": "Home.Image8_11"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Home.Image8_11.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Home.Image8_11.TabIndex",
+                  "fullyQualifiedName": "Home.Image8_18.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Home",
-                "type": "Home.Image8_11"
+                "type": "Home.Image8_18"
               }
             }
           ],
@@ -33008,19 +32978,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Home.Circle4_2.AccessibleLabel"
+                  "fullyQualifiedName": "Home.Image8_18.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Home.Circle4_2.AccessibleLabel",
+                  "fullyQualifiedName": "Home.Image8_18.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Home",
-                "type": "Home.Circle4_2"
+                "type": "Home.Image8_18"
               }
             }
           ],
@@ -33038,19 +33008,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Home.Circle4_2.TabIndex"
+                  "fullyQualifiedName": "Home.Image8_20.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Home.Circle4_2.TabIndex",
+                  "fullyQualifiedName": "Home.Image8_20.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Home",
-                "type": "Home.Circle4_2"
+                "type": "Home.Image8_20"
               }
             }
           ],
@@ -33068,19 +33038,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Home.Image1_7.AccessibleLabel"
+                  "fullyQualifiedName": "Home.Image8_20.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Home.Image1_7.AccessibleLabel",
+                  "fullyQualifiedName": "Home.Image8_20.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Home",
-                "type": "Home.Image1_7"
+                "type": "Home.Image8_20"
               }
             }
           ],
@@ -33098,19 +33068,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Home.Image1_7.TabIndex"
+                  "fullyQualifiedName": "Home.Image8_19.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Home.Image1_7.TabIndex",
+                  "fullyQualifiedName": "Home.Image8_19.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Home",
-                "type": "Home.Image1_7"
+                "type": "Home.Image8_19"
               }
             }
           ],
@@ -33128,19 +33098,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Home.Image4_4.AccessibleLabel"
+                  "fullyQualifiedName": "Home.Image8_19.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Home.Image4_4.AccessibleLabel",
+                  "fullyQualifiedName": "Home.Image8_19.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Home",
-                "type": "Home.Image4_4"
+                "type": "Home.Image8_19"
               }
             }
           ],
@@ -33158,19 +33128,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Home.Image4_4.TabIndex"
+                  "fullyQualifiedName": "Home.Image4_7.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Home.Image4_4.TabIndex",
+                  "fullyQualifiedName": "Home.Image4_7.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Home",
-                "type": "Home.Image4_4"
+                "type": "Home.Image4_7"
               }
             }
           ],
@@ -33188,19 +33158,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Home.Image8_13.AccessibleLabel"
+                  "fullyQualifiedName": "Home.Image4_7.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Home.Image8_13.AccessibleLabel",
+                  "fullyQualifiedName": "Home.Image4_7.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Home",
-                "type": "Home.Image8_13"
+                "type": "Home.Image4_7"
               }
             }
           ],
@@ -33218,19 +33188,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Home.Image8_13.TabIndex"
+                  "fullyQualifiedName": "Home.Image1_11.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Home.Image8_13.TabIndex",
+                  "fullyQualifiedName": "Home.Image1_11.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Home",
-                "type": "Home.Image8_13"
+                "type": "Home.Image1_11"
               }
             }
           ],
@@ -33248,19 +33218,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Home.Image8_14.AccessibleLabel"
+                  "fullyQualifiedName": "Home.Image1_11.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Home.Image8_14.AccessibleLabel",
+                  "fullyQualifiedName": "Home.Image1_11.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Home",
-                "type": "Home.Image8_14"
+                "type": "Home.Image1_11"
               }
             }
           ],
@@ -33278,19 +33248,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Home.Image8_14.TabIndex"
+                  "fullyQualifiedName": "Home.Circle4_7.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Home.Image8_14.TabIndex",
+                  "fullyQualifiedName": "Home.Circle4_7.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Home",
-                "type": "Home.Image8_14"
+                "type": "Home.Circle4_7"
               }
             }
           ],
@@ -33302,6 +33272,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Home.Circle4_7.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Home.Circle4_7.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Home",
+                "type": "Home.Circle4_7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
         },
         {
           "locations": [
