@@ -300,6 +300,7 @@ Home As screen:
         Height: =483
         Items: ='Info Screen'
         LoadingSpinner: =LoadingSpinner.Data
+        ShowNavigation: =true
         TemplatePadding: =0
         TemplateSize: =411
         Width: =521
