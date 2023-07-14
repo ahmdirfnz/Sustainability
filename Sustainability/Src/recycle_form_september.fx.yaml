@@ -1236,12 +1236,12 @@ recycle_form_september As screen:
             OnSelect: |
                 =Set(SelectedMonth,ThisItem.ID);
                 If(
-                    ThisItem.ID=1,Navigate(recycle_form_september),
-                    ThisItem.ID=2,Navigate(plant_track_feb),
-                    ThisItem.ID=3,Navigate(plant_track_mac),
-                    ThisItem.ID=4,Navigate(plant_track_apr),
-                    ThisItem.ID=5,Navigate(plant_track_may),
-                    ThisItem.ID=6,Navigate(plant_track_jun),
+                    ThisItem.ID=1,Navigate(recycle_form_january),
+                    ThisItem.ID=2,Navigate(recycle_form_february),
+                    ThisItem.ID=3,Navigate(recycle_form_march),
+                    ThisItem.ID=4,Navigate(recycle_form_april),
+                    ThisItem.ID=5,Navigate(recycle_form_may),
+                    ThisItem.ID=6,Navigate(recycle_form_june),
                     ThisItem.ID=7,Navigate(recycle_form_july),
                     ThisItem.ID=8,Navigate(recycle_form_august),
                     ThisItem.ID=9,Navigate(recycle_form_september),

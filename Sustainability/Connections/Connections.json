@@ -101,14 +101,32 @@
       },
       "https://petronas.sharepoint.com/sites/sustainablity/Recycle": {
         "dataSources": {
+          "April_1": {
+            "tableName": "aa30949e-7f1a-4a0f-a20f-5a3c4e8dae53"
+          },
           "August_1": {
             "tableName": "d89dcc28-5631-4bb8-b8a3-5021df63d048"
           },
           "December_1": {
             "tableName": "181e7603-204d-4d66-913a-be32fc6a1968"
           },
+          "February_2": {
+            "tableName": "dea1bf2f-f6b2-447f-8a4f-beef54e3f1ab"
+          },
+          "January_2": {
+            "tableName": "a08386b6-d7af-4d5c-88d6-1b5356726c76"
+          },
           "July_1": {
             "tableName": "fe681b6e-96a1-4c32-86ca-af409da93bfa"
+          },
+          "June_1": {
+            "tableName": "0534193e-60ac-4af1-a4ba-61d97f6e4c2b"
+          },
+          "March_2": {
+            "tableName": "78de30a7-8c25-493a-a0d3-70a4ae79ec57"
+          },
+          "May_1": {
+            "tableName": "393b211b-16a8-407e-8b5c-c843a6e9a198"
           },
           "November_1": {
             "tableName": "ce420b16-4e5c-4f96-94a4-8f827fbc4666"
@@ -158,7 +176,13 @@
       "December_1",
       "November_1",
       "October_1",
-      "September_1"
+      "September_1",
+      "January_2",
+      "February_2",
+      "March_2",
+      "April_1",
+      "May_1",
+      "June_1"
     ],
     "dependencies": {},
     "dependents": [],
