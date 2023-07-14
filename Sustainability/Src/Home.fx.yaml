@@ -1,4 +1,4 @@
-new_home As screen:
+Home As screen:
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
 
     Button5 As button:
