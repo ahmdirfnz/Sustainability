@@ -24,6 +24,9 @@
           "Feedback": {
             "tableName": "881611d7-bd8e-40a9-8d44-089c854bb6ad"
           },
+          "Info Screen": {
+            "tableName": "b04c8c30-9e59-4e2a-b24f-ce0c94e6e5d3"
+          },
           "Plant Adoption": {
             "tableName": "7692b11c-d8a0-49c8-8770-73afe86d027b"
           },
@@ -182,7 +185,8 @@
       "March_2",
       "April_1",
       "May_1",
-      "June_1"
+      "June_1",
+      "Info Screen"
     ],
     "dependencies": {},
     "dependents": [],
