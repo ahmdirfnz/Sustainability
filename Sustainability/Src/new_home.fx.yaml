@@ -291,7 +291,7 @@ new_home As screen:
             HoverBorderColor: =RGBA(248, 246, 244, 1)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-            PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+            PressedBorderColor: =ColorFade(RGBA(0, 0, 0, 0), -0%)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
             RadiusBottomLeft: =30
@@ -312,6 +312,7 @@ new_home As screen:
             Height: =505
             Items: ='Info Screen'
             LoadingSpinner: =LoadingSpinner.Data
+            ShowNavigation: =true
             TemplatePadding: =0
             TemplateSize: =Min(440, Self.Height - 60)
             Width: =523
