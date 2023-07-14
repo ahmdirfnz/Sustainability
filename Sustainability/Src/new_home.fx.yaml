@@ -67,12 +67,12 @@ new_home As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
-        Height: =70
+        Height: =51
         Size: =21
         Text: ="Sustainability Initiatives Information"
         Width: =560
         X: =50
-        Y: =331
+        Y: =350
         ZIndex: =15
 
     Group3 As group:

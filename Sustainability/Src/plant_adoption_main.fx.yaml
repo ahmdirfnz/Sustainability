@@ -193,12 +193,12 @@ plant_adoption_main As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
-        Height: =38
+        Height: =29
         Size: =30
         Text: ="="
-        Width: =51
-        X: =168
-        Y: =406
+        Width: =35
+        X: =153
+        Y: =410
         ZIndex: =11
 
     Label16 As label:
@@ -211,7 +211,7 @@ plant_adoption_main As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
-        Height: =52
+        Height: =48
         Size: =19
         Text: |
             =Concatenate(
@@ -239,7 +239,7 @@ plant_adoption_main As screen:
                     +
                     Round(First (Filter(December,User().FullName in Name.DisplayName)).'Total Points',0)," pts")
         Width: =104
-        X: =188
+        X: =187
         Y: =404
         ZIndex: =12
 
@@ -450,7 +450,7 @@ plant_adoption_main As screen:
                 )
             )
         Width: =111
-        X: =446
+        X: =437
         Y: =408
         ZIndex: =21
 
@@ -463,12 +463,12 @@ plant_adoption_main As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
-        Height: =38
+        Height: =47
         Size: =30
         Text: ="="
-        Width: =51
-        X: =416
-        Y: =406
+        Width: =37
+        X: =400
+        Y: =401
         ZIndex: =24
 
     Image8_5 As image:
