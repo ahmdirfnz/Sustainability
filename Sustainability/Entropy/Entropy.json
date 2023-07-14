@@ -896,6 +896,7 @@
     "Glass_DataCard9": 1043,
     "Group/POD_DataCard1_1": 406,
     "Group1": 521,
+    "Group2": 1497,
     "Group2_1": 730,
     "Group2_2": 500,
     "Group2_3": 1410,
@@ -1502,7 +1503,7 @@
   "DoesTestStepsMetadataExist": true,
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/14/2023 02:11:28",
+  "HeaderLastSavedDateTimeUTC": "07/14/2023 02:13:16",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "112e14a3-c31d-4be0-85dc-d76cc3867b09": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/7960b4a89ad94311b4fd3276680292a4\"",
@@ -1666,6 +1667,10 @@
       "Image5_1": 0,
       "Label5_4": 1,
       "Label6_1": 2
+    },
+    "Group2": {
+      "Button4": 1,
+      "Gallery3": 0
     },
     "Group2_1": {
       "Circle2_2": 1,
@@ -2640,6 +2645,7 @@
     "Glass_DataCard9": {},
     "Group/POD_DataCard1_1": {},
     "Group1": {},
+    "Group2": {},
     "Group2_1": {},
     "Group2_2": {},
     "Group2_3": {},
@@ -4183,6 +4189,7 @@
     "Glass_DataCard9": 370,
     "Group/POD_DataCard1_1": 188,
     "Group1": 1435,
+    "Group2": 0,
     "Group2_1": 13,
     "Group2_2": 130,
     "Group2_3": 156,
