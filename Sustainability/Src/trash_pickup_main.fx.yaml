@@ -427,7 +427,7 @@ trash_pickup_main As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         Height: =52
-        Size: =24
+        Size: =30
         Text: |
             =Concatenate(
                 Round(First(Filter(January_1,User().FullName in Name.DisplayName)).'Total Points',0)
@@ -455,7 +455,7 @@ trash_pickup_main As screen:
                     Round(First (Filter(December,User().FullName in Name.DisplayName)).'Total Points',0)," pts")
         Width: =158
         X: =321
-        Y: =438
+        Y: =430
         ZIndex: =28
 
     Button2_23 As button:
