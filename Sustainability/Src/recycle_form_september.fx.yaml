@@ -1271,7 +1271,7 @@ recycle_form_september As screen:
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         HoverFill: =RGBA(0, 0, 0, 0)
-        Icon: =Icon.ChevronLeft
+        Icon: =Icon.BackArrow
         OnSelect: =Navigate(plant_adoption_main,ScreenTransition.CoverRight)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)

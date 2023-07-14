@@ -1088,23 +1088,23 @@ recycle_form_october As screen:
             =// Get value from Weight field.
             Set(
                 paper_var,
-                Value(DataCardValue5.Text)
+                Value(DataCardValue36.Text)
             );
             Set(
                 metal_var,
-                Value(DataCardValue8.Text)
+                Value(DataCardValue37.Text)
             );
             Set(
                 plastic_var,
-                Value(DataCardValue18.Text)
+                Value(DataCardValue38.Text)
             );
             Set(
                 glass_var,
-                Value(DataCardValue19.Text)
+                Value(DataCardValue39.Text)
             );
             Set(
                 textile_var,
-                Value(DataCardValue24.Text)
+                Value(DataCardValue40.Text)
             );
             Set(
                 battery_var,
@@ -1271,7 +1271,7 @@ recycle_form_october As screen:
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         HoverFill: =RGBA(0, 0, 0, 0)
-        Icon: =Icon.ChevronLeft
+        Icon: =Icon.BackArrow
         OnSelect: =Navigate(plant_adoption_main,ScreenTransition.CoverRight)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)

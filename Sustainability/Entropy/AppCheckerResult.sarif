@@ -17598,18 +17598,6 @@
               "message": {
                 "text": "Error occurred running rule app-InefficientDelayLoading."
               }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 12
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
             }
           ]
         }
@@ -18602,48 +18590,8 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 14,
-                  "charOffset": 65,
-                  "snippet": {
-                    "text": "DataCardValue5"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "recycle_form_october",
-                "type": "recycle_form_october.Button1_15"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "DataCardValue5"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "recycle_form_october.Button1_15.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "recycle_form_october.Button1_15.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
                   "charLength": 5,
-                  "charOffset": 79,
+                  "charOffset": 139,
                   "snippet": {
                     "text": ".Text"
                   }
@@ -18657,85 +18605,8 @@
             }
           ],
           "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "recycle_form_october.Button1_15.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "recycle_form_october.Button1_15.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 26,
-                  "charOffset": 59,
-                  "snippet": {
-                    "text": "Value(DataCardValue5.Text)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "recycle_form_october",
-                "type": "recycle_form_october.Button1_15"
-              }
-            }
-          ],
-          "message": {
             "arguments": [
-              "Value"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "recycle_form_october.Button1_15.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "recycle_form_october.Button1_15.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 14,
-                  "charOffset": 123,
-                  "snippet": {
-                    "text": "DataCardValue8"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "recycle_form_october",
-                "type": "recycle_form_october.Button1_15"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "DataCardValue8"
+              "Text"
             ],
             "id": "issue"
           },
@@ -18744,160 +18615,6 @@
           },
           "ruleId": "app-ErrInvalidName",
           "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "recycle_form_october.Button1_15.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "recycle_form_october.Button1_15.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 137,
-                  "snippet": {
-                    "text": ".Text"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "recycle_form_october",
-                "type": "recycle_form_october.Button1_15"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "recycle_form_october.Button1_15.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "recycle_form_october.Button1_15.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 26,
-                  "charOffset": 117,
-                  "snippet": {
-                    "text": "Value(DataCardValue8.Text)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "recycle_form_october",
-                "type": "recycle_form_october.Button1_15"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Value"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "recycle_form_october.Button1_15.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "recycle_form_october.Button1_15.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 15,
-                  "charOffset": 183,
-                  "snippet": {
-                    "text": "DataCardValue18"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "recycle_form_october",
-                "type": "recycle_form_october.Button1_15"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "DataCardValue18"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "recycle_form_october.Button1_15.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "recycle_form_october.Button1_15.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 198,
-                  "snippet": {
-                    "text": ".Text"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "recycle_form_october",
-                "type": "recycle_form_october.Button1_15"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
         },
         {
           "locations": [
@@ -18914,9 +18631,9 @@
                 },
                 "region": {
                   "charLength": 27,
-                  "charOffset": 177,
+                  "charOffset": 118,
                   "snippet": {
-                    "text": "Value(DataCardValue18.Text)"
+                    "text": "Value(DataCardValue37.Text)"
                   }
                 }
               },
@@ -18953,10 +18670,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 15,
-                  "charOffset": 242,
+                  "charLength": 5,
+                  "charOffset": 320,
                   "snippet": {
-                    "text": "DataCardValue19"
+                    "text": ".Text"
                   }
                 }
               },
@@ -18969,7 +18686,7 @@
           ],
           "message": {
             "arguments": [
-              "DataCardValue19"
+              "Text"
             ],
             "id": "issue"
           },
@@ -18993,47 +18710,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 5,
-                  "charOffset": 257,
-                  "snippet": {
-                    "text": ".Text"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "recycle_form_october",
-                "type": "recycle_form_october.Button1_15"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "recycle_form_october.Button1_15.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "recycle_form_october.Button1_15.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
                   "charLength": 27,
-                  "charOffset": 236,
+                  "charOffset": 299,
                   "snippet": {
-                    "text": "Value(DataCardValue19.Text)"
+                    "text": "Value(DataCardValue40.Text)"
                   }
                 }
               },
@@ -19071,124 +18751,7 @@
                 },
                 "region": {
                   "charLength": 15,
-                  "charOffset": 303,
-                  "snippet": {
-                    "text": "DataCardValue24"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "recycle_form_october",
-                "type": "recycle_form_october.Button1_15"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "DataCardValue24"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "recycle_form_october.Button1_15.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "recycle_form_october.Button1_15.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 318,
-                  "snippet": {
-                    "text": ".Text"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "recycle_form_october",
-                "type": "recycle_form_october.Button1_15"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "recycle_form_october.Button1_15.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "recycle_form_october.Button1_15.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 27,
-                  "charOffset": 297,
-                  "snippet": {
-                    "text": "Value(DataCardValue24.Text)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "recycle_form_october",
-                "type": "recycle_form_october.Button1_15"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Value"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "recycle_form_october.Button1_15.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "recycle_form_october.Button1_15.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 15,
-                  "charOffset": 364,
+                  "charOffset": 366,
                   "snippet": {
                     "text": "DataCardValue21"
                   }
@@ -19228,7 +18791,7 @@
                 },
                 "region": {
                   "charLength": 5,
-                  "charOffset": 379,
+                  "charOffset": 381,
                   "snippet": {
                     "text": ".Text"
                   }
@@ -19265,7 +18828,7 @@
                 },
                 "region": {
                   "charLength": 27,
-                  "charOffset": 358,
+                  "charOffset": 360,
                   "snippet": {
                     "text": "Value(DataCardValue21.Text)"
                   }
@@ -19305,7 +18868,7 @@
                 },
                 "region": {
                   "charLength": 15,
-                  "charOffset": 424,
+                  "charOffset": 426,
                   "snippet": {
                     "text": "DataCardValue25"
                   }
@@ -19345,7 +18908,7 @@
                 },
                 "region": {
                   "charLength": 5,
-                  "charOffset": 439,
+                  "charOffset": 441,
                   "snippet": {
                     "text": ".Text"
                   }
@@ -19382,7 +18945,7 @@
                 },
                 "region": {
                   "charLength": 27,
-                  "charOffset": 418,
+                  "charOffset": 420,
                   "snippet": {
                     "text": "Value(DataCardValue25.Text)"
                   }
@@ -19422,7 +18985,7 @@
                 },
                 "region": {
                   "charLength": 14,
-                  "charOffset": 513,
+                  "charOffset": 515,
                   "snippet": {
                     "text": "DataCardValue4"
                   }
@@ -19462,7 +19025,7 @@
                 },
                 "region": {
                   "charLength": 9,
-                  "charOffset": 527,
+                  "charOffset": 529,
                   "snippet": {
                     "text": ".Selected"
                   }
@@ -19499,7 +19062,7 @@
                 },
                 "region": {
                   "charLength": 12,
-                  "charOffset": 536,
+                  "charOffset": 538,
                   "snippet": {
                     "text": ".DisplayName"
                   }
@@ -19536,7 +19099,7 @@
                 },
                 "region": {
                   "charLength": 41,
-                  "charOffset": 508,
+                  "charOffset": 510,
                   "snippet": {
                     "text": "Text(DataCardValue4.Selected.DisplayName)"
                   }
@@ -32575,49 +32138,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EarthHours.Image3_6.AccessibleLabel"
+                  "fullyQualifiedName": "EarthHours.Icon1_31.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EarthHours.Image3_6.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "EarthHours",
-                "type": "EarthHours.Image3_6"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EarthHours.Image3_6.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EarthHours.Image3_6.TabIndex",
+                  "fullyQualifiedName": "EarthHours.Icon1_31.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "EarthHours",
-                "type": "EarthHours.Image3_6"
+                "type": "EarthHours.Icon1_31"
               }
             }
           ],
@@ -32629,6 +32162,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EarthHours.Icon1_31.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EarthHours.Icon1_31.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "EarthHours",
+                "type": "EarthHours.Icon1_31"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
         },
         {
           "locations": [

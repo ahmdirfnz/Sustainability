@@ -1,29 +1,12 @@
 "EarthHours As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
 
-    RectQuickActionBar2 As rectangle:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        Fill: =RGBA(0, 120, 212, 1)
-        Height: =88
-        Width: =Parent.Width
-        ZIndex: =1
-
-    LblAppName2 As label:
-        Align: =Align.Center
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Font: =Font.'Segoe UI'
-        Height: =88
-        Size: =27
-        Text: ="EARTH HOUR"
-        Width: =Parent.Width
-        ZIndex: =2
-
     Canvas2 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
-        Height: =Parent.Height - Self.Y
-        Width: =Parent.Width
-        Y: =RectQuickActionBar2.Y + RectQuickActionBar2.Height
+        Height: =738
+        Width: =585
+        X: =33
+        Y: =225
         ZIndex: =3
 
         DataCard4 As dataCard:
@@ -32,8 +15,8 @@
             BorderThickness: =0
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =1810
-            Width: =Parent.Width
+            Height: =1899
+            Width: =585
             X: =0
             Y: =0
             ZIndex: =1
@@ -77,26 +60,48 @@
                     
                     In conclusion, the first Earth Hour event was a success and a positive step forward towards promoting sustainability and fighting climate change. With the company's commitment and the continued support of its employees, it is hoped that more green initiatives like this will be implemented in the future, leading to a more sustainable and eco-friendly workplace."
                 Width: =560
-                X: =38
+                X: =10
                 Y: =380
                 ZIndex: =2
 
-    Image3_6 As image:
+    Label5_4 As label:
+        Align: =Align.Center
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.View
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =85
+        Size: =24
+        Text: ="Earth Hour "
+        Width: =432
+        X: =97
+        Y: =120
+        ZIndex: =5
+
+    Icon1_31 As icon.ChevronLeft:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(102, 174, 229, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)
         FocusedBorderThickness: =4
-        Height: =69
+        Height: =47
         HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         HoverFill: =RGBA(0, 0, 0, 0)
-        Image: =back
-        OnSelect: =Navigate(plant_adoption_main,ScreenTransition)
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
         PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =61
-        X: =19
-        Y: =9
-        ZIndex: =4
+        Width: =52
+        X: =38
+        Y: =1031
+        ZIndex: =6
 
