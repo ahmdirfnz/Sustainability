@@ -15,7 +15,7 @@
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =640
-        Y: =256
+        Y: =203
         ZIndex: =1
 
     Label2 As label:
@@ -34,7 +34,7 @@
         Text: ="Towards a Sustainable Future"
         Width: =525
         X: =57
-        Y: =814
+        Y: =803
         ZIndex: =2
 
     Label3 As label:
@@ -52,7 +52,7 @@
         Text: ="Where every action we take, big or small, contributes to the well-being of the planet."
         Width: =501
         X: =69
-        Y: =884
+        Y: =873
         ZIndex: =3
 
     Button2 As button:
@@ -60,11 +60,11 @@
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(32, 247, 186, 1)
+        Fill: =RGBA(56, 176, 157, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
-        Height: =70
+        Height: =81
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
@@ -79,28 +79,9 @@
         Size: =24
         Text: ="Let's get started"
         Width: =280
-        X: =180
-        Y: =994
+        X: =179
+        Y: =985
         ZIndex: =4
-
-    Label2_1 As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        Color: =RGBA(51, 51, 51, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Bold
-        Height: =86
-        Size: =25
-        Text: ="Sustainability Tracking App"
-        Width: =525
-        X: =57
-        Y: =170
-        ZIndex: =6
 
     Image3 As image:
         BorderColor: =RGBA(0, 0, 0, 0)
