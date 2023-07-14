@@ -133,6 +133,7 @@
   "ScreenOrder": [
     "Login",
     "Home",
+    "Home_1",
     "EarthHours",
     "plant_adoption_main",
     "feedback",

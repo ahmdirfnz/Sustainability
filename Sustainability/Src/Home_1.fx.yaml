@@ -1,7 +1,7 @@
-Home As screen:
+Home_1 As screen:
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
 
-    Button6 As button:
+    Button6_1 As button:
         BorderColor: =RGBA(0, 0, 0, 1)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -28,7 +28,7 @@ Home As screen:
         Y: =207
         ZIndex: =1
 
-    Image8_11 As image:
+    Image8_15 As image:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
@@ -39,7 +39,7 @@ Home As screen:
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverFill: =RGBA(0, 0, 0, 0)
         Image: ='home (4)'
-        OnSelect: =Navigate(Home,ScreenTransition.Fade)
+        OnSelect: =Navigate(Home_1,ScreenTransition.Fade)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =58
@@ -47,14 +47,14 @@ Home As screen:
         Y: =1054
         ZIndex: =8
 
-    Group3_4 As group:
+    Group3_5 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =8
 
-        Rectangle2_7 As rectangle:
+        Rectangle2_8 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -67,22 +67,7 @@ Home As screen:
             Y: =1036
             ZIndex: =2
 
-        Circle4_2 As circle:
-            BorderColor: =RGBA(166, 166, 166, 1)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            DisabledFill: =RGBA(133, 242, 99, 1)
-            Fill: =RGBA(133, 242, 99, 0.42)
-            Height: =81
-            HoverFill: =RGBA(133, 242, 99, 1)
-            OnSelect: =Navigate(plant_adoption_main,ScreenTransition.Fade)
-            PressedFill: =RGBA(133, 242, 99, 1)
-            Width: =86
-            X: =153
-            Y: =1045
-            ZIndex: =3
-
-        Image1_7 As image:
+        Image1_9 As image:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -101,7 +86,7 @@ Home As screen:
             Y: =1059
             ZIndex: =4
 
-        Image4_4 As image:
+        Image4_5 As image:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -120,7 +105,7 @@ Home As screen:
             Y: =1052
             ZIndex: =5
 
-        Image8_13 As image:
+        Image8_16 As image:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -139,7 +124,7 @@ Home As screen:
             Y: =1054
             ZIndex: =6
 
-        Image8_14 As image:
+        Image8_17 As image:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -158,7 +143,7 @@ Home As screen:
             Y: =1054
             ZIndex: =7
 
-    Image1_8 As image:
+    Image1_10 As image:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
@@ -188,7 +173,7 @@ Home As screen:
         Y: =66
         ZIndex: =9
 
-    Label1_6 As label:
+    Label1_9 As label:
         Align: =Align.Center
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
@@ -207,7 +192,7 @@ Home As screen:
         Y: =232
         ZIndex: =10
 
-    Label1_7 As label:
+    Label1_10 As label:
         Align: =Align.Center
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
@@ -226,7 +211,7 @@ Home As screen:
         Y: =275
         ZIndex: =11
 
-    Button4 As button:
+    Button4_1 As button:
         BorderColor: =RGBA(0, 0, 0, 0)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -254,7 +239,7 @@ Home As screen:
         Y: =941
         ZIndex: =12
 
-    Button5 As button:
+    Button5_1 As button:
         BorderColor: =RGBA(0, 0, 0, 0)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -281,7 +266,22 @@ Home As screen:
         Y: =416
         ZIndex: =13
 
-    Label1_8 As label:
+    Circle4_6 As circle:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(179, 179, 179, 1)
+        Fill: =RGBA(179, 179, 179, 0.2)
+        Height: =81
+        HoverFill: =RGBA(179, 179, 179, 1)
+        OnSelect: =Navigate(plant_adoption_main,ScreenTransition.Fade)
+        PressedFill: =RGBA(179, 179, 179, 1)
+        Width: =86
+        X: =277
+        Y: =1046
+        ZIndex: =14
+
+    Label1_11 As label:
         Align: =Align.Center
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
@@ -298,9 +298,9 @@ Home As screen:
         Text: ="Sustainability Initiatives Information"
         Width: =640
         Y: =354
-        ZIndex: =14
+        ZIndex: =15
 
-    "Gallery3 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver5.0'":
+    "Gallery3_2 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver5.0'":
         BorderColor: =RGBA(166, 166, 166, 1)
         DelayItemLoading: =true
         Height: =483
@@ -312,9 +312,9 @@ Home As screen:
         Width: =521
         X: =61
         Y: =428
-        ZIndex: =15
+        ZIndex: =16
 
-        Image4 As image:
+        Image4_6 As image:
             BorderThickness: =2
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledFill: =RGBA(0, 0, 0, 0)
@@ -336,7 +336,7 @@ Home As screen:
             Y: =16
             ZIndex: =1
 
-        Title3 As label:
+        Title3_1 As label:
             Color: =RGBA(50, 49, 48, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
@@ -352,10 +352,10 @@ Home As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 64
             X: =32
-            Y: =Image4.Y + Image4.Height + 16
+            Y: =Image4_6.Y + Image4_6.Height + 16
             ZIndex: =2
 
-        Subtitle3 As label:
+        Subtitle3_1 As label:
             Color: =RGBA(51, 51, 51, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
@@ -369,8 +369,8 @@ Home As screen:
             Size: =12
             Text: =ThisItem.Description
             VerticalAlign: =VerticalAlign.Top
-            Width: =Title3.Width
-            X: =Title3.X
-            Y: =Title3.Y + Title3.Height + 8
+            Width: =Title3_1.Width
+            X: =Title3_1.X
+            Y: =Title3_1.Y + Title3_1.Height + 8
             ZIndex: =3
 
