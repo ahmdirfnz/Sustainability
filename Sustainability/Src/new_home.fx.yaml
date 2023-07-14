@@ -1,6 +1,33 @@
 new_home As screen:
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
 
+    Button5 As button:
+        BorderColor: =RGBA(153, 153, 153, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(248, 246, 244, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =117
+        HoverBorderColor: =RGBA(248, 246, 244, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50
+        RadiusTopRight: =50
+        Size: =24
+        Text: ="Button"
+        Width: =549
+        X: =50
+        Y: =202
+        ZIndex: =1
+
     Button6_1 As button:
         BorderColor: =RGBA(0, 0, 0, 0)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -27,7 +54,26 @@ new_home As screen:
         Width: =560
         X: =39
         Y: =948
-        ZIndex: =17
+        ZIndex: =9
+
+    Label4 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =70
+        Size: =21
+        Text: ="Sustainability Initiatives Information"
+        Width: =560
+        X: =50
+        Y: =331
+        ZIndex: =15
 
     Group3 As group:
         Height: =5
@@ -48,7 +94,7 @@ new_home As screen:
             PressedFill: =RGBA(248, 246, 244, 1)
             Width: =640
             Y: =1036
-            ZIndex: =4
+            ZIndex: =2
 
         Circle4 As circle:
             BorderColor: =RGBA(166, 166, 166, 1)
@@ -63,7 +109,7 @@ new_home As screen:
             Width: =86
             X: =277
             Y: =1046
-            ZIndex: =6
+            ZIndex: =3
 
         Image1 As image:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -82,7 +128,7 @@ new_home As screen:
             Width: =62
             X: =165
             Y: =1059
-            ZIndex: =7
+            ZIndex: =4
 
         Image4 As image:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -101,7 +147,7 @@ new_home As screen:
             Width: =49
             X: =50
             Y: =1052
-            ZIndex: =9
+            ZIndex: =5
 
         Image8 As image:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -120,7 +166,7 @@ new_home As screen:
             Width: =53
             X: =411
             Y: =1054
-            ZIndex: =14
+            ZIndex: =6
 
         Image8_1 As image:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -139,7 +185,7 @@ new_home As screen:
             Width: =53
             X: =530
             Y: =1054
-            ZIndex: =15
+            ZIndex: =7
 
         Image8_2 As image:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -158,7 +204,7 @@ new_home As screen:
             Width: =58
             X: =291
             Y: =1052
-            ZIndex: =16
+            ZIndex: =8
 
     Group1 As group:
         Height: =5
@@ -168,7 +214,7 @@ new_home As screen:
         ZIndex: =25
 
         Image5_1 As image:
-            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderColor: =RGBA(153, 153, 153, 1)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -185,9 +231,9 @@ new_home As screen:
             RadiusTopLeft: =360
             RadiusTopRight: =360
             Width: =150
-            X: =245
-            Y: =55
-            ZIndex: =21
+            X: =249
+            Y: =83
+            ZIndex: =10
 
         Label5_4 As label:
             Align: =Align.Center
@@ -204,8 +250,8 @@ new_home As screen:
             Size: =21
             Text: =User().FullName
             Width: =640
-            Y: =205
-            ZIndex: =23
+            Y: =233
+            ZIndex: =11
 
         Label6_1 As label:
             Align: =Align.Center
@@ -222,8 +268,8 @@ new_home As screen:
             Text: |
                 =Office365Users.MyProfile().JobTitle
             Width: =640
-            Y: =244
-            ZIndex: =24
+            Y: =272
+            ZIndex: =12
 
     Group2 As group:
         Height: =5
@@ -241,7 +287,7 @@ new_home As screen:
             FocusedBorderColor: =ColorFade(Self.Fill, -75%)
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
-            Height: =566
+            Height: =532
             HoverBorderColor: =RGBA(248, 246, 244, 1)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
@@ -254,24 +300,24 @@ new_home As screen:
             RadiusTopRight: =30
             Size: =24
             Text: =""
-            Width: =560
-            X: =39
-            Y: =346
-            ZIndex: =25
+            Width: =549
+            X: =50
+            Y: =401
+            ZIndex: =13
 
         "Gallery3 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver5.0'":
             BorderColor: =RGBA(153, 153, 153, 1)
             BorderThickness: =2
             DelayItemLoading: =true
-            Height: =537
+            Height: =505
             Items: ='Info Screen'
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
             TemplateSize: =Min(440, Self.Height - 60)
-            Width: =533
-            X: =50
-            Y: =361
-            ZIndex: =26
+            Width: =523
+            X: =61
+            Y: =415
+            ZIndex: =14
 
             Image39 As image:
                 BorderThickness: =2
