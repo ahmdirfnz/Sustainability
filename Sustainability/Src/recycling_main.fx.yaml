@@ -199,17 +199,17 @@ recycling_main As screen:
                     Value(
                         First(
                             Filter(
-                                July,
+                                July_1,
                                 User().FullName in Name.DisplayName
                             )
                         ).'Total Points'
                     ),
                     0
                 ),
-                " pts.
+                " Points
             "
             )
-        Width: =128
+        Width: =219
         X: =335
         Y: =412
         ZIndex: =12

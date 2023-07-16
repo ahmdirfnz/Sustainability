@@ -1272,7 +1272,7 @@ recycle_form_april As screen:
         HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.BackArrow
-        OnSelect: =Navigate(plant_adoption_main,ScreenTransition.CoverRight)
+        OnSelect: =Navigate(recycling_main,ScreenTransition.CoverRight)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
