@@ -7,7 +7,7 @@
   },
   "Properties": {
     "AppCreationSource": "AppFromFigma",
-    "AppDescription": "fix plant adoption configuration",
+    "AppDescription": "Add Kg to datacard label and fix datacard value error on recycle form",
     "AppPreviewFlagsMap": {
       "aibuilderserviceenrollment": false,
       "allowmultiplescreensincanvaspages": false,
