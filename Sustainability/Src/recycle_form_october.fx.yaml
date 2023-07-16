@@ -1092,32 +1092,28 @@ recycle_form_october As screen:
             );
             Set(
                 metal_var,
-                Value(DataCardValue37.Text)
-            );
-            Set(
-                plastic_var,
                 Value(DataCardValue38.Text)
             );
             Set(
-                glass_var,
+                plastic_var,
                 Value(DataCardValue39.Text)
             );
             Set(
+                glass_var,
+                Value(DataCardValue53.Text)
+            );
+            Set(
                 textile_var,
-                Value(DataCardValue40.Text)
+                Value(DataCardValue54.Text)
             );
             Set(
                 battery_var,
-                Value(DataCardValue21.Text)
-            );
-            Set(
-                others_var,
-                Value(DataCardValue25.Text)
+                Value(DataCardValue56.Text)
             );
             // Get value from Name field.
             Set(
                 user_name,
-                Text(DataCardValue4.Selected.DisplayName)
+                Text(DataCardValue35.Selected.DisplayName)
             );
             If(
                 Not(IsBlank(LookUp(October_1, StartsWith(Name.DisplayName, user_name)))),
@@ -1215,7 +1211,7 @@ recycle_form_october As screen:
             =Table({ID:1, Label:"Jan"},{ID:2, Label:"Feb"},{ID:3, Label:"Mar"},{ID:4, Label:"Apr"},{ID:5, Label:"May"},{ID:6, Label:"Jun"},{ID:7, Label:"July"},{ID:8, Label:"Aug"},{ID:9, Label:"Sept"},{ID:10, Label:"Oct"},{ID:11, Label:"Nov"},{ID:12, Label:"Dec"})
         LoadingSpinner: =LoadingSpinner.Data
         TemplateSize: =120
-        Y: =166
+        Y: =161
         ZIndex: =4
 
         Button12_15 As button:
