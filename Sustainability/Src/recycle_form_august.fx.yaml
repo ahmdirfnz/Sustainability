@@ -45,7 +45,7 @@ recycle_form_august As screen:
                 Height: =48
                 PaddingLeft: =0
                 Size: =21
-                Text: =Parent.DisplayName
+                Text: ="Others (Kg)"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -412,7 +412,7 @@ recycle_form_august As screen:
                 Height: =48
                 PaddingLeft: =0
                 Size: =21
-                Text: =Parent.DisplayName
+                Text: ="Paper (Kg)"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -527,7 +527,7 @@ recycle_form_august As screen:
                 Height: =48
                 PaddingLeft: =0
                 Size: =21
-                Text: =Parent.DisplayName
+                Text: ="Metal / Aluminium (Kg)"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -642,7 +642,7 @@ recycle_form_august As screen:
                 Height: =48
                 PaddingLeft: =0
                 Size: =21
-                Text: =Parent.DisplayName
+                Text: ="Plastic (Kg)"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -757,7 +757,7 @@ recycle_form_august As screen:
                 Height: =48
                 PaddingLeft: =0
                 Size: =21
-                Text: =Parent.DisplayName
+                Text: ="Glass (Kg)"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -872,7 +872,7 @@ recycle_form_august As screen:
                 Height: =48
                 PaddingLeft: =0
                 Size: =21
-                Text: =Parent.DisplayName
+                Text: ="Textile / Fabric (Kg)"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -987,7 +987,7 @@ recycle_form_august As screen:
                 Height: =48
                 PaddingLeft: =0
                 Size: =21
-                Text: =Parent.DisplayName
+                Text: ="Battery / E-Waste (Kg)"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
