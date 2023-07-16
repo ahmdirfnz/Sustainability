@@ -1150,6 +1150,11 @@ recycle_form_march As screen:
                     First(Filter(March_2, StartsWith(Name.DisplayName, user_name))),
                     {Others: First(Filter(March_2, StartsWith(Name.DisplayName, user_name))).Others + others_var}
                 );
+                Patch(
+                    March_2,
+                    First(Filter(March_2, StartsWith(Name.DisplayName, user_name))),
+                    {Others: First(Filter(March_2, StartsWith(Name.DisplayName, user_name))).Others + others_var}
+                );
                 ,
                 SubmitForm(Form5_20);
                 /*Patch(
