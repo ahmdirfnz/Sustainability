@@ -813,15 +813,15 @@ TrashPickup_Form As screen:
                 Y: =DataCardKey35_1.Y
                 ZIndex: =4
 
-    "InfoButtonCanvas1 As 'Information button'":
-        Content: |-
-            ="1 Kg = 1 pts
-             0.5 Kg = 0.5 pts"
-        DisplayMode: =DisplayMode.Edit
-        Height: =44
-        IconSize: ='InfoButtonCanvas.IconSize'.Large
-        Width: =43
-        X: =318
-        Y: =636
-        ZIndex: =11
+            "InfoButtonCanvas1 As 'Information button'":
+                Content: |-
+                    ="1 Kg = 1 pts
+                     0.5 Kg = 0.5 pts"
+                DisplayMode: =DisplayMode.Edit
+                Height: =44
+                IconSize: ='InfoButtonCanvas.IconSize'.Large
+                Width: =43
+                X: =309
+                Y: =10
+                ZIndex: =5
 
