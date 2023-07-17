@@ -29866,36 +29866,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "TrashPickup_Form.Form6_1.'Weight (kg)_DataCard1_1'.InfoButtonCanvas1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "TrashPickup_Form.Form6_1.'Weight (kg)_DataCard1_1'.InfoButtonCanvas1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "TrashPickup_Form",
-                "type": "TrashPickup_Form.Form6_1.'Weight (kg)_DataCard1_1'.InfoButtonCanvas1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "trash_pickup_main.Circle4_3.AccessibleLabel"
                 }
               ],

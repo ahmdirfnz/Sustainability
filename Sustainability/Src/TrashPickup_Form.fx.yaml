@@ -705,7 +705,7 @@ TrashPickup_Form As screen:
             Default: =ThisItem.'Weight (kg)'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Trash Pickup'],DataSourceInfo.DisplayName,"Weight_x0028_kg_x0029_")
-            Fill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(255, 255, 255, 1)
             Height: =50
             Required: =false
             Update: =Value(DataCardValue30_1.Text)
@@ -722,6 +722,7 @@ TrashPickup_Form As screen:
                 Color: =RGBA(51, 51, 51, 1)
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                Fill: =RGBA(255, 255, 255, 1)
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
@@ -813,15 +814,22 @@ TrashPickup_Form As screen:
                 Y: =DataCardKey35_1.Y
                 ZIndex: =4
 
-            "InfoButtonCanvas1 As 'Information button'":
-                Content: |-
-                    ="1 Kg = 1 pts
-                     0.5 Kg = 0.5 pts"
-                DisplayMode: =DisplayMode.Edit
-                Height: =44
-                IconSize: ='InfoButtonCanvas.IconSize'.Large
-                Width: =43
-                X: =309
+            Icon3 As icon.Information:
+                BorderColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(220, 220, 220, 1)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                FocusedBorderThickness: =4
+                Height: =47
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Icon: =Icon.Information
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                Width: =16
+                X: =324
                 Y: =10
                 ZIndex: =5
 
