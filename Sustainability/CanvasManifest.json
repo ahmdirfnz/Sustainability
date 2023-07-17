@@ -97,7 +97,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 7,
+    "BindingErrorCount": 12,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "Phone",
@@ -116,7 +116,7 @@
     "ManualOfflineProfileId": "",
     "Name": "Sustainability Apps",
     "OriginatingVersion": "1.326",
-    "ParserErrorCount": 0,
+    "ParserErrorCount": 10,
     "ShowStatusBar": false
   },
   "PublishInfo": {
