@@ -1479,7 +1479,7 @@
   "DoesTestStepsMetadataExist": true,
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/17/2023 06:57:08",
+  "HeaderLastSavedDateTimeUTC": "07/17/2023 07:01:21",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "112e14a3-c31d-4be0-85dc-d76cc3867b09": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/shared-sharepointonl-436f868b-db70-4b92-9999-4901122fd2c7\"",
@@ -4167,7 +4167,7 @@
     "Icon1_7": 1051,
     "Icon1_8": 1095,
     "Icon1_9": 1139,
-    "Icon3": 0,
+    "Icon3": 192,
     "Icon4_1": 1424,
     "Image_DataCard1": 195,
     "Image1_1": 80,
