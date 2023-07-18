@@ -7,7 +7,7 @@
   },
   "Properties": {
     "AppCreationSource": "AppFromFigma",
-    "AppDescription": "Fix back button at recycle form",
+    "AppDescription": "Fix tracking button function on user fullname and name.displayname on sharepoint list.",
     "AppPreviewFlagsMap": {
       "aibuilderserviceenrollment": false,
       "allowmultiplescreensincanvaspages": false,

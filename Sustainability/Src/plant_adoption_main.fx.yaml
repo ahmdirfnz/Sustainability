@@ -141,7 +141,8 @@ plant_adoption_main As screen:
             FontWeight: =FontWeight.Bold
             Height: =42
             Size: =20
-            Text: =User().FullName
+            Text: |
+                =User().FullName
             Width: =382
             X: =97
             Y: =281
@@ -329,7 +330,7 @@ plant_adoption_main As screen:
             =
             If(
                 IsEmpty(
-                    Filter('Plant Registration', Name.DisplayName)
+                    Filter('Plant Registration', User().FullName = Name.DisplayName)
                 ),
                 Notify("You are not registered. Please register first.", NotificationType.Error),
                 Navigate(plant_track_jul, ScreenTransition.Fade)
