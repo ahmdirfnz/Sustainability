@@ -1086,6 +1086,7 @@ recycle_form_january As screen:
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
         OnSelect: |-
             =// Get value from Weight field.
+            /*
             Set(
                 paper_var,
                 Value(DataCardValue33.Text)
@@ -1118,6 +1119,10 @@ recycle_form_january As screen:
             Set(
                 user_name,
                 Text(DataCardValue16.Selected.DisplayName)
+            );
+            Set(
+                showPopup,
+                true
             );
             If(
                 Not(IsBlank(LookUp(January_2, StartsWith(Name.DisplayName, user_name)))),
@@ -1158,21 +1163,10 @@ recycle_form_january As screen:
                 );
                 ,
                 SubmitForm(Form5_18);
-                /*Patch(
-                    Recycle,
-                    First(Filter(Recycle, StartsWith(Name.DisplayName, user_name))),
-                    {
-                        Paper: paper_var,
-                        Plastic: plastic_var,
-                        'Metal/Aluminium': metal_var,
-                        Glass: glass_var,
-                        'Textile/Fabric': textile_var,
-                        'Battery/E-Waste': battery_var
-                    }
-                );*/
             );
             NewForm(Form5_18);
-            ResetForm(Form5_18);
+            ResetForm(Form5_18); */
+            UpdateContext({showPopup: true});
         PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
@@ -1296,13 +1290,14 @@ recycle_form_january As screen:
         Container2 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Light
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =225
+            Height: =273
             RadiusBottomLeft: =4
             RadiusBottomRight: =4
             RadiusTopLeft: =4
             RadiusTopRight: =4
-            X: =75
-            Y: =498
+            Width: =526
+            X: =64
+            Y: =462
             ZIndex: =1
 
             Button8 As button:
@@ -1310,7 +1305,7 @@ recycle_form_january As screen:
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =RGBA(0, 120, 212, 1)
+                Fill: =RGBA(255, 191, 0, 1)
                 FocusedBorderColor: =ColorFade(Self.Fill, -75%)
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
@@ -1318,19 +1313,112 @@ recycle_form_january As screen:
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-                OnSelect: =Notify("Yes");UpdateContext({showPopup, true});
+                OnSelect: |-
+                    =// Get value from Weight field.
+                    Set(
+                        paper_var,
+                        Value(DataCardValue33.Text)
+                    );
+                    Set(
+                        metal_var,
+                        Value(DataCardValue57.Text)
+                    );
+                    Set(
+                        plastic_var,
+                        Value(DataCardValue66.Text)
+                    );
+                    Set(
+                        glass_var,
+                        Value(DataCardValue75.Text)
+                    );
+                    Set(
+                        textile_var,
+                        Value(DataCardValue76.Text)
+                    );
+                    Set(
+                        battery_var,
+                        Value(DataCardValue77.Text)
+                    );
+                    Set(
+                        others_var,
+                        Value(DataCardValue78.Text)
+                    );
+                    // Get value from Name field.
+                    Set(
+                        user_name,
+                        Text(DataCardValue16.Selected.DisplayName)
+                    );
+                    Set(
+                        showPopup,
+                        true
+                    );
+                    If(
+                        Not(IsBlank(LookUp(January_2, StartsWith(Name.DisplayName, user_name)))),
+                        Patch(
+                            January_2,
+                            First(Filter(January_2, StartsWith(Name.DisplayName, user_name))),
+                            {Paper: First(Filter(January_2, StartsWith(Name.DisplayName, user_name))).Paper + paper_var}
+                        );
+                        Patch(
+                            January_2,
+                            First(Filter(January_2, StartsWith(Name.DisplayName, user_name))),
+                            {'Metal/Aluminium': First(Filter(January_2, StartsWith(Name.DisplayName, user_name))).'Metal/Aluminium' + metal_var}
+                        );
+                        Patch(
+                            January_2,
+                            First(Filter(January_2, StartsWith(Name.DisplayName, user_name))),
+                            {Plastic: First(Filter(January_2, StartsWith(Name.DisplayName, user_name))).Plastic + plastic_var}
+                        );
+                        Patch(
+                            January_2,
+                            First(Filter(January_2, StartsWith(Name.DisplayName, user_name))),
+                            {Glass: First(Filter(January_2, StartsWith(Name.DisplayName, user_name))).Glass + glass_var}
+                        );
+                        Patch(
+                            January_2,
+                            First(Filter(January_2, StartsWith(Name.DisplayName, user_name))),
+                            {'Textile/Fabric': First(Filter(January_2, StartsWith(Name.DisplayName, user_name))).'Textile/Fabric' + textile_var}
+                        );
+                        Patch(
+                            January_2,
+                            First(Filter(January_2, StartsWith(Name.DisplayName, user_name))),
+                            {'Battery/E-Waste': First(Filter(January_2, StartsWith(Name.DisplayName, user_name))).'Battery/E-Waste' + battery_var}
+                        );
+                        Patch(
+                            January_2,
+                            First(Filter(January_2, StartsWith(Name.DisplayName, user_name))),
+                            {Others: First(Filter(January_2, StartsWith(Name.DisplayName, user_name))).Others + others_var}
+                        );
+                        ,
+                        SubmitForm(Form5_18);
+                        /*Patch(
+                            Recycle,
+                            First(Filter(Recycle, StartsWith(Name.DisplayName, user_name))),
+                            {
+                                Paper: paper_var,
+                                Plastic: plastic_var,
+                                'Metal/Aluminium': metal_var,
+                                Glass: glass_var,
+                                'Textile/Fabric': textile_var,
+                                'Battery/E-Waste': battery_var
+                            }
+                        );*/
+                    );
+                    NewForm(Form5_18);
+                    ResetForm(Form5_18);
+                    UpdateContext({showPopup: false});
                 PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
                 Size: =24
                 Text: ="Yes"
-                Width: =140
-                X: =72
-                Y: =141
+                Width: =148
+                X: =70
+                Y: =160
                 ZIndex: =1
 
             Button8_1 As button:
@@ -1338,7 +1426,7 @@ recycle_form_january As screen:
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =RGBA(0, 120, 212, 1)
+                Fill: =RGBA(255, 191, 0, 1)
                 FocusedBorderColor: =ColorFade(Self.Fill, -75%)
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
@@ -1346,19 +1434,20 @@ recycle_form_january As screen:
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-                OnSelect: =Notify("No");UpdateContext({showPopup, false});
+                OnSelect: |-
+                    =UpdateContext({showPopup: false});
                 PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
                 Size: =24
                 Text: ="No"
-                Width: =140
-                X: =271
-                Y: =141
+                Width: =148
+                X: =300
+                Y: =160
                 ZIndex: =2
 
             Label4 As label:
@@ -1373,9 +1462,9 @@ recycle_form_january As screen:
                 Font: =Font.'Segoe UI'
                 Height: =70
                 Size: =21
-                Text: ="Are you sure?"
-                Width: =236
-                X: =123
-                Y: =45
+                Text: ="Please ensure that all the data is correct."
+                Width: =356
+                X: =92
+                Y: =57
                 ZIndex: =3
 
