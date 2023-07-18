@@ -329,10 +329,7 @@ plant_adoption_main As screen:
             =
             If(
                 IsEmpty(
-                    Filter(
-                        'Plant Registration',
-                        User().FullName in Name.DisplayName
-                    )
+                    Filter('Plant Registration', Name.DisplayName)
                 ),
                 Notify("You are not registered. Please register first.", NotificationType.Error),
                 Navigate(plant_track_jul, ScreenTransition.Fade)
