@@ -1,4 +1,5 @@
 TrashPickup_Form As screen:
+    LoadingSpinner: =LoadingSpinner.Data
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
 
     Label13_6 As label:
@@ -289,7 +290,7 @@ TrashPickup_Form As screen:
                 Height: =48
                 PaddingLeft: =0
                 Size: =21
-                Text: =Parent.DisplayName
+                Text: ="Cleanup Image"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -323,7 +324,7 @@ TrashPickup_Form As screen:
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =RGBA(0, 120, 212, 1)
+                Fill: =RGBA(169, 102, 227, 100)
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 Height: =320
@@ -334,6 +335,7 @@ TrashPickup_Form As screen:
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 Size: =24
+                Text: =" Add a picture"
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardKey6.Y + DataCardKey6.Height + 5
