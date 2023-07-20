@@ -251,7 +251,23 @@ trash_pickup_main As screen:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: |-
             =ColorValue("#38B09D")
-        OnSelect: =Navigate(trash_pickup_pending,ScreenTransition.Fade)
+        OnSelect: |-
+            =If(
+                IsEmpty(
+                    Filter(
+                        'Trash Pickup',
+                        User().Email in 'Creator Email'
+                    )
+                ),
+                Notify(
+                    "Please ensure you have submitted the form before accessing the history.",
+                    NotificationType.Error
+                ),
+                Navigate(
+                    trash_pickup_pending,
+                    ScreenTransition.Fade
+                )
+            )
         PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)

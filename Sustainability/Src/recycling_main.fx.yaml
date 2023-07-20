@@ -194,21 +194,8 @@ recycling_main As screen:
         Height: =45
         Size: =23
         Text: |-
-            =Concatenate(
-                Round(
-                    Value(
-                        First(
-                            Filter(
-                                July_1,
-                                User().FullName in Name.DisplayName
-                            )
-                        ).'Total Points'
-                    ),
-                    0
-                ),
-                " Points
-            "
-            )
+            =Concatenate(Round(Value(First(Filter(July_1,User().FullName in Name.DisplayName)).'Total Points'),0)," Points
+            ")
         Width: =219
         X: =335
         Y: =412
