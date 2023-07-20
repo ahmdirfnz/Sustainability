@@ -426,34 +426,26 @@ trash_pickup_main As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
-        Height: =52
+        FontWeight: =FontWeight.Semibold
+        Height: =45
         Size: =30
         Text: |
             =Concatenate(
-                Round(First(Filter(January_1,User().FullName in Name.DisplayName)).'Total Points',0)
-                    +
-                Round(First(Filter(February,User().FullName in Name.DisplayName)).'Total Points',0)
-                    + 
-                Round(First (Filter(March,User().FullName in Name.DisplayName)).'Total Points',0)
-                    +
-                Round(First (Filter(April,User().FullName in Name.DisplayName)).'Total Points',0)
-                    +
-                    Round(First (Filter(May,User().FullName in Name.DisplayName)).'Total Points',0)
-                    +
-                    Round(First (Filter(June,User().FullName in Name.DisplayName)).'Total Points',0)
-                    +
-                    Round(First (Filter(July,User().FullName in Name.DisplayName)).'Total Points',0)
-                    +
-                    Round(First (Filter(August,User().FullName in Name.DisplayName)).'Total Points',0)
-                    +
-                    Round(First (Filter(September,User().FullName in Name.DisplayName)).'Total Points',0)
-                    +
-                    Round(First (Filter(October,User().FullName in Name.DisplayName)).'Total Points',0)
-                    +
-                    Round(First (Filter(November,User().FullName in Name.DisplayName)).'Total Points',0)
-                    +
-                    Round(First (Filter(December,User().FullName in Name.DisplayName)).'Total Points',0)," pts")
-        Width: =158
+                Round(
+                    Value(
+                        First(
+                            Filter(
+                                'Trash Pickup',
+                                User().Email = 'Creator Email'
+                            )
+                        ).'Weight (kg)'
+                    ),
+                    0
+                ),
+                " Points
+            "
+            )
+        Width: =209
         X: =321
         Y: =430
         ZIndex: =28
