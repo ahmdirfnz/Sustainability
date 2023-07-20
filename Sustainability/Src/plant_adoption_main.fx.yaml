@@ -215,7 +215,10 @@ plant_adoption_main As screen:
         Height: =48
         Size: =19
         Text: |
-            =Concatenate(
+            =If(
+                IsEmpty(Filter('Plant Registration', User().FullName in Name.DisplayName)),
+                " - ",
+            Concatenate(
                 Round(First(Filter(January_1,User().FullName in Name.DisplayName)).'Total Points',0)
                     +
                 Round(First(Filter(February,User().FullName in Name.DisplayName)).'Total Points',0)
@@ -239,6 +242,9 @@ plant_adoption_main As screen:
                     Round(First (Filter(November,User().FullName in Name.DisplayName)).'Total Points',0)
                     +
                     Round(First (Filter(December,User().FullName in Name.DisplayName)).'Total Points',0)," pts")
+            
+            
+            )
         Width: =104
         X: =187
         Y: =404
