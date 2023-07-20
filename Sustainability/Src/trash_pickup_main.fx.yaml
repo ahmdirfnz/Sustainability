@@ -417,7 +417,6 @@ trash_pickup_main As screen:
             ZIndex: =25
 
     Label16_2 As label:
-        Align: =Align.Center
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
@@ -427,27 +426,19 @@ trash_pickup_main As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
-        Height: =45
-        Size: =30
-        Text: |
-            =Concatenate(
-                Round(
-                    Value(
-                        First(
-                            Filter(
-                                'Trash Pickup',
-                                User().Email = 'Creator Email'
-                            )
-                        ).'Weight (kg)'
-                    ),
-                    0
+        Height: =76
+        Size: =26
+        Text: |-
+            =Sum(
+                Filter(
+                    'Trash Pickup',
+                    'Creator Email' = User().Email
                 ),
-                " Points
-            "
-            )
-        Width: =209
+                'Weight (kg)'
+            ) & " Points"
+        Width: =213
         X: =321
-        Y: =430
+        Y: =421
         ZIndex: =28
 
     Button2_23 As button:
