@@ -692,7 +692,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button6_1",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1471,7 +1471,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Image1_10",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3642,7 +3642,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label1_9",
-      "ParentIndex": 2,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

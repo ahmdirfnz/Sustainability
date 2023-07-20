@@ -216,32 +216,32 @@ plant_adoption_main As screen:
         Size: =19
         Text: |
             =If(
-                IsEmpty(Filter('Plant Registration', User().FullName in Name.DisplayName)),
+                IsEmpty(Filter('Plant Registration', Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)),
                 " - ",
             Concatenate(
-                Round(First(Filter(January_1,User().FullName in Name.DisplayName)).'Total Points',0)
+                Round(First(Filter(January_1,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
                     +
-                Round(First(Filter(February,User().FullName in Name.DisplayName)).'Total Points',0)
+                Round(First(Filter(February,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
                     + 
-                Round(First (Filter(March,User().FullName in Name.DisplayName)).'Total Points',0)
+                Round(First (Filter(March,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
                     +
-                Round(First (Filter(April,User().FullName in Name.DisplayName)).'Total Points',0)
+                Round(First (Filter(April,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
                     +
-                    Round(First (Filter(May,User().FullName in Name.DisplayName)).'Total Points',0)
+                    Round(First (Filter(May,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
                     +
-                    Round(First (Filter(June,User().FullName in Name.DisplayName)).'Total Points',0)
+                    Round(First (Filter(June,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
                     +
-                    Round(First (Filter(July,User().FullName in Name.DisplayName)).'Total Points',0)
+                    Round(First (Filter(July,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
                     +
-                    Round(First (Filter(August,User().FullName in Name.DisplayName)).'Total Points',0)
+                    Round(First (Filter(August,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
                     +
-                    Round(First (Filter(September,User().FullName in Name.DisplayName)).'Total Points',0)
+                    Round(First (Filter(September,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
                     +
-                    Round(First (Filter(October,User().FullName in Name.DisplayName)).'Total Points',0)
+                    Round(First (Filter(October,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
                     +
-                    Round(First (Filter(November,User().FullName in Name.DisplayName)).'Total Points',0)
+                    Round(First (Filter(November,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
                     +
-                    Round(First (Filter(December,User().FullName in Name.DisplayName)).'Total Points',0)," pts")
+                    Round(First (Filter(December,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)," pts")
             
             
             )
@@ -446,10 +446,10 @@ plant_adoption_main As screen:
         Size: =19
         Text: |
             =If(
-                IsEmpty(Filter('Plant Registration', User().FullName in Name.DisplayName)),
+                IsEmpty(Filter('Plant Registration', Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)),
                 " - ",
                 Concatenate(
-                    Round(Today() - First(Filter('Plant Registration', User().FullName in Name.DisplayName)).'First Day', 0),
+                    Round(Today() - First(Filter('Plant Registration', Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'First Day', 0),
                     " Days"
                 )
             )
