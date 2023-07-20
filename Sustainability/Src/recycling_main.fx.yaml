@@ -226,10 +226,10 @@ recycling_main As screen:
         Height: =337
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+        HoverFill: =ColorFade(RGBA(236, 236, 235,0), -0%)
+        PressedBorderColor: =ColorFade(RGBA(236, 236, 235,0), -0%)
         PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        PressedFill: =ColorFade(RGBA(236, 236, 235,0), -0%)
         RadiusBottomLeft: =30
         RadiusBottomRight: =30
         RadiusTopLeft: =30
