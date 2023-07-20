@@ -110,11 +110,11 @@
     "DocumentType": "App",
     "EnableInstrumentation": false,
     "FileID": "720ca52c-4ba4-458a-8637-2fba6ce90084",
-    "Id": "addf4f13-530a-41eb-804b-f61571d4c997",
+    "Id": "e0b98b43-c444-4822-9d75-9a74b4117d23",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
     "ManualOfflineProfileId": "",
-    "Name": "Sustainability Apps",
+    "Name": "Sustainability+Apps.msapp",
     "OriginatingVersion": "1.326",
     "ParserErrorCount": 0,
     "ShowStatusBar": false
