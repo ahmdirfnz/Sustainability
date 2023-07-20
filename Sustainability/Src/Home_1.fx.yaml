@@ -185,11 +185,10 @@ Home_1 As screen:
         FocusedBorderThickness: =4
         Font: =Font.Verdana
         FontWeight: =FontWeight.Bold
-        Height: =43
+        Height: =80
         Size: =20
-        Text: =User().FullName
+        Text: =Office365Users.UserProfile(User().Email).DisplayName
         Width: =640
-        Y: =232
         ZIndex: =10
 
     Label1_10 As label:
