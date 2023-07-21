@@ -1,45 +1,12 @@
 Screen1 As screen:
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
 
-    CompositeColumnChart2 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =1
-
-        Title5 As label:
-            Align: =Align.Center
-            Color: =RGBA(51, 51, 51, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Bold
-            Height: =41
-            Size: =15
-            Text: ="January Leaderboard"
-            Width: =400
-            X: =125
-            Y: =162
-            ZIndex: =2
-
-        ColumnChart2 As barChart:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderThickness: =2
-            Color: =RGBA(51, 51, 51, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            Font: =Font.'Segoe UI'
-            Height: =542
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            ItemColorSet: =[]
-            Items: =AddColumns(January_1, "Person", ThisRecord.Name.DisplayName)
-            ItemsGap: |
-                =10
-            MarkerSuffix: ="pts"
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            Size: =15
-            Width: =571
-            X: =40
-            XLabelAngle: =90
-            Y: =211
-            ZIndex: =3
+    PowerBI1 As powerbi:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        DashboardId: ="5ece590d-eae0-4355-bd3f-cab54fd11bed"
+        Height: =1136
+        TileUrl: |-
+            ="https://app.powerbi.com/embed?dashboardId=5ece590d-eae0-4355-bd3f-cab54fd11bed&tileId=a12a5029-0214-407e-bd7b-d1845976ae0f&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLVNPVVRILUVBU1QtQVNJQS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
+        WorkspaceId: ="da8ede2a-7d65-4691-8e94-d36a98f95135"
+        ZIndex: =4
 
