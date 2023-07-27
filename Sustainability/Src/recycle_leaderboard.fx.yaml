@@ -22,8 +22,10 @@ recycle_leaderboard As screen:
         DelayItemLoading: =true
         Fill: =RGBA(255, 255, 255, 1)
         Height: =810
-        Items: |
-            =Sort(July,"Total_x0020_Points", SortOrder.Descending)
+        Items: |+
+            =Sort(July_1,Value('Total Points'), SortOrder.Descending)
+            
+            
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
