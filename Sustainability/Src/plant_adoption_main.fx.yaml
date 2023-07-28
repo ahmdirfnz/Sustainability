@@ -361,7 +361,7 @@ plant_adoption_main As screen:
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(204, 204, 204, 1)
+        Fill: =RGBA(133, 242, 99, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.Verdana
         FontWeight: =FontWeight.Semibold
@@ -378,8 +378,8 @@ plant_adoption_main As screen:
         RadiusBottomRight: =20
         RadiusTopLeft: =20
         RadiusTopRight: =20
-        Size: =20
-        Text: ="Leaderboard (coming soon)"
+        Size: =24
+        Text: ="Leaderboard"
         Width: =475
         X: =79
         Y: =760
