@@ -10,7 +10,7 @@ plant_leaderboard As screen:
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
-        Height: =695
+        Height: =774
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(236, 236, 235,0), -0%)
@@ -24,8 +24,8 @@ plant_leaderboard As screen:
         Size: =24
         Text: =""
         Width: =590
-        X: =23
-        Y: =346
+        X: =25
+        Y: =218
         ZIndex: =1
 
     "Gallery3_3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
@@ -34,16 +34,17 @@ plant_leaderboard As screen:
         BorderThickness: =1
         DelayItemLoading: =true
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =656
-        Items: |
-            =Sort(January_1,Value('Total Points'), SortOrder.Descending)
+        Height: =711
+        Items: |+
+            =Sort('Plant Adoption Total Points',Value('Total Points'), SortOrder.Descending)
+            
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =93
         Width: =561
-        X: =37
-        Y: =363
+        X: =39
+        Y: =235
         ZIndex: =3
 
         Title2_2 As label:
@@ -142,4 +143,75 @@ plant_leaderboard As screen:
         X: =91
         Y: =120
         ZIndex: =6
+
+    Button11 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(133, 242, 99, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+        OnSelect: |-
+            =Set(
+                var_PlantTotalPoints,
+                Round(
+                    First(Filter(January_1, Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points', 0
+                )
+                + Round(
+                    First(Filter(February, Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points', 0
+                )
+                + Round(
+                    First(Filter(March, Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points', 0
+                )
+                + Round(
+                    First(Filter(April, Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points', 0
+                )
+                + Round(
+                    First(Filter(May, Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points', 0
+                )
+                + Round(
+                    First(Filter(June, Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points', 0
+                )
+                + Round(
+                    First(Filter(July, Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points', 0
+                )
+                + Round(
+                    First(Filter(August, Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points', 0
+                )
+                + Round(
+                    First(Filter(September, Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points', 0
+                )
+                + Round(
+                    First(Filter(October, Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points', 0
+                )
+                + Round(
+                    First(Filter(November, Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points', 0
+                )
+                + Round(
+                    First(Filter(December, Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points', 0
+                )
+            );
+            
+            // Patch the values to the SharePoint list
+            
+            SubmitForm(Form1)
+        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Size: =24
+        Text: ="Refresh"
+        Width: =280
+        X: =180
+        Y: =1030
+        ZIndex: =7
 
