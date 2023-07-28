@@ -91,6 +91,9 @@
           "October": {
             "tableName": "45f74c01-a8bd-4dcd-8633-d244de9567f8"
           },
+          "Plant Adoption Total Points": {
+            "tableName": "f85d9a37-c51a-4bcb-89f3-e5d7cb77f0ce"
+          },
           "Plant Registration": {
             "tableName": "48a3a86a-1642-4f16-8ecb-21bdbdde4e09"
           },
@@ -186,7 +189,8 @@
       "April_1",
       "May_1",
       "June_1",
-      "Info Screen"
+      "Info Screen",
+      "Plant Adoption Total Points"
     ],
     "dependencies": {},
     "dependents": [],
