@@ -370,7 +370,7 @@ plant_adoption_main As screen:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: |-
             =ColorValue("#38B09D")
-        OnSelect: =//Navigate(plant_leaderboard,ScreenTransition.Fade)
+        OnSelect: =Navigate(plant_leaderboard,ScreenTransition.Fade)
         PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
