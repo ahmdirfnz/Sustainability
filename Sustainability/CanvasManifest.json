@@ -7,7 +7,7 @@
   },
   "Properties": {
     "AppCreationSource": "AppFromFigma",
-    "AppDescription": "Fix tracking button function on user fullname and name.displayname on sharepoint list.",
+    "AppDescription": "Add Leaderboard Feature",
     "AppPreviewFlagsMap": {
       "aibuilderserviceenrollment": false,
       "allowmultiplescreensincanvaspages": false,
@@ -112,7 +112,7 @@
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
     "ManualOfflineProfileId": "",
-    "Name": "Sustainability+Apps.msapp",
+    "Name": "Sustainability Apps",
     "OriginatingVersion": "1.326",
     "ParserErrorCount": 0,
     "ShowStatusBar": false
