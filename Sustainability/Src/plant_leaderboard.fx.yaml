@@ -144,83 +144,6 @@ plant_leaderboard As screen:
         Y: =120
         ZIndex: =6
 
-    Button11 As button:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(133, 242, 99, 1)
-        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Semibold
-        Height: =70
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-        OnSelect: |
-            =
-            Set(
-                var_PlantTotalPoints,
-                Round(First(Filter(January_1,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
-                    +
-                Round(First(Filter(February,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
-                    + 
-                Round(First (Filter(March,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
-                    +
-                Round(First (Filter(April,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
-                    +
-                    Round(First (Filter(May,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
-                    +
-                    Round(First (Filter(June,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
-                    +
-                    Round(First (Filter(July,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
-                    +
-                    Round(First (Filter(August,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
-                    +
-                    Round(First (Filter(September,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
-                    +
-                    Round(First (Filter(October,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
-                    +
-                    Round(First (Filter(November,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
-                    +
-                    Round(First (Filter(December,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0));
-            
-            
-            
-            If(
-               Not(IsBlank(LookUp('Plant Adoption Total Points', StartsWith(Name.DisplayName, Office365Users.UserProfile(User().Email).DisplayName)))),
-               Patch(
-                  'Plant Adoption Total Points',
-                  First(Filter('Plant Adoption Total Points', StartsWith(Name.DisplayName, Office365Users.UserProfile(User().Email).DisplayName))),
-                  {
-                     'Total Points':
-                     var_PlantTotalPoints
-            
-                  }
-                  )
-                  
-                  //Else
-                  ,
-            
-               SubmitForm(Form1);
-            
-            );
-            NewForm(Form1);
-            ResetForm(Form1);
-        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-        RadiusBottomLeft: =30
-        RadiusBottomRight: =30
-        RadiusTopLeft: =30
-        RadiusTopRight: =30
-        Size: =24
-        Text: ="Refresh"
-        Width: =280
-        X: =180
-        Y: =1019
-        ZIndex: =7
-
     Rectangle1 As rectangle:
         BorderColor: =RGBA(128, 128, 128, 1)
         BorderThickness: =1
@@ -293,4 +216,128 @@ plant_leaderboard As screen:
         X: =38
         Y: =1031
         ZIndex: =11
+
+    Label6 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =66
+        Size: =12
+        Text: |-
+            ="note: 
+            The standings may have changed since you last checked. Please refresh the 
+            page to see the latest results."
+        Width: =561
+        X: =39
+        Y: =934
+        ZIndex: =12
+
+    Group1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =14
+
+        Button11 As button:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(133, 242, 99, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =58
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+            OnSelect: |
+                =
+                Set(
+                    var_PlantTotalPoints,
+                    Round(First(Filter(January_1,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                        +
+                    Round(First(Filter(February,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                        + 
+                    Round(First (Filter(March,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                        +
+                    Round(First (Filter(April,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                        +
+                        Round(First (Filter(May,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                        +
+                        Round(First (Filter(June,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                        +
+                        Round(First (Filter(July,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                        +
+                        Round(First (Filter(August,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                        +
+                        Round(First (Filter(September,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                        +
+                        Round(First (Filter(October,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                        +
+                        Round(First (Filter(November,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                        +
+                        Round(First (Filter(December,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0));
+                
+                
+                
+                If(
+                   Not(IsBlank(LookUp('Plant Adoption Total Points', StartsWith(Name.DisplayName, Office365Users.UserProfile(User().Email).DisplayName)))),
+                   Patch(
+                      'Plant Adoption Total Points',
+                      First(Filter('Plant Adoption Total Points', StartsWith(Name.DisplayName, Office365Users.UserProfile(User().Email).DisplayName))),
+                      {
+                         'Total Points':
+                         var_PlantTotalPoints
+                
+                      }
+                      )
+                      
+                      //Else
+                      ,
+                
+                   SubmitForm(Form1);
+                
+                );
+                NewForm(Form1);
+                ResetForm(Form1);
+            PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            RadiusBottomLeft: =30
+            RadiusBottomRight: =30
+            RadiusTopLeft: =30
+            RadiusTopRight: =30
+            Size: =24
+            Text: =""
+            Width: =111
+            X: =264
+            Y: =1025
+            ZIndex: =7
+
+        Icon2 As icon.Reload:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =6
+            Height: =44
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.Reload
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =29
+            X: =305
+            Y: =1031
+            ZIndex: =13
 
