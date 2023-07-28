@@ -29,12 +29,10 @@ plant_leaderboard As screen:
         ZIndex: =1
 
     "Gallery3_3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
-        BorderColor: =RGBA(166, 166, 166, 1)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =1
+        BorderThickness: =2
         DelayItemLoading: =true
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =711
+        Height: =677
         Items: |+
             =Sort('Plant Adoption Total Points',Value('Total Points'), SortOrder.Descending)
             
@@ -44,7 +42,7 @@ plant_leaderboard As screen:
         TemplateSize: =93
         Width: =561
         X: =39
-        Y: =235
+        Y: =296
         ZIndex: =3
 
         Title2_2 As label:
@@ -120,7 +118,7 @@ plant_leaderboard As screen:
             Text: |
                 =Concatenate(Text(Round(ThisItem.'Total Points', 0)), " points")
             Width: =154
-            X: =342
+            X: =360
             Y: =17
             ZIndex: =7
 
@@ -220,4 +218,56 @@ plant_leaderboard As screen:
         X: =180
         Y: =1030
         ZIndex: =7
+
+    Rectangle1 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(133, 242, 99, 1)
+        FocusedBorderThickness: =4
+        Height: =48
+        HoverFill: =RGBA(0, 120, 212, 1)
+        PressedFill: =RGBA(0, 120, 212, 1)
+        Width: =561
+        X: =39
+        Y: =248
+        ZIndex: =8
+
+    Label5 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =48
+        Size: =21
+        Text: ="Name"
+        Width: =163
+        X: =136
+        Y: =248
+        ZIndex: =9
+
+    Label5_6 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =48
+        Size: =21
+        Text: ="Points"
+        Width: =163
+        X: =386
+        Y: =248
+        ZIndex: =10
 
