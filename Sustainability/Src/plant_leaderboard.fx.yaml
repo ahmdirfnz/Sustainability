@@ -87,12 +87,13 @@ plant_leaderboard As screen:
             ZIndex: =3
 
         Separator3_2 As rectangle:
-            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =8
+            Height: =0
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
-            Y: =85
+            Y: =93
             ZIndex: =5
 
         Rectangle3_2 As rectangle:
