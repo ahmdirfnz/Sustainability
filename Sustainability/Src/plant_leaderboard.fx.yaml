@@ -157,50 +157,56 @@ plant_leaderboard As screen:
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-        OnSelect: |-
-            =Set(
+        OnSelect: |
+            =
+            Set(
                 var_PlantTotalPoints,
-                Round(
-                    First(Filter(January_1, Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points', 0
-                )
-                + Round(
-                    First(Filter(February, Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points', 0
-                )
-                + Round(
-                    First(Filter(March, Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points', 0
-                )
-                + Round(
-                    First(Filter(April, Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points', 0
-                )
-                + Round(
-                    First(Filter(May, Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points', 0
-                )
-                + Round(
-                    First(Filter(June, Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points', 0
-                )
-                + Round(
-                    First(Filter(July, Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points', 0
-                )
-                + Round(
-                    First(Filter(August, Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points', 0
-                )
-                + Round(
-                    First(Filter(September, Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points', 0
-                )
-                + Round(
-                    First(Filter(October, Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points', 0
-                )
-                + Round(
-                    First(Filter(November, Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points', 0
-                )
-                + Round(
-                    First(Filter(December, Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points', 0
-                )
+                Round(First(Filter(January_1,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                    +
+                Round(First(Filter(February,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                    + 
+                Round(First (Filter(March,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                    +
+                Round(First (Filter(April,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                    +
+                    Round(First (Filter(May,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                    +
+                    Round(First (Filter(June,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                    +
+                    Round(First (Filter(July,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                    +
+                    Round(First (Filter(August,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                    +
+                    Round(First (Filter(September,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                    +
+                    Round(First (Filter(October,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                    +
+                    Round(First (Filter(November,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                    +
+                    Round(First (Filter(December,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0));
+            
+            
+            
+            If(
+               Not(IsBlank(LookUp('Plant Adoption Total Points', StartsWith(Name.DisplayName, Office365Users.UserProfile(User().Email).DisplayName)))),
+               Patch(
+                  'Plant Adoption Total Points',
+                  First(Filter('Plant Adoption Total Points', StartsWith(Name.DisplayName, Office365Users.UserProfile(User().Email).DisplayName))),
+                  {
+                     'Total Points':
+                     var_PlantTotalPoints
+            
+                  }
+                  )
+                  
+                  //Else
+                  ,
+            
+               SubmitForm(Form1);
+            
             );
-            
-            // Patch the values to the SharePoint list
-            
-            SubmitForm(Form1)
+            NewForm(Form1);
+            ResetForm(Form1);
         PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
