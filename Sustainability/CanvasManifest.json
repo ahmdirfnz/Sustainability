@@ -50,7 +50,6 @@
       "enhanceddelegation": true,
       "enhancedgalleryinitialization": true,
       "errorhandling": true,
-      "excelcompatibility": false,
       "expandedsavedatasupport": true,
       "exportimportcomponents2": true,
       "externalmessage": false,
@@ -74,6 +73,7 @@
       "parallelcodegen": false,
       "pdffunction": false,
       "powerfxdecimal": false,
+      "powerfxv1": false,
       "projectionmapping": true,
       "reactformulabar": false,
       "reliableconcurrent": true,
@@ -168,6 +168,7 @@
     "trash_pickup_pending",
     "trash_pickup_pending_1",
     "Screen1",
-    "Screen2"
+    "Screen2",
+    "Screen3"
   ]
 }

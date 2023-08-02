@@ -1,6 +1,7 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: =
+    OnStart: |
+        =
     StartScreen: =Login
 
     Host As hostControl.DefaultHostControlVariant:

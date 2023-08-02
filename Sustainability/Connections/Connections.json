@@ -142,6 +142,9 @@
           },
           "September_1": {
             "tableName": "890a1761-21c9-4e6f-a1c0-3d7c4e8d58be"
+          },
+          "Total Points": {
+            "tableName": "0aab0d8b-585a-4609-a387-2dcb23c3eafc"
           }
         }
       }
@@ -190,7 +193,8 @@
       "May_1",
       "June_1",
       "Info Screen",
-      "Plant Adoption Total Points"
+      "Plant Adoption Total Points",
+      "Total Points"
     ],
     "dependencies": {},
     "dependents": [],
