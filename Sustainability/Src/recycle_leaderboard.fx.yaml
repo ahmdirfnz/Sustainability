@@ -1,6 +1,33 @@
 recycle_leaderboard As screen:
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
 
+    Button10_1 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(248, 246, 244, 1)
+        Fill: =RGBA(248, 246, 244, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =700
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(236, 236, 235,0), -0%)
+        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(236, 236, 235,0), -0%)
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Size: =24
+        Text: =""
+        Width: =590
+        X: =25
+        Y: =218
+        ZIndex: =1
+
     Rectangle4_1 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 1)
         BorderStyle: =BorderStyle.None
@@ -8,12 +35,13 @@ recycle_leaderboard As screen:
         DisabledFill: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(255, 197, 61, 1)
         FocusedBorderThickness: =4
-        Height: =70
+        Height: =64
         HoverFill: =RGBA(0, 120, 212, 1)
         PressedFill: =RGBA(0, 120, 212, 1)
-        Width: =640
-        Y: =256
-        ZIndex: =1
+        Width: =579
+        X: =30
+        Y: =242
+        ZIndex: =2
 
     "Gallery3_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         BorderColor: =RGBA(166, 166, 166, 1)
@@ -21,7 +49,7 @@ recycle_leaderboard As screen:
         BorderThickness: =1
         DelayItemLoading: =true
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =677
+        Height: =571
         Items: |+
             =Sort(July_1,Value('Total Points'), SortOrder.Descending)
             
@@ -31,8 +59,10 @@ recycle_leaderboard As screen:
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =93
-        Y: =326
-        ZIndex: =2
+        Width: =557
+        X: =38
+        Y: =323
+        ZIndex: =3
 
         Title2_1 As label:
             Color: =RGBA(50, 49, 48, 1)
@@ -106,7 +136,7 @@ recycle_leaderboard As screen:
             Size: =18
             Text: |
                 =Concatenate(Text(Round(ThisItem.'Total Points', 0)), " points")
-            Width: =279
+            Width: =186
             X: =361
             Y: =17
             ZIndex: =7
@@ -122,13 +152,13 @@ recycle_leaderboard As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
-        Height: =70
+        Height: =64
         Size: =21
         Text: ="Users"
-        Width: =86
-        X: =147
-        Y: =256
-        ZIndex: =3
+        Width: =127
+        X: =127
+        Y: =242
+        ZIndex: =4
 
     Label14_3 As label:
         Align: =Align.Center
@@ -141,15 +171,36 @@ recycle_leaderboard As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
-        Height: =70
+        Height: =64
         Size: =21
         Text: ="Points"
-        Width: =116
-        X: =451
-        Y: =256
-        ZIndex: =4
+        Width: =104
+        X: =436
+        Y: =242
+        ZIndex: =5
 
-    Label5_5 As label:
+    Icon1_33 As icon.ChevronLeft:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(255, 197, 61, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =47
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate(recycling_main,ScreenTransition.CoverRight)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =52
+        X: =38
+        Y: =1031
+        ZIndex: =8
+
+    Label5_33 As label:
         Align: =Align.Center
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
@@ -161,58 +212,66 @@ recycle_leaderboard As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
-        Height: =70
-        Size: =29
-        Text: ="Recycle Leaderboard"
-        Width: =519
-        X: =60
-        Y: =128
-        ZIndex: =5
-
-    Image3_9 As image:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
-        Height: =69
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverFill: =RGBA(0, 0, 0, 0)
-        Image: =back
-        OnSelect: =Navigate(recycling_main,ScreenTransition)
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =61
-        X: =24
-        Y: =24
-        ZIndex: =6
-
-    Button14 As button:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(0, 120, 212, 1)
-        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Semibold
-        Height: =70
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-        OnSelect: =SubmitForm(Form2)
-        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
+        Height: =85
         Size: =24
-        Text: ="Button"
-        Width: =280
-        X: =180
-        Y: =1037
-        ZIndex: =7
+        Text: ="Recycle Leaderboard"
+        Width: =458
+        X: =91
+        Y: =120
+        ZIndex: =10
+
+    Group1_1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =11
+
+        Button11_2 As button:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(255, 197, 61, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =58
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+            OnSelect: =SubmitForm(Form2)
+            PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            RadiusBottomLeft: =30
+            RadiusBottomRight: =30
+            RadiusTopLeft: =30
+            RadiusTopRight: =30
+            Size: =24
+            Text: =""
+            Width: =111
+            X: =264
+            Y: =1025
+            ZIndex: =7
+
+        Icon2_1 As icon.Reload:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =6
+            Height: =44
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.Reload
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =29
+            X: =305
+            Y: =1031
+            ZIndex: =9
 
