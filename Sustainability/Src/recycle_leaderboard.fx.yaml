@@ -220,6 +220,26 @@ recycle_leaderboard As screen:
         Y: =120
         ZIndex: =10
 
+    Label6_1 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =66
+        Size: =12
+        Text: |-
+            ="note: 
+            The standings may have changed since you last checked. Please refresh the 
+            page to see the latest results."
+        Width: =561
+        X: =39
+        Y: =934
+        ZIndex: =11
+
     Group1_1 As group:
         Height: =5
         Width: =5
