@@ -121,7 +121,7 @@ Home As screen:
         Text: ="Feedback"
         Width: =538
         X: =51
-        Y: =941
+        Y: =570
         ZIndex: =12
 
     Button5 As button:
@@ -148,7 +148,7 @@ Home As screen:
         Text: =""
         Width: =538
         X: =51
-        Y: =416
+        Y: =134
         ZIndex: =13
 
     Label1_8 As label:
@@ -181,7 +181,7 @@ Home As screen:
         TemplateSize: =411
         Width: =521
         X: =61
-        Y: =428
+        Y: =157
         ZIndex: =15
 
         Image4 As image:
@@ -260,7 +260,7 @@ Home As screen:
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =58
         X: =291
-        Y: =1054
+        Y: =575
         ZIndex: =21
 
     Group3_6 As group:
@@ -280,7 +280,7 @@ Home As screen:
             HoverFill: =RGBA(248, 246, 244, 1)
             PressedFill: =RGBA(248, 246, 244, 1)
             Width: =640
-            Y: =1036
+            Y: =540
             ZIndex: =16
 
         Image1_11 As image:
@@ -299,7 +299,7 @@ Home As screen:
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =62
             X: =165
-            Y: =1059
+            Y: =540
             ZIndex: =17
 
         Image4_7 As image:
@@ -318,7 +318,7 @@ Home As screen:
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =49
             X: =50
-            Y: =1052
+            Y: =540
             ZIndex: =18
 
         Image8_19 As image:
@@ -337,7 +337,7 @@ Home As screen:
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =53
             X: =411
-            Y: =1054
+            Y: =540
             ZIndex: =19
 
         Image8_20 As image:
@@ -356,7 +356,7 @@ Home As screen:
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =53
             X: =530
-            Y: =1054
+            Y: =540
             ZIndex: =20
 
     Circle4_7 As circle:
@@ -371,6 +371,6 @@ Home As screen:
         PressedFill: =RGBA(179, 179, 179, 1)
         Width: =86
         X: =277
-        Y: =1046
+        Y: =559
         ZIndex: =23
 

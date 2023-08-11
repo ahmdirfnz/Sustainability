@@ -10,7 +10,7 @@
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
-        Height: =811
+        Height: =640
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
@@ -25,15 +25,13 @@
         Text: =""
         Width: =596
         X: =27
-        Y: =205
         ZIndex: =1
 
     Canvas2 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
-        Height: =738
+        Height: =640
         Width: =585
         X: =33
-        Y: =225
         ZIndex: =2
 
         DataCard4 As dataCard:
@@ -129,6 +127,6 @@
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =52
         X: =38
-        Y: =1031
+        Y: =593
         ZIndex: =4
 

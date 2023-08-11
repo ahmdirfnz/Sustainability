@@ -205,7 +205,7 @@ trash_pickup_main As screen:
         Text: =""
         Width: =512
         X: =64
-        Y: =525
+        Y: =303
         ZIndex: =13
 
     Button2_21 As button:
@@ -279,7 +279,7 @@ trash_pickup_main As screen:
         Text: ="Cleanup History"
         Width: =475
         X: =82
-        Y: =661
+        Y: =575
         ZIndex: =15
 
     Circle4_3 As circle:
@@ -294,7 +294,7 @@ trash_pickup_main As screen:
         PressedFill: =RGBA(169, 102, 227, 1)
         Width: =86
         X: =513
-        Y: =1045
+        Y: =559
         ZIndex: =24
 
     Image8_8 As image:
@@ -313,7 +313,7 @@ trash_pickup_main As screen:
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =58
         X: =291
-        Y: =1054
+        Y: =575
         ZIndex: =26
 
     Label5_3 As label:
@@ -353,7 +353,7 @@ trash_pickup_main As screen:
             HoverFill: =RGBA(248, 246, 244, 1)
             PressedFill: =RGBA(248, 246, 244, 1)
             Width: =640
-            Y: =1036
+            Y: =540
             ZIndex: =19
 
         Image1_2 As image:
@@ -372,7 +372,7 @@ trash_pickup_main As screen:
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =62
             X: =165
-            Y: =1059
+            Y: =589
             ZIndex: =21
 
         Image4_2 As image:
@@ -391,7 +391,7 @@ trash_pickup_main As screen:
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =49
             X: =50
-            Y: =1052
+            Y: =574
             ZIndex: =22
 
         Image8_6 As image:
@@ -410,7 +410,7 @@ trash_pickup_main As screen:
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =53
             X: =411
-            Y: =1054
+            Y: =576
             ZIndex: =23
 
         Image8_7 As image:
@@ -429,7 +429,7 @@ trash_pickup_main As screen:
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =53
             X: =530
-            Y: =1054
+            Y: =576
             ZIndex: =25
 
     Label16_2 As label:
@@ -483,6 +483,6 @@ trash_pickup_main As screen:
         Text: ="Leaderboard (coming soon)"
         Width: =475
         X: =79
-        Y: =763
+        Y: =575
         ZIndex: =29
 

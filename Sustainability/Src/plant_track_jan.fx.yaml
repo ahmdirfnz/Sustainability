@@ -5,13 +5,12 @@ plant_track_jan As screen:
         BorderColor: =RGBA(166, 166, 166, 1)
         DataSource: =January_1
         DefaultMode: =FormMode.New
-        Height: =723
+        Height: =640
         OnFailure: =Notify("Failed to submit form. Please fill in the required field.", NotificationType.Error)
         OnSuccess: =Notify("Saved.", NotificationType.Success)
         Visible: |
             =SelectedMonth=1
         Width: =640
-        Y: =261
         ZIndex: =1
 
         Name_DataCard2 As typedDataCard.comboBoxEditCard:
@@ -980,7 +979,7 @@ plant_track_jan As screen:
         Text: ="Submit"
         Width: =280
         X: =180
-        Y: =1021
+        Y: =570
         ZIndex: =2
 
     Label5_8 As label:
@@ -1074,6 +1073,6 @@ plant_track_jan As screen:
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =52
         X: =38
-        Y: =1031
+        Y: =593
         ZIndex: =5
 

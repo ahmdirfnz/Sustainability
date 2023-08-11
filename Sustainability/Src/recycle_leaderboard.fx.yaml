@@ -10,7 +10,7 @@ recycle_leaderboard As screen:
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
-        Height: =700
+        Height: =640
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(236, 236, 235,0), -0%)
@@ -25,7 +25,6 @@ recycle_leaderboard As screen:
         Text: =""
         Width: =590
         X: =25
-        Y: =218
         ZIndex: =1
 
     Rectangle4_1 As rectangle:
@@ -61,7 +60,7 @@ recycle_leaderboard As screen:
         TemplateSize: =93
         Width: =554
         X: =41
-        Y: =289
+        Y: =25
         ZIndex: =3
 
         Title2_1 As label:
@@ -197,7 +196,7 @@ recycle_leaderboard As screen:
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =52
         X: =38
-        Y: =1031
+        Y: =593
         ZIndex: =8
 
     Label5_33 As label:
@@ -237,7 +236,7 @@ recycle_leaderboard As screen:
             page to see the latest results."
         Width: =561
         X: =39
-        Y: =934
+        Y: =574
         ZIndex: =11
 
     Group1_1 As group:
@@ -272,7 +271,7 @@ recycle_leaderboard As screen:
             Text: =""
             Width: =111
             X: =264
-            Y: =1025
+            Y: =582
             ZIndex: =7
 
         Icon2_1 As icon.Reload:
@@ -292,6 +291,6 @@ recycle_leaderboard As screen:
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =29
             X: =305
-            Y: =1031
+            Y: =596
             ZIndex: =9
 

@@ -4,7 +4,7 @@ Screen1 As screen:
     PowerBI1 As powerbi:
         BorderColor: =RGBA(166, 166, 166, 1)
         DashboardId: ="5ece590d-eae0-4355-bd3f-cab54fd11bed"
-        Height: =1136
+        Height: =640
         TileUrl: |-
             ="https://app.powerbi.com/embed?dashboardId=5ece590d-eae0-4355-bd3f-cab54fd11bed&tileId=a12a5029-0214-407e-bd7b-d1845976ae0f&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLVNPVVRILUVBU1QtQVNJQS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
         WorkspaceId: ="da8ede2a-7d65-4691-8e94-d36a98f95135"

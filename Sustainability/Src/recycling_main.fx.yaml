@@ -225,7 +225,7 @@ recycling_main As screen:
         Text: =""
         Width: =512
         X: =64
-        Y: =525
+        Y: =303
         ZIndex: =13
 
     Button2_17 As button:
@@ -284,7 +284,7 @@ recycling_main As screen:
         Text: ="Report (coming soon)"
         Width: =475
         X: =82
-        Y: =663
+        Y: =575
         ZIndex: =15
 
     Button2_19 As button:
@@ -313,7 +313,7 @@ recycling_main As screen:
         Text: ="Leaderboard (coming soon)"
         Width: =475
         X: =79
-        Y: =760
+        Y: =575
         ZIndex: =16
 
     Circle4_4 As circle:
@@ -328,7 +328,7 @@ recycling_main As screen:
         PressedFill: =RGBA(255, 197, 61, 1)
         Width: =86
         X: =394
-        Y: =1045
+        Y: =559
         ZIndex: =21
 
     Image8_12 As image:
@@ -347,7 +347,7 @@ recycling_main As screen:
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =58
         X: =291
-        Y: =1054
+        Y: =575
         ZIndex: =25
 
     Label5_2 As label:
@@ -387,7 +387,7 @@ recycling_main As screen:
             HoverFill: =RGBA(248, 246, 244, 1)
             PressedFill: =RGBA(248, 246, 244, 1)
             Width: =640
-            Y: =1036
+            Y: =540
             ZIndex: =18
 
         Image1_6 As image:
@@ -406,7 +406,7 @@ recycling_main As screen:
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =62
             X: =165
-            Y: =1059
+            Y: =589
             ZIndex: =19
 
         Image4_3 As image:
@@ -425,7 +425,7 @@ recycling_main As screen:
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =49
             X: =50
-            Y: =1052
+            Y: =574
             ZIndex: =20
 
         Image8_9 As image:
@@ -444,7 +444,7 @@ recycling_main As screen:
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =53
             X: =411
-            Y: =1054
+            Y: =576
             ZIndex: =22
 
         Image8_10 As image:
@@ -463,6 +463,6 @@ recycling_main As screen:
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =53
             X: =530
-            Y: =1054
+            Y: =576
             ZIndex: =23
 

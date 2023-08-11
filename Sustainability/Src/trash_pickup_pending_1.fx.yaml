@@ -4,12 +4,11 @@ trash_pickup_pending_1 As screen:
     Gallery1_1 As gallery.galleryVertical:
         BorderColor: =RGBA(166, 166, 166, 1)
         DelayItemLoading: =true
-        Height: =755
+        Height: =640
         Items: ='Trash Pickup'
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplateSize: =59
-        Y: =244
         ZIndex: =1
 
         "DateCreated_1 As 'Date picker'":

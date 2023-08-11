@@ -25,11 +25,10 @@ TrashPickup_Form As screen:
         BorderColor: =RGBA(166, 166, 166, 1)
         DataSource: ='Trash Pickup'
         DefaultMode: =FormMode.New
-        Height: =926
+        Height: =640
         OnFailure: =Notify("Form has not been submitted successfully", NotificationType.Error, 3000);
         OnSuccess: =Notify("Form has been submitted successfully", NotificationType.Success, 3000);
         Width: =640
-        Y: =210
         ZIndex: =10
 
         "'Creator Email_DataCard1' As typedDataCard.textualEditCard":

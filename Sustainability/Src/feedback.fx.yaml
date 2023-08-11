@@ -29,7 +29,7 @@ feedback As screen:
         Text: ="Submit"
         Width: =214
         X: =213
-        Y: =1026
+        Y: =583
         ZIndex: =2
 
     Label13_5 As label:
@@ -57,9 +57,8 @@ feedback As screen:
         BorderColor: =RGBA(166, 166, 166, 1)
         DataSource: =Feedback
         DefaultMode: =FormMode.New
-        Height: =766
+        Height: =640
         Width: =640
-        Y: =235
         ZIndex: =5
 
         Feedback_DataCard5 As typedDataCard.textualMultiLineEditCard:
@@ -546,6 +545,6 @@ feedback As screen:
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =52
         X: =38
-        Y: =1031
+        Y: =593
         ZIndex: =6
 

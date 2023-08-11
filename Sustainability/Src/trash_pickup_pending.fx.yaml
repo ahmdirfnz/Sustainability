@@ -4,7 +4,7 @@ trash_pickup_pending As screen:
     "Gallery1 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
         BorderColor: =RGBA(166, 166, 166, 1)
         DelayItemLoading: =true
-        Height: =756
+        Height: =640
         Items: |-
             =Filter(
                 Sort(
@@ -20,7 +20,6 @@ trash_pickup_pending As screen:
         TemplatePadding: =20
         TemplateSize: =161
         Transition: =Transition.Pop
-        Y: =210
         ZIndex: =1
 
         Image31 As image:
@@ -170,7 +169,7 @@ trash_pickup_pending As screen:
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =52
         X: =25
-        Y: =1017
+        Y: =593
         ZIndex: =5
 
     Label13_7 As label:

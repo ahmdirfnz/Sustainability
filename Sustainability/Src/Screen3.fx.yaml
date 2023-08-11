@@ -5,7 +5,7 @@ Screen3 As screen:
         BorderColor: =RGBA(166, 166, 166, 1)
         DataSource: ='Total Points'
         DefaultMode: =FormMode.New
-        Height: =989
+        Height: =640
         Width: =640
         ZIndex: =1
 
@@ -1655,6 +1655,6 @@ Screen3 As screen:
         Text: ="Button"
         Width: =280
         X: =180
-        Y: =1045
+        Y: =570
         ZIndex: =2
 

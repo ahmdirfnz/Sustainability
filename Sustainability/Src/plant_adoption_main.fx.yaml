@@ -274,7 +274,7 @@ plant_adoption_main As screen:
         Text: =""
         Width: =512
         X: =64
-        Y: =521
+        Y: =208
         ZIndex: =13
 
     Button2_13 As button:
@@ -353,7 +353,7 @@ plant_adoption_main As screen:
         Text: ="Tracking"
         Width: =475
         X: =82
-        Y: =663
+        Y: =575
         ZIndex: =15
 
     Button2_15 As button:
@@ -382,7 +382,7 @@ plant_adoption_main As screen:
         Text: ="Leaderboard"
         Width: =475
         X: =79
-        Y: =760
+        Y: =575
         ZIndex: =16
 
     Button2_16 As button:
@@ -411,7 +411,7 @@ plant_adoption_main As screen:
         Text: ="Report (coming soon)"
         Width: =475
         X: =82
-        Y: =857
+        Y: =575
         ZIndex: =17
 
     Image13_3 As image:
@@ -491,7 +491,7 @@ plant_adoption_main As screen:
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =58
         X: =291
-        Y: =1054
+        Y: =575
         ZIndex: =31
 
     Group3_1 As group:
@@ -511,7 +511,7 @@ plant_adoption_main As screen:
             HoverFill: =RGBA(248, 246, 244, 1)
             PressedFill: =RGBA(248, 246, 244, 1)
             Width: =640
-            Y: =1036
+            Y: =540
             ZIndex: =25
 
         Circle4_1 As circle:
@@ -526,7 +526,7 @@ plant_adoption_main As screen:
             PressedFill: =RGBA(133, 242, 99, 1)
             Width: =86
             X: =153
-            Y: =1045
+            Y: =559
             ZIndex: =26
 
         Image1_1 As image:
@@ -545,7 +545,7 @@ plant_adoption_main As screen:
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =62
             X: =165
-            Y: =1059
+            Y: =589
             ZIndex: =27
 
         Image4_1 As image:
@@ -564,7 +564,7 @@ plant_adoption_main As screen:
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =49
             X: =50
-            Y: =1052
+            Y: =574
             ZIndex: =28
 
         Image8_3 As image:
@@ -583,7 +583,7 @@ plant_adoption_main As screen:
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =53
             X: =411
-            Y: =1054
+            Y: =576
             ZIndex: =29
 
         Image8_4 As image:
@@ -602,6 +602,6 @@ plant_adoption_main As screen:
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =53
             X: =530
-            Y: =1054
+            Y: =576
             ZIndex: =30
 

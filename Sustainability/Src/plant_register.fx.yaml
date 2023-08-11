@@ -48,17 +48,16 @@ plant_register As screen:
         Text: ="Submit"
         Width: =280
         X: =180
-        Y: =1020
+        Y: =570
         ZIndex: =6
 
     Form9 As form:
         BorderColor: =RGBA(166, 166, 166, 1)
         DataSource: ='Plant Registration'
         DefaultMode: =FormMode.New
-        Height: =750
+        Height: =640
         OnSuccess: =Notify("Successfully registered.Thank you for participating in this sustainability initiative.",NotificationType.Success)
         Width: =640
-        Y: =195
         ZIndex: =7
 
         "'First Day_DataCard2' As typedDataCard.dateEditCard":
@@ -804,6 +803,6 @@ plant_register As screen:
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =52
         X: =38
-        Y: =1031
+        Y: =593
         ZIndex: =8
 
