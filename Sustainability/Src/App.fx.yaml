@@ -3,6 +3,7 @@ App As appinfo:
     OnStart: |
         =
     StartScreen: =Login
+    Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
         OnCancel: =false
