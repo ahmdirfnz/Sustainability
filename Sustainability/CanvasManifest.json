@@ -100,7 +100,7 @@
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "Phone",
     "DocumentLayoutHeight": 1136,
-    "DocumentLayoutLockOrientation": false,
+    "DocumentLayoutLockOrientation": true,
     "DocumentLayoutMaintainAspectRatio": true,
     "DocumentLayoutOrientation": "portrait",
     "DocumentLayoutScaleToFit": true,
