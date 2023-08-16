@@ -227,7 +227,7 @@ trash_pickup_main As screen:
             Text: ="Submit Cleanup Activity"
             Width: =475
             X: =84
-            Y: =729
+            Y: =618
             ZIndex: =12
 
         Button2_22 As button:
@@ -271,8 +271,8 @@ trash_pickup_main As screen:
             Size: =24
             Text: ="Cleanup History"
             Width: =475
-            X: =91
-            Y: =621
+            X: =84
+            Y: =729
             ZIndex: =13
 
         Button2_23 As button:

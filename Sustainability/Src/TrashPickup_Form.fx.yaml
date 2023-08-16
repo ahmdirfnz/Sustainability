@@ -18,17 +18,18 @@ TrashPickup_Form As screen:
         Text: ="Cleanup Activity Form"
         Width: =486
         X: =77
-        Y: =113
+        Y: =65
         ZIndex: =8
 
     Form6_1 As form:
         BorderColor: =RGBA(166, 166, 166, 1)
         DataSource: ='Trash Pickup'
         DefaultMode: =FormMode.New
-        Height: =640
+        Height: =954
         OnFailure: =Notify("Form has not been submitted successfully", NotificationType.Error, 3000);
         OnSuccess: =Notify("Form has been submitted successfully", NotificationType.Success, 3000);
         Width: =640
+        Y: =182
         ZIndex: =10
 
         "'Creator Email_DataCard1' As typedDataCard.textualEditCard":
