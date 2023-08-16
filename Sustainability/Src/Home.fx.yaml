@@ -105,12 +105,12 @@ Home As screen:
         Y: =327
         ZIndex: =14
 
-    Group3_6 As group:
+    Group2 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
-        ZIndex: =22
+        ZIndex: =24
 
         Rectangle2_9 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -122,7 +122,7 @@ Home As screen:
             HoverFill: =RGBA(248, 246, 244, 1)
             PressedFill: =RGBA(248, 246, 244, 1)
             Width: =640
-            Y: =1034
+            Y: =1036
             ZIndex: =16
 
         Image1_11 As image:
@@ -141,7 +141,7 @@ Home As screen:
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =62
             X: =161
-            Y: =1057
+            Y: =1065
             ZIndex: =17
 
         Image4_7 As image:
@@ -160,7 +160,7 @@ Home As screen:
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =49
             X: =51
-            Y: =1051
+            Y: =1060
             ZIndex: =18
 
         Image8_19 As image:
@@ -178,8 +178,8 @@ Home As screen:
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =53
-            X: =417
-            Y: =1050
+            X: =416
+            Y: =1059
             ZIndex: =19
 
         Image8_20 As image:
@@ -198,15 +198,8 @@ Home As screen:
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =53
             X: =529
-            Y: =1042
+            Y: =1055
             ZIndex: =20
-
-    Group2 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =24
 
         Image8_18 As image:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -223,8 +216,8 @@ Home As screen:
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =58
-            X: =285
-            Y: =1050
+            X: =293
+            Y: =1054
             ZIndex: =21
 
         Circle4_7 As circle:
@@ -238,8 +231,8 @@ Home As screen:
             OnSelect: =Navigate(plant_adoption_main,ScreenTransition.Fade)
             PressedFill: =RGBA(179, 179, 179, 1)
             Width: =86
-            X: =271
-            Y: =1043
+            X: =279
+            Y: =1046
             ZIndex: =23
 
     Group3 As group:
