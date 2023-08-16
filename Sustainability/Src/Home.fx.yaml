@@ -25,7 +25,7 @@ Home As screen:
         Text: =""
         Width: =522
         X: =61
-        Y: =207
+        Y: =209
         ZIndex: =1
 
     Image1_8 As image:
@@ -55,46 +55,8 @@ Home As screen:
         RadiusTopRight: =100
         Width: =160
         X: =240
-        Y: =66
+        Y: =42
         ZIndex: =9
-
-    Label1_6 As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        Color: =RGBA(51, 51, 51, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisplayMode: =DisplayMode.View
-        FocusedBorderThickness: =4
-        Font: =Font.Verdana
-        FontWeight: =FontWeight.Bold
-        Height: =43
-        Size: =20
-        Text: =User().FullName
-        Width: =640
-        Y: =232
-        ZIndex: =10
-
-    Label1_7 As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        Color: =RGBA(51, 51, 51, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisplayMode: =DisplayMode.View
-        FocusedBorderThickness: =4
-        Font: =Font.Verdana
-        Height: =43
-        Size: =15
-        Text: |
-            =Office365Users.MyProfile().Department
-        Width: =640
-        Y: =275
-        ZIndex: =11
 
     Button4 As button:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -121,35 +83,8 @@ Home As screen:
         Text: ="Feedback"
         Width: =538
         X: =51
-        Y: =570
+        Y: =927
         ZIndex: =12
-
-    Button5 As button:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(248, 246, 244, 1)
-        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Semibold
-        Height: =506
-        HoverBorderColor: =RGBA(248, 246, 244, 1)
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(248, 246, 244, 1), -0%)
-        PressedBorderColor: =ColorFade(RGBA(248, 246, 244, 1), -0%)
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =ColorFade(RGBA(248, 246, 244, 1), -0%)
-        RadiusBottomLeft: =30
-        RadiusBottomRight: =30
-        RadiusTopLeft: =30
-        RadiusTopRight: =30
-        Size: =24
-        Text: =""
-        Width: =538
-        X: =51
-        Y: =134
-        ZIndex: =13
 
     Label1_8 As label:
         Align: =Align.Center
@@ -167,101 +102,8 @@ Home As screen:
         Size: =22
         Text: ="Sustainability Initiatives Information"
         Width: =640
-        Y: =354
+        Y: =327
         ZIndex: =14
-
-    "Gallery3 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver5.0'":
-        BorderColor: =RGBA(166, 166, 166, 1)
-        DelayItemLoading: =true
-        Height: =483
-        Items: ='Info Screen'
-        LoadingSpinner: =LoadingSpinner.Data
-        ShowNavigation: =true
-        TemplatePadding: =0
-        TemplateSize: =411
-        Width: =521
-        X: =61
-        Y: =157
-        ZIndex: =15
-
-        Image4 As image:
-            BorderThickness: =2
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
-            Height: =261
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverFill: =RGBA(0, 0, 0, 0)
-            Image: =ThisItem.Image
-            ImagePosition: =ImagePosition.Fill
-            OnSelect: =Select(Parent)
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedFill: =RGBA(0, 0, 0, 0)
-            RadiusBottomLeft: =8
-            RadiusBottomRight: =8
-            RadiusTopLeft: =8
-            RadiusTopRight: =8
-            Width: =373
-            X: =19
-            Y: =16
-            ZIndex: =1
-
-        Title3 As label:
-            Color: =RGBA(50, 49, 48, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Bold
-            Height: =Self.Size * 1.8
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =18
-            Text: =ThisItem.Title
-            VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - 64
-            X: =32
-            Y: =Image4.Y + Image4.Height + 16
-            ZIndex: =2
-
-        Subtitle3 As label:
-            Color: =RGBA(51, 51, 51, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =Font.'Segoe UI'
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =136
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =12
-            Text: =ThisItem.Description
-            VerticalAlign: =VerticalAlign.Top
-            Width: =Title3.Width
-            X: =Title3.X
-            Y: =Title3.Y + Title3.Height + 8
-            ZIndex: =3
-
-    Image8_18 As image:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
-        Height: =65
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverFill: =RGBA(0, 0, 0, 0)
-        Image: ='home (4)'
-        OnSelect: =Navigate(Home_1,ScreenTransition.Fade)
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =58
-        X: =291
-        Y: =575
-        ZIndex: =21
 
     Group3_6 As group:
         Height: =5
@@ -280,7 +122,7 @@ Home As screen:
             HoverFill: =RGBA(248, 246, 244, 1)
             PressedFill: =RGBA(248, 246, 244, 1)
             Width: =640
-            Y: =540
+            Y: =1034
             ZIndex: =16
 
         Image1_11 As image:
@@ -298,8 +140,8 @@ Home As screen:
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =62
-            X: =165
-            Y: =540
+            X: =161
+            Y: =1057
             ZIndex: =17
 
         Image4_7 As image:
@@ -317,8 +159,8 @@ Home As screen:
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =49
-            X: =50
-            Y: =540
+            X: =51
+            Y: =1051
             ZIndex: =18
 
         Image8_19 As image:
@@ -336,8 +178,8 @@ Home As screen:
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =53
-            X: =411
-            Y: =540
+            X: =417
+            Y: =1050
             ZIndex: =19
 
         Image8_20 As image:
@@ -355,22 +197,201 @@ Home As screen:
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =53
-            X: =530
-            Y: =540
+            X: =529
+            Y: =1042
             ZIndex: =20
 
-    Circle4_7 As circle:
-        BorderColor: =RGBA(166, 166, 166, 1)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        DisabledFill: =RGBA(179, 179, 179, 1)
-        Fill: =RGBA(179, 179, 179, 0.2)
-        Height: =81
-        HoverFill: =RGBA(179, 179, 179, 1)
-        OnSelect: =Navigate(plant_adoption_main,ScreenTransition.Fade)
-        PressedFill: =RGBA(179, 179, 179, 1)
-        Width: =86
-        X: =277
-        Y: =559
-        ZIndex: =23
+    Group2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =24
+
+        Image8_18 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =65
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: ='home (4)'
+            OnSelect: =Navigate(Home_1,ScreenTransition.Fade)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =58
+            X: =285
+            Y: =1050
+            ZIndex: =21
+
+        Circle4_7 As circle:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledFill: =RGBA(179, 179, 179, 1)
+            Fill: =RGBA(179, 179, 179, 0.2)
+            Height: =81
+            HoverFill: =RGBA(179, 179, 179, 1)
+            OnSelect: =Navigate(plant_adoption_main,ScreenTransition.Fade)
+            PressedFill: =RGBA(179, 179, 179, 1)
+            Width: =86
+            X: =271
+            Y: =1043
+            ZIndex: =23
+
+    Group3 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =24
+
+        Button5 As button:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(248, 246, 244, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =506
+            HoverBorderColor: =RGBA(248, 246, 244, 1)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(248, 246, 244, 1), -0%)
+            PressedBorderColor: =ColorFade(RGBA(248, 246, 244, 1), -0%)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorFade(RGBA(248, 246, 244, 1), -0%)
+            RadiusBottomLeft: =30
+            RadiusBottomRight: =30
+            RadiusTopLeft: =30
+            RadiusTopRight: =30
+            Size: =24
+            Text: =""
+            Width: =538
+            X: =51
+            Y: =384
+            ZIndex: =13
+
+        "Gallery3 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver5.0'":
+            BorderColor: =RGBA(166, 166, 166, 1)
+            DelayItemLoading: =true
+            Height: =483
+            Items: ='Info Screen'
+            LoadingSpinner: =LoadingSpinner.Data
+            ShowNavigation: =true
+            TemplatePadding: =0
+            TemplateSize: =411
+            Width: =521
+            X: =61
+            Y: =407
+            ZIndex: =15
+
+            Image4 As image:
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                FocusedBorderThickness: =4
+                Height: =261
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Image: =ThisItem.Image
+                ImagePosition: =ImagePosition.Fill
+                OnSelect: =Select(Parent)
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                RadiusBottomLeft: =8
+                RadiusBottomRight: =8
+                RadiusTopLeft: =8
+                RadiusTopRight: =8
+                Width: =373
+                X: =19
+                Y: =16
+                ZIndex: =1
+
+            Title3 As label:
+                Color: =RGBA(50, 49, 48, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Bold
+                Height: =Self.Size * 1.8
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =18
+                Text: =ThisItem.Title
+                VerticalAlign: =VerticalAlign.Top
+                Width: =Parent.TemplateWidth - 64
+                X: =32
+                Y: =Image4.Y + Image4.Height + 16
+                ZIndex: =2
+
+            Subtitle3 As label:
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =136
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =12
+                Text: =ThisItem.Description
+                VerticalAlign: =VerticalAlign.Top
+                Width: =Title3.Width
+                X: =Title3.X
+                Y: =Title3.Y + Title3.Height + 8
+                ZIndex: =3
+
+    Group4 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =24
+
+        Label1_6 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =DisplayMode.View
+            FocusedBorderThickness: =4
+            Font: =Font.Verdana
+            FontWeight: =FontWeight.Bold
+            Height: =43
+            Size: =20
+            Text: =User().FullName
+            Width: =640
+            Y: =265
+            ZIndex: =10
+
+        Label1_7 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =DisplayMode.View
+            FocusedBorderThickness: =4
+            Font: =Font.Verdana
+            Height: =43
+            Size: =15
+            Text: |
+                =Office365Users.MyProfile().Department
+            Width: =640
+            Y: =222
+            ZIndex: =11
 
