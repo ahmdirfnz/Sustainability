@@ -19050,6 +19050,18 @@
               "message": {
                 "text": "Error occurred running rule app-InefficientDelayLoading."
               }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 14
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error occurred running rule app-InefficientDelayLoading."
+              }
             }
           ]
         }
@@ -28337,49 +28349,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "recycling_main.Image8_10.AccessibleLabel"
+                  "fullyQualifiedName": "recycling_main.Image8_27.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "recycling_main.Image8_10.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "recycling_main",
-                "type": "recycling_main.Image8_10"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "recycling_main.Image8_10.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "recycling_main.Image8_10.TabIndex",
+                  "fullyQualifiedName": "recycling_main.Image8_27.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "recycling_main",
-                "type": "recycling_main.Image8_10"
+                "type": "recycling_main.Image8_27"
               }
             }
           ],
@@ -28397,19 +28379,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "recycling_main.Image8_12.AccessibleLabel"
+                  "fullyQualifiedName": "recycling_main.Image8_27.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "recycling_main.Image8_12.AccessibleLabel",
+                  "fullyQualifiedName": "recycling_main.Image8_27.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "recycling_main",
-                "type": "recycling_main.Image8_12"
+                "type": "recycling_main.Image8_27"
               }
             }
           ],
@@ -28427,19 +28409,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "recycling_main.Image8_12.TabIndex"
+                  "fullyQualifiedName": "recycling_main.Circle4_8.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "recycling_main.Image8_12.TabIndex",
+                  "fullyQualifiedName": "recycling_main.Circle4_8.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "recycling_main",
-                "type": "recycling_main.Image8_12"
+                "type": "recycling_main.Circle4_8"
               }
             }
           ],
@@ -28457,19 +28439,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "recycling_main.Image4_3.AccessibleLabel"
+                  "fullyQualifiedName": "recycling_main.Circle4_8.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "recycling_main.Image4_3.AccessibleLabel",
+                  "fullyQualifiedName": "recycling_main.Circle4_8.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "recycling_main",
-                "type": "recycling_main.Image4_3"
+                "type": "recycling_main.Circle4_8"
               }
             }
           ],
@@ -28487,19 +28469,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "recycling_main.Image4_3.TabIndex"
+                  "fullyQualifiedName": "recycling_main.Image4_10.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "recycling_main.Image4_3.TabIndex",
+                  "fullyQualifiedName": "recycling_main.Image4_10.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "recycling_main",
-                "type": "recycling_main.Image4_3"
+                "type": "recycling_main.Image4_10"
               }
             }
           ],
@@ -28517,19 +28499,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "recycling_main.Image8_9.AccessibleLabel"
+                  "fullyQualifiedName": "recycling_main.Image4_10.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "recycling_main.Image8_9.AccessibleLabel",
+                  "fullyQualifiedName": "recycling_main.Image4_10.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "recycling_main",
-                "type": "recycling_main.Image8_9"
+                "type": "recycling_main.Image4_10"
               }
             }
           ],
@@ -28547,19 +28529,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "recycling_main.Image8_9.TabIndex"
+                  "fullyQualifiedName": "recycling_main.Image1_14.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "recycling_main.Image8_9.TabIndex",
+                  "fullyQualifiedName": "recycling_main.Image1_14.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "recycling_main",
-                "type": "recycling_main.Image8_9"
+                "type": "recycling_main.Image1_14"
               }
             }
           ],
@@ -28577,19 +28559,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "recycling_main.Image1_6.AccessibleLabel"
+                  "fullyQualifiedName": "recycling_main.Image1_14.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "recycling_main.Image1_6.AccessibleLabel",
+                  "fullyQualifiedName": "recycling_main.Image1_14.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "recycling_main",
-                "type": "recycling_main.Image1_6"
+                "type": "recycling_main.Image1_14"
               }
             }
           ],
@@ -28607,19 +28589,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "recycling_main.Image1_6.TabIndex"
+                  "fullyQualifiedName": "recycling_main.Image8_28.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "recycling_main.Image1_6.TabIndex",
+                  "fullyQualifiedName": "recycling_main.Image8_28.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "recycling_main",
-                "type": "recycling_main.Image1_6"
+                "type": "recycling_main.Image8_28"
               }
             }
           ],
@@ -28631,6 +28613,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "recycling_main.Image8_28.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "recycling_main.Image8_28.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "recycling_main",
+                "type": "recycling_main.Image8_28"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -34198,6 +34210,66 @@
                 "member": "TabIndex",
                 "module": "plant_track_may",
                 "type": "plant_track_may.Icon1_8"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "recycling_main.Image8_29.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "recycling_main.Image8_29.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "recycling_main",
+                "type": "recycling_main.Image8_29"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "recycling_main.Image8_29.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "recycling_main.Image8_29.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "recycling_main",
+                "type": "recycling_main.Image8_29"
               }
             }
           ],
