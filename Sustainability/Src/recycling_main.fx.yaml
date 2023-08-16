@@ -12,7 +12,7 @@ recycling_main As screen:
         PressedFill: =RGBA(0, 120, 212, 1)
         Width: =512
         X: =60
-        Y: =380
+        Y: =404
         ZIndex: =1
 
     Circle2_5 As circle:
@@ -45,7 +45,7 @@ recycling_main As screen:
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =71
         X: =182
-        Y: =389
+        Y: =412
         ZIndex: =9
 
     Label15_1 As label:
@@ -61,8 +61,8 @@ recycling_main As screen:
         Size: =30
         Text: ="="
         Width: =39
-        X: =280
-        Y: =419
+        X: =279
+        Y: =439
         ZIndex: =10
 
     Group2_2 As group:
@@ -197,8 +197,8 @@ recycling_main As screen:
             =Concatenate(Round(Value(First(Filter(July_1,User().FullName in Name.DisplayName)).'Total Points'),0)," Points
             ")
         Width: =219
-        X: =335
-        Y: =412
+        X: =334
+        Y: =430
         ZIndex: =11
 
     Button9_2 As button:
@@ -210,7 +210,7 @@ recycling_main As screen:
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
-        Height: =337
+        Height: =387
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(236, 236, 235,0), -0%)
@@ -225,7 +225,7 @@ recycling_main As screen:
         Text: =""
         Width: =512
         X: =64
-        Y: =600
+        Y: =550
         ZIndex: =12
 
     Button2_17 As button:
@@ -253,8 +253,8 @@ recycling_main As screen:
         Size: =24
         Text: ="Recycling Form"
         Width: =475
-        X: =78
-        Y: =628
+        X: =84
+        Y: =602
         ZIndex: =13
 
     Button2_18 As button:
@@ -312,8 +312,8 @@ recycling_main As screen:
         Size: =20
         Text: ="Leaderboard (coming soon)"
         Width: =475
-        X: =78
-        Y: =738
+        X: =82
+        Y: =717
         ZIndex: =15
 
     Label5_2 As label:
@@ -329,11 +329,11 @@ recycling_main As screen:
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
         Height: =85
-        Size: =24
+        Size: =30
         Text: ="Recycling Programme"
         Width: =432
         X: =97
-        Y: =120
+        Y: =88
         ZIndex: =16
 
     Circle4_4 As circle:

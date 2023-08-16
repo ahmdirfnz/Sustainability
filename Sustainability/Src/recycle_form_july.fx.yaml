@@ -1158,18 +1158,7 @@ recycle_form_july As screen:
                 );
                 ,
                 SubmitForm(Form5_12);
-                /*Patch(
-                    Recycle,
-                    First(Filter(Recycle, StartsWith(Name.DisplayName, user_name))),
-                    {
-                        Paper: paper_var,
-                        Plastic: plastic_var,
-                        'Metal/Aluminium': metal_var,
-                        Glass: glass_var,
-                        'Textile/Fabric': textile_var,
-                        'Battery/E-Waste': battery_var
-                    }
-                );*/
+            
             );
             NewForm(Form5_12);
             ResetForm(Form5_12);
