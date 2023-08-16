@@ -18,7 +18,7 @@ plant_register As screen:
         Text: ="Plant Registration Form"
         Width: =432
         X: =104
-        Y: =98
+        Y: =70
         ZIndex: =3
 
     Button3 As button:
@@ -47,17 +47,18 @@ plant_register As screen:
         Size: =24
         Text: ="Submit"
         Width: =280
-        X: =180
-        Y: =570
+        X: =195
+        Y: =984
         ZIndex: =6
 
     Form9 As form:
         BorderColor: =RGBA(166, 166, 166, 1)
         DataSource: ='Plant Registration'
         DefaultMode: =FormMode.New
-        Height: =640
+        Height: =770
         OnSuccess: =Notify("Successfully registered.Thank you for participating in this sustainability initiative.",NotificationType.Success)
         Width: =640
+        Y: =174
         ZIndex: =7
 
         "'First Day_DataCard2' As typedDataCard.dateEditCard":
@@ -71,7 +72,7 @@ plant_register As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue51.SelectedDate
-            Width: =640
+            Width: =658
             X: =0
             Y: =3
             ZIndex: =1
@@ -181,7 +182,7 @@ plant_register As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue22.Selected
-            Width: =640
+            Width: =658
             X: =0
             Y: =0
             ZIndex: =8
@@ -307,7 +308,7 @@ plant_register As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue12.Selected
-            Width: =640
+            Width: =658
             X: =0
             Y: =1
             ZIndex: =8
@@ -426,7 +427,7 @@ plant_register As screen:
             Height: =50
             Required: =false
             Update: =Image15.Image
-            Width: =640
+            Width: =658
             X: =0
             Y: =2
             ZIndex: =8
@@ -550,7 +551,7 @@ plant_register As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Plant Registration'],DataSourceInfo.DisplayName,"PlantType")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =172
             MaxLength: =DataSourceInfo([@'Plant Registration'], DataSourceInfo.MaxLength, "PlantType")
             Required: =false
             Update: =DataCardValue17.Text
@@ -669,7 +670,7 @@ plant_register As screen:
             Height: =50
             Required: =false
             Update: =Image14.Image
-            Width: =640
+            Width: =658
             X: =0
             Y: =5
             ZIndex: =8
@@ -802,7 +803,7 @@ plant_register As screen:
         PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =52
-        X: =38
-        Y: =593
+        X: =52
+        Y: =995
         ZIndex: =8
 
