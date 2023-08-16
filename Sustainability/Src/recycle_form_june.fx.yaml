@@ -1151,7 +1151,7 @@ recycle_form_june As screen:
                     {'Battery/E-Waste': First(Filter(June_1, StartsWith(Name.DisplayName, user_name))).'Battery/E-Waste' + battery_var}
                 );
                 Patch(
-                    July_1,
+                    June_1,
                     First(Filter(June_1, StartsWith(Name.DisplayName, user_name))),
                     {Others: First(Filter(June_1, StartsWith(Name.DisplayName, user_name))).Others + others_var}
                 );

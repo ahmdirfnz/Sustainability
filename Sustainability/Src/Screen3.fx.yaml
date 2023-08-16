@@ -5,7 +5,7 @@ Screen3 As screen:
         BorderColor: =RGBA(166, 166, 166, 1)
         DataSource: ='Total Points'
         DefaultMode: =FormMode.New
-        Height: =640
+        Height: =988
         Width: =640
         ZIndex: =1
 
@@ -50,7 +50,7 @@ Screen3 As screen:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 BorderThickness: =2
                 Color: =RGBA(51, 51, 51, 1)
-                Default: =Round(First(Filter(January_2,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                Default: =Round(First(Filter(February_2,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
                 DelayOutput: =true
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -1643,7 +1643,61 @@ Screen3 As screen:
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-        OnSelect: =SubmitForm(Form2)
+        OnSelect: |-
+            =Set(
+                var_RecycleTotalPoints,
+                Round(First(Filter(January_2,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                    +
+                Round(First(Filter(February_2,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                    + 
+                Round(First (Filter(March_2,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                    +
+                Round(First (Filter(April_1,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                    +
+                    Round(First (Filter(May_1,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                    +
+                    Round(First (Filter(June_1,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                    +
+                    Round(First (Filter(July_1,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                    +
+                    Round(First (Filter(August_1,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                    +
+                    Round(First (Filter(September_1,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                    +
+                    Round(First (Filter(October_1,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                    +
+                    Round(First (Filter(November_1,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                    +
+                    Round(First (Filter(December_1,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                );
+            
+            Set(
+                user_name,
+                Text(DataCardValue21.Selected.DisplayName)
+            );
+            
+            
+            
+            If(
+               Not(IsBlank(LookUp('Total Points', StartsWith(Name.DisplayName, user_name)))),
+               Patch(
+                  'Total Points',
+                  First(Filter('Total Points', StartsWith(Name.DisplayName, user_name))),
+                  {
+                     'Total Point':
+                     var_RecycleTotalPoints
+            
+                  }
+                  )
+                  
+                  //Else
+                  ,
+            
+               SubmitForm(Form2);
+            
+            );
+            NewForm(Form2);
+            ResetForm(Form2);
         PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
@@ -1655,6 +1709,6 @@ Screen3 As screen:
         Text: ="Button"
         Width: =280
         X: =180
-        Y: =570
+        Y: =1026
         ZIndex: =2
 
