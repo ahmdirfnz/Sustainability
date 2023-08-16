@@ -492,7 +492,7 @@ trash_pickup_main As screen:
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverFill: =RGBA(0, 0, 0, 0)
             Image: ='home (4)'
-            OnSelect: =Navigate(Home_1,ScreenTransition.Fade)
+            OnSelect: =Navigate(Home,ScreenTransition.Fade)
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =58
