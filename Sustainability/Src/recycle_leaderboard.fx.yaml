@@ -38,7 +38,7 @@ recycle_leaderboard As screen:
         HoverFill: =RGBA(0, 120, 212, 1)
         PressedFill: =RGBA(0, 120, 212, 1)
         Width: =557
-        X: =41
+        X: =48
         Y: =242
         ZIndex: =2
 
@@ -48,7 +48,7 @@ recycle_leaderboard As screen:
         BorderThickness: =1
         DelayItemLoading: =true
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =615
+        Height: =656
         Items: |+
             =Sort(July_1,Value('Total Points'), SortOrder.Descending)
             
@@ -59,8 +59,8 @@ recycle_leaderboard As screen:
         TemplatePadding: =0
         TemplateSize: =93
         Width: =554
-        X: =41
-        Y: =25
+        X: =48
+        Y: =289
         ZIndex: =3
 
         Title2_1 As label:
@@ -195,8 +195,8 @@ recycle_leaderboard As screen:
         PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =52
-        X: =38
-        Y: =593
+        X: =39
+        Y: =1048
         ZIndex: =8
 
     Label5_33 As label:
@@ -235,8 +235,8 @@ recycle_leaderboard As screen:
             The standings may have changed since you last checked. Please refresh the 
             page to see the latest results."
         Width: =561
-        X: =39
-        Y: =574
+        X: =41
+        Y: =963
         ZIndex: =11
 
     Group1_1 As group:
@@ -270,8 +270,8 @@ recycle_leaderboard As screen:
             Size: =24
             Text: =""
             Width: =111
-            X: =264
-            Y: =582
+            X: =262
+            Y: =1048
             ZIndex: =7
 
         Icon2_1 As icon.Reload:
@@ -290,7 +290,7 @@ recycle_leaderboard As screen:
             PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =29
-            X: =305
-            Y: =596
+            X: =303
+            Y: =1055
             ZIndex: =9
 

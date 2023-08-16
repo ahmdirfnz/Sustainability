@@ -254,7 +254,7 @@ recycling_main As screen:
         Text: ="Recycling Form"
         Width: =475
         X: =82
-        Y: =570
+        Y: =682
         ZIndex: =14
 
     Button2_18 As button:
@@ -283,8 +283,8 @@ recycling_main As screen:
         Size: =20
         Text: ="Report (coming soon)"
         Width: =475
-        X: =82
-        Y: =575
+        X: =75
+        Y: =790
         ZIndex: =15
 
     Button2_19 As button:
@@ -312,8 +312,8 @@ recycling_main As screen:
         Size: =20
         Text: ="Leaderboard (coming soon)"
         Width: =475
-        X: =79
-        Y: =575
+        X: =75
+        Y: =917
         ZIndex: =16
 
     Circle4_4 As circle:
@@ -327,8 +327,8 @@ recycling_main As screen:
         OnSelect: =Navigate(plant_adoption_main,ScreenTransition.Fade)
         PressedFill: =RGBA(255, 197, 61, 1)
         Width: =86
-        X: =394
-        Y: =559
+        X: =464
+        Y: =252
         ZIndex: =21
 
     Image8_12 As image:
@@ -346,8 +346,8 @@ recycling_main As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =58
-        X: =291
-        Y: =575
+        X: =287
+        Y: =1061
         ZIndex: =25
 
     Label5_2 As label:
@@ -387,7 +387,7 @@ recycling_main As screen:
             HoverFill: =RGBA(248, 246, 244, 1)
             PressedFill: =RGBA(248, 246, 244, 1)
             Width: =640
-            Y: =540
+            Y: =1036
             ZIndex: =18
 
         Image1_6 As image:
@@ -405,8 +405,8 @@ recycling_main As screen:
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =62
-            X: =165
-            Y: =589
+            X: =172
+            Y: =1070
             ZIndex: =19
 
         Image4_3 As image:
@@ -425,7 +425,7 @@ recycling_main As screen:
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =49
             X: =50
-            Y: =574
+            Y: =1062
             ZIndex: =20
 
         Image8_9 As image:
@@ -444,7 +444,7 @@ recycling_main As screen:
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =53
             X: =411
-            Y: =576
+            Y: =1062
             ZIndex: =22
 
         Image8_10 As image:
@@ -462,7 +462,7 @@ recycling_main As screen:
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =53
-            X: =530
-            Y: =576
+            X: =529
+            Y: =1057
             ZIndex: =23
 
