@@ -273,8 +273,8 @@ plant_adoption_main As screen:
         Size: =24
         Text: =""
         Width: =512
-        X: =64
-        Y: =208
+        X: =67
+        Y: =540
         ZIndex: =13
 
     Button2_13 As button:
@@ -353,7 +353,7 @@ plant_adoption_main As screen:
         Text: ="Tracking"
         Width: =475
         X: =82
-        Y: =575
+        Y: =671
         ZIndex: =15
 
     Button2_15 As button:
@@ -382,7 +382,7 @@ plant_adoption_main As screen:
         Text: ="Leaderboard"
         Width: =475
         X: =79
-        Y: =575
+        Y: =771
         ZIndex: =16
 
     Button2_16 As button:
@@ -410,8 +410,8 @@ plant_adoption_main As screen:
         Size: =20
         Text: ="Report (coming soon)"
         Width: =475
-        X: =82
-        Y: =575
+        X: =76
+        Y: =871
         ZIndex: =17
 
     Image13_3 As image:
@@ -430,7 +430,7 @@ plant_adoption_main As screen:
         Width: =85
         X: =306
         Y: =390
-        ZIndex: =19
+        ZIndex: =18
 
     Label16_3 As label:
         Align: =Align.Center
@@ -456,7 +456,7 @@ plant_adoption_main As screen:
         Width: =111
         X: =437
         Y: =408
-        ZIndex: =21
+        ZIndex: =19
 
     Label15_3 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -473,35 +473,31 @@ plant_adoption_main As screen:
         Width: =37
         X: =400
         Y: =401
-        ZIndex: =24
+        ZIndex: =20
 
-    Image8_5 As image:
-        BorderColor: =RGBA(0, 0, 0, 0)
+    Circle4_1 As circle:
+        BorderColor: =RGBA(166, 166, 166, 1)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
-        Height: =65
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverFill: =RGBA(0, 0, 0, 0)
-        Image: ='home (4)'
-        OnSelect: =Navigate(Home,ScreenTransition.Fade)
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =58
-        X: =291
-        Y: =575
-        ZIndex: =31
+        DisabledFill: =RGBA(133, 242, 99, 1)
+        Fill: =RGBA(133, 242, 99, 0.42)
+        Height: =78
+        HoverFill: =RGBA(133, 242, 99, 1)
+        OnSelect: =Navigate(plant_adoption_main,ScreenTransition.Fade)
+        PressedFill: =RGBA(133, 242, 99, 1)
+        Width: =86
+        X: =149
+        Y: =1052
+        ZIndex: =22
 
-    Group3_1 As group:
+    Group2_5 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
-        ZIndex: =32
+        ZIndex: =34
 
-        Rectangle2_4 As rectangle:
+        Rectangle2_11 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -511,25 +507,10 @@ plant_adoption_main As screen:
             HoverFill: =RGBA(248, 246, 244, 1)
             PressedFill: =RGBA(248, 246, 244, 1)
             Width: =640
-            Y: =540
-            ZIndex: =25
+            Y: =1036
+            ZIndex: =21
 
-        Circle4_1 As circle:
-            BorderColor: =RGBA(166, 166, 166, 1)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            DisabledFill: =RGBA(133, 242, 99, 1)
-            Fill: =RGBA(133, 242, 99, 0.42)
-            Height: =81
-            HoverFill: =RGBA(133, 242, 99, 1)
-            OnSelect: =Navigate(plant_adoption_main,ScreenTransition.Fade)
-            PressedFill: =RGBA(133, 242, 99, 1)
-            Width: =86
-            X: =153
-            Y: =559
-            ZIndex: =26
-
-        Image1_1 As image:
+        Image1_13 As image:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -544,11 +525,11 @@ plant_adoption_main As screen:
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =62
-            X: =165
-            Y: =589
-            ZIndex: =27
+            X: =161
+            Y: =1065
+            ZIndex: =23
 
-        Image4_1 As image:
+        Image4_9 As image:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -563,11 +544,11 @@ plant_adoption_main As screen:
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =49
-            X: =50
-            Y: =574
-            ZIndex: =28
+            X: =51
+            Y: =1060
+            ZIndex: =24
 
-        Image8_3 As image:
+        Image8_25 As image:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -582,11 +563,11 @@ plant_adoption_main As screen:
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =53
-            X: =411
-            Y: =576
-            ZIndex: =29
+            X: =416
+            Y: =1059
+            ZIndex: =25
 
-        Image8_4 As image:
+        Image8_26 As image:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -601,7 +582,26 @@ plant_adoption_main As screen:
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =53
-            X: =530
-            Y: =576
-            ZIndex: =30
+            X: =529
+            Y: =1055
+            ZIndex: =26
+
+        Image8_24 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =65
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: ='home (4)'
+            OnSelect: =Navigate(Home_1,ScreenTransition.Fade)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =58
+            X: =293
+            Y: =1054
+            ZIndex: =27
 

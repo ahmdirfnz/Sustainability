@@ -28576,36 +28576,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "plant_adoption_main.Circle4_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "plant_adoption_main.Circle4_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "plant_adoption_main",
-                "type": "plant_adoption_main.Circle4_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "plant_adoption_main.Circle4_1.TabIndex"
                 }
               ],
@@ -28636,19 +28606,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "plant_adoption_main.Image4_1.AccessibleLabel"
+                  "fullyQualifiedName": "plant_adoption_main.Circle4_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "plant_adoption_main.Image4_1.AccessibleLabel",
+                  "fullyQualifiedName": "plant_adoption_main.Circle4_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "plant_adoption_main",
-                "type": "plant_adoption_main.Image4_1"
+                "type": "plant_adoption_main.Circle4_1"
               }
             }
           ],
@@ -28666,19 +28636,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "plant_adoption_main.Image4_1.TabIndex"
+                  "fullyQualifiedName": "plant_adoption_main.Image1_13.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "plant_adoption_main.Image4_1.TabIndex",
+                  "fullyQualifiedName": "plant_adoption_main.Image1_13.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "plant_adoption_main",
+                "type": "plant_adoption_main.Image1_13"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "plant_adoption_main.Image1_13.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "plant_adoption_main.Image1_13.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "plant_adoption_main",
-                "type": "plant_adoption_main.Image4_1"
+                "type": "plant_adoption_main.Image1_13"
               }
             }
           ],
@@ -28696,19 +28696,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "plant_adoption_main.Image8_5.AccessibleLabel"
+                  "fullyQualifiedName": "plant_adoption_main.Image8_24.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "plant_adoption_main.Image8_5.AccessibleLabel",
+                  "fullyQualifiedName": "plant_adoption_main.Image8_24.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "plant_adoption_main",
-                "type": "plant_adoption_main.Image8_5"
+                "type": "plant_adoption_main.Image8_24"
               }
             }
           ],
@@ -28726,19 +28726,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "plant_adoption_main.Image8_5.TabIndex"
+                  "fullyQualifiedName": "plant_adoption_main.Image8_24.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "plant_adoption_main.Image8_5.TabIndex",
+                  "fullyQualifiedName": "plant_adoption_main.Image8_24.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "plant_adoption_main",
-                "type": "plant_adoption_main.Image8_5"
+                "type": "plant_adoption_main.Image8_24"
               }
             }
           ],
@@ -28756,19 +28756,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "plant_adoption_main.Image8_3.AccessibleLabel"
+                  "fullyQualifiedName": "plant_adoption_main.Image8_26.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "plant_adoption_main.Image8_3.AccessibleLabel",
+                  "fullyQualifiedName": "plant_adoption_main.Image8_26.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "plant_adoption_main",
-                "type": "plant_adoption_main.Image8_3"
+                "type": "plant_adoption_main.Image8_26"
               }
             }
           ],
@@ -28786,19 +28786,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "plant_adoption_main.Image8_3.TabIndex"
+                  "fullyQualifiedName": "plant_adoption_main.Image8_26.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "plant_adoption_main.Image8_3.TabIndex",
+                  "fullyQualifiedName": "plant_adoption_main.Image8_26.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "plant_adoption_main",
-                "type": "plant_adoption_main.Image8_3"
+                "type": "plant_adoption_main.Image8_26"
               }
             }
           ],
@@ -28816,19 +28816,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "plant_adoption_main.Image8_4.AccessibleLabel"
+                  "fullyQualifiedName": "plant_adoption_main.Image8_25.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "plant_adoption_main.Image8_4.AccessibleLabel",
+                  "fullyQualifiedName": "plant_adoption_main.Image8_25.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "plant_adoption_main",
-                "type": "plant_adoption_main.Image8_4"
+                "type": "plant_adoption_main.Image8_25"
               }
             }
           ],
@@ -28846,19 +28846,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "plant_adoption_main.Image8_4.TabIndex"
+                  "fullyQualifiedName": "plant_adoption_main.Image8_25.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "plant_adoption_main.Image8_4.TabIndex",
+                  "fullyQualifiedName": "plant_adoption_main.Image8_25.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "plant_adoption_main",
-                "type": "plant_adoption_main.Image8_4"
+                "type": "plant_adoption_main.Image8_25"
               }
             }
           ],
@@ -28876,19 +28876,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "plant_adoption_main.Image1_1.AccessibleLabel"
+                  "fullyQualifiedName": "plant_adoption_main.Image4_9.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "plant_adoption_main.Image1_1.AccessibleLabel",
+                  "fullyQualifiedName": "plant_adoption_main.Image4_9.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "plant_adoption_main",
-                "type": "plant_adoption_main.Image1_1"
+                "type": "plant_adoption_main.Image4_9"
               }
             }
           ],
@@ -28906,19 +28906,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "plant_adoption_main.Image1_1.TabIndex"
+                  "fullyQualifiedName": "plant_adoption_main.Image4_9.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "plant_adoption_main.Image1_1.TabIndex",
+                  "fullyQualifiedName": "plant_adoption_main.Image4_9.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "plant_adoption_main",
-                "type": "plant_adoption_main.Image1_1"
+                "type": "plant_adoption_main.Image4_9"
               }
             }
           ],
