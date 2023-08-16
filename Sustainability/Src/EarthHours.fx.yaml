@@ -10,7 +10,7 @@
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
-        Height: =640
+        Height: =892
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
@@ -24,14 +24,16 @@
         Size: =24
         Text: =""
         Width: =596
-        X: =27
+        X: =21
+        Y: =162
         ZIndex: =1
 
     Canvas2 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
-        Height: =640
+        Height: =870
         Width: =585
-        X: =33
+        X: =27
+        Y: =166
         ZIndex: =2
 
         DataCard4 As dataCard:
@@ -40,7 +42,7 @@
             BorderThickness: =0
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =1899
+            Height: =1799
             Width: =585
             X: =0
             Y: =0
@@ -60,7 +62,6 @@
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedFill: =RGBA(0, 0, 0, 0)
                 Width: =617
-                X: =10
                 ZIndex: =1
 
             Label7 As label:
@@ -72,7 +73,7 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
-                Height: =1519
+                Height: =1539
                 Size: =21
                 Text: |-
                     ="On 22 March 2023, Digital Engineering (DE) held its first Earth Hour event in support of the global movement to promote sustainability and combat climate change. We switched off all lights and air conditioning units from 12PM to 2PM for floor 22 to floor 29 of Menara ExxonMobil.
@@ -86,7 +87,7 @@
                     In conclusion, the first Earth Hour event was a success and a positive step forward towards promoting sustainability and fighting climate change. With the company's commitment and the continued support of its employees, it is hoped that more green initiatives like this will be implemented in the future, leading to a more sustainable and eco-friendly workplace."
                 Width: =560
                 X: =10
-                Y: =380
+                Y: =360
                 ZIndex: =2
 
     Label5_4 As label:
@@ -106,7 +107,7 @@
         Text: ="Earth Hour "
         Width: =432
         X: =97
-        Y: =120
+        Y: =44
         ZIndex: =3
 
     Icon1_31 As icon.ChevronLeft:
@@ -126,7 +127,7 @@
         PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =52
-        X: =38
-        Y: =593
+        X: =27
+        Y: =63
         ZIndex: =4
 
