@@ -5,12 +5,13 @@ recycle_form_january As screen:
         BorderColor: =RGBA(166, 166, 166, 1)
         DataSource: =January_2
         DefaultMode: =FormMode.New
-        Height: =640
+        Height: =737
         OnFailure: =Notify("Failed to submit form. Please fill in the required field.", NotificationType.Error)
         OnSuccess: =Notify("Saved.", NotificationType.Success)
         Visible: |
             =SelectedMonth=1
         Width: =640
+        Y: =262
         ZIndex: =1
 
         Others_DataCard8 As typedDataCard.numberEditCard:
@@ -1177,7 +1178,7 @@ recycle_form_january As screen:
         Text: ="Submit"
         Width: =280
         X: =180
-        Y: =570
+        Y: =1025
         ZIndex: =2
 
     Label5_26 As label:
@@ -1270,8 +1271,8 @@ recycle_form_january As screen:
         PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =46
-        X: =38
-        Y: =593
+        X: =58
+        Y: =1036
         ZIndex: =5
 
     Container1 As groupContainer.manualLayoutContainer:
