@@ -5,12 +5,13 @@ plant_track_oct As screen:
         BorderColor: =RGBA(166, 166, 166, 1)
         DataSource: =October
         DefaultMode: =FormMode.New
-        Height: =640
+        Height: =732
         OnFailure: =Notify("Failed to submit form. Please fill in the required field.", NotificationType.Error)
         OnSuccess: =Notify("Saved.", NotificationType.Success)
         Visible: |
             =SelectedMonth=10
         Width: =640
+        Y: =274
         ZIndex: =1
 
         "'Family Image_DataCard12' As typedDataCard.addLargePictureCard":
@@ -981,7 +982,7 @@ plant_track_oct As screen:
         Text: ="Submit"
         Width: =280
         X: =180
-        Y: =570
+        Y: =1022
         ZIndex: =2
 
     Label5_18 As label:
@@ -1074,7 +1075,7 @@ plant_track_oct As screen:
         PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =52
-        X: =38
-        Y: =593
+        X: =52
+        Y: =1033
         ZIndex: =5
 
