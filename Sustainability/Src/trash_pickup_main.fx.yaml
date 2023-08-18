@@ -160,7 +160,7 @@ trash_pickup_main As screen:
         Fill: =RGBA(169, 102, 227, 0.47)
         Height: =81
         HoverFill: =RGBA(169, 102, 227, 1)
-        OnSelect: =Navigate(plant_adoption_main,ScreenTransition.Fade)
+        OnSelect: =Navigate(trash_pickup_main,ScreenTransition.Fade)
         PressedFill: =RGBA(169, 102, 227, 1)
         Width: =86
         X: =512

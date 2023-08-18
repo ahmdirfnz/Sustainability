@@ -194,7 +194,7 @@ recycling_main As screen:
         Height: =45
         Size: =23
         Text: |-
-            =Concatenate(Round(Value(First(Filter(July_1,User().FullName in Name.DisplayName)).'Total Points'),0)," Points
+            =Concatenate(Round(Value(First(Filter('Total Points',User().FullName in Name.DisplayName)).'Total Point'),0)," Points
             ")
         Width: =219
         X: =334
@@ -310,7 +310,7 @@ recycling_main As screen:
         RadiusTopLeft: =20
         RadiusTopRight: =20
         Size: =20
-        Text: ="Leaderboard (coming soon)"
+        Text: ="Leaderboard"
         Width: =475
         X: =82
         Y: =717
@@ -344,7 +344,7 @@ recycling_main As screen:
         Fill: =RGBA(255, 197, 61, 0.7)
         Height: =81
         HoverFill: =RGBA(255, 197, 61, 1)
-        OnSelect: =Navigate(plant_adoption_main,ScreenTransition.Fade)
+        OnSelect: =Navigate(recycling_main,ScreenTransition.Fade)
         PressedFill: =RGBA(255, 197, 61, 1)
         Width: =86
         X: =401

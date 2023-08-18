@@ -228,7 +228,7 @@ Home As screen:
             Fill: =RGBA(179, 179, 179, 0.2)
             Height: =81
             HoverFill: =RGBA(179, 179, 179, 1)
-            OnSelect: =Navigate(plant_adoption_main,ScreenTransition.Fade)
+            OnSelect: =Navigate(Home,ScreenTransition.Fade)
             PressedFill: =RGBA(179, 179, 179, 1)
             Width: =86
             X: =279
