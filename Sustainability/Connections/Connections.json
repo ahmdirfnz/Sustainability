@@ -39,9 +39,6 @@
           "Recycle": {
             "tableName": "29aae791-3d67-4225-9628-cae9184911e9"
           },
-          "Total Points TP": {
-            "tableName": "f3638712-6e05-4bd3-b3dc-1f141cfa579e"
-          },
           "Trash Pickup": {
             "tableName": "2935f1ac-736b-438d-b150-70cf09e824c5"
           }
@@ -197,8 +194,7 @@
       "June_1",
       "Info Screen",
       "Plant Adoption Total Points",
-      "Total Points",
-      "Total Points TP"
+      "Total Points"
     ],
     "dependencies": {},
     "dependents": [],
