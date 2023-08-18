@@ -6771,7 +6771,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Family Image_DataCard6",
-      "ParentIndex": 0,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6931,7 +6931,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Family Input_DataCard1_5",
-      "ParentIndex": 6,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7084,7 +7084,7 @@
       "LayoutName": "vertical",
       "MetaDataIDKey": "",
       "Name": "Form5_5",
-      "ParentIndex": 2,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7212,7 +7212,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Gallery4_5",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8084,7 +8084,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label5_14",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8364,7 +8364,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Leaf Input_DataCard1_5",
-      "ParentIndex": 5,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8524,7 +8524,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Name_DataCard2_5",
-      "ParentIndex": 3,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8684,7 +8684,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "New Plant Image_DataCard1_5",
-      "ParentIndex": 2,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8844,7 +8844,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "New Plant?_DataCard1_5",
-      "ParentIndex": 1,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11039,7 +11039,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Still Alive?_DataCard1_5",
-      "ParentIndex": 4,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
