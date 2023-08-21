@@ -138,7 +138,7 @@ trash_leaderboard As screen:
         FontWeight: =FontWeight.Bold
         Height: =85
         Size: =24
-        Text: ="Plant Adoption Leaderboard"
+        Text: ="Cleanup Programme Leaderboard"
         Width: =458
         X: =91
         Y: =120
