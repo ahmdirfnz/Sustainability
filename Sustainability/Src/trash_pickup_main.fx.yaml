@@ -280,7 +280,7 @@ trash_pickup_main As screen:
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
-            Fill: =RGBA(204, 204, 204, 1)
+            Fill: =RGBA(169, 102, 227, 1)
             FocusedBorderColor: =ColorFade(Self.Fill, -75%)
             Font: =Font.Verdana
             FontWeight: =FontWeight.Semibold
@@ -298,7 +298,7 @@ trash_pickup_main As screen:
             RadiusTopLeft: =20
             RadiusTopRight: =20
             Size: =20
-            Text: ="Leaderboard (coming soon)"
+            Text: ="Leaderboard"
             Width: =475
             X: =84
             Y: =837
