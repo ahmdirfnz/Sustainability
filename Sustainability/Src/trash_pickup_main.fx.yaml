@@ -297,7 +297,7 @@ trash_pickup_main As screen:
             RadiusBottomRight: =20
             RadiusTopLeft: =20
             RadiusTopRight: =20
-            Size: =20
+            Size: =24
             Text: ="Leaderboard"
             Width: =475
             X: =84
